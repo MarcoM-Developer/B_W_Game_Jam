@@ -1,37 +1,49 @@
 fileFormatVersion: 2
-guid: 24fb8d367207640d4844e81379c0e953
+guid: bdc636707946943918652611bfe0f94c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6038035318942987555
-    second: Tile set 5_0
+      213: -1121221427187300267
+    second: Black tiles 01 Artboard 2_0
   - first:
-      213: -6453907144535795687
-    second: Tile set 5_1
+      213: -6189586997637605808
+    second: Black tiles 01 Artboard 2_1
   - first:
-      213: -3251394004349967680
-    second: Tile set 5_2
+      213: 301832420678983633
+    second: Black tiles 01 Artboard 2_2
   - first:
-      213: 1823179980496009982
-    second: Tile set 5_3
+      213: 9124993942977600251
+    second: Black tiles 01 Artboard 2_3
   - first:
-      213: -5576900426024611104
-    second: Tile set 5_4
+      213: 5259028159247659129
+    second: Black tiles 01 Artboard 2_4
   - first:
-      213: -461776693733334062
-    second: Tile set 5_5
+      213: 2634108468882804124
+    second: Black tiles 01 Artboard 2_5
   - first:
-      213: 1790910448823473370
-    second: Tile set 5_6
+      213: -429270395949652675
+    second: Black tiles 01 Artboard 2_6
   - first:
-      213: -6636967623365008295
-    second: Tile set 5_7
+      213: -6973323045813134979
+    second: Black tiles 01 Artboard 2_7
   - first:
-      213: -4915463006186337911
-    second: Tile set 5_8
+      213: -2012380365053871920
+    second: Black tiles 01 Artboard 2_8
   - first:
-      213: -7050060380490683377
-    second: Tile set 5_9
+      213: -3741107556708946052
+    second: Black tiles 01 Artboard 2_9
+  - first:
+      213: -6049726598833265396
+    second: Black tiles 01 Artboard 2_10
+  - first:
+      213: 6016825123457893940
+    second: Black tiles 01 Artboard 2_11
+  - first:
+      213: 4374808430755815849
+    second: Black tiles 01 Artboard 2_12
+  - first:
+      213: -3762273969349703522
+    second: Black tiles 01 Artboard 2_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -72,7 +84,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -121,10 +133,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tile set 5_0
+      name: Black tiles 01 Artboard 2_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 128
         width: 128
         height: 128
@@ -135,17 +147,38 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dda04294ed6943ca0800000000000000
-      internalID: -6038035318942987555
+      spriteID: 558c1fd6d0f9070f0800000000000000
+      internalID: -1121221427187300267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile set 5_1
+      name: Black tiles 01 Artboard 2_1
       rect:
         serializedVersion: 2
-        x: 128
+        x: 129
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0561f636b6b2a1aa0800000000000000
+      internalID: -6189586997637605808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black tiles 01 Artboard 2_2
+      rect:
+        serializedVersion: 2
+        x: 257
         y: 128
         width: 128
         height: 128
@@ -154,86 +187,220 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -28, y: 26}
+      - - {x: 15, y: 54}
+        - {x: -31, y: 23}
+        - {x: -57, y: -15}
         - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
+      tessellationDetail: 0.5
+      bones: []
+      spriteID: 1df5448ccf2503400800000000000000
+      internalID: 301832420678983633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black tiles 01 Artboard 2_3
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 57, y: -18}
+        - {x: 22, y: 29}
+        - {x: -16, y: 56}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa55c415ad72ae70800000000000000
+      internalID: 9124993942977600251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black tiles 01 Artboard 2_4
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970bbbf4f32dbf840800000000000000
+      internalID: 5259028159247659129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black tiles 01 Artboard 2_5
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -64, y: 64}
+        - {x: -64, y: -41}
+        - {x: -29, y: 29}
+        - {x: 34, y: 64}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d8b9342bb3e8420800000000000000
+      internalID: 2634108468882804124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black tiles 01 Artboard 2_6
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -28, y: 64}
+        - {x: 23, y: 31}
+        - {x: 64, y: -24}
+        - {x: 64, y: 64}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3564d869dcea0af0800000000000000
+      internalID: -429270395949652675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black tiles 01 Artboard 2_7
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d795346d2a7c93f90800000000000000
+      internalID: -6973323045813134979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black tiles 01 Artboard 2_8
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d83ef358b69214e0800000000000000
+      internalID: -2012380365053871920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black tiles 01 Artboard 2_9
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -64, y: 64}
+        - {x: -57, y: 22}
+        - {x: -34, y: -18}
+        - {x: -1, y: -44}
+        - {x: 32, y: -59}
         - {x: 64, y: -64}
         - {x: 64, y: 64}
       tessellationDetail: 0
       bones: []
-      spriteID: 918969475ad1f66a0800000000000000
-      internalID: -6453907144535795687
+      spriteID: c7f65d79f7ae41cc0800000000000000
+      internalID: -3741107556708946052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile set 5_2
+      name: Black tiles 01 Artboard 2_10
       rect:
         serializedVersion: 2
-        x: 256
-        y: 128
+        x: 385
+        y: 0
         width: 128
         height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 58, y: 23}
+        - {x: 64, y: 64}
+        - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: -9, y: -53}
+        - {x: 30, y: -23}
       tessellationDetail: 0
       bones: []
-      spriteID: 0c2a2e1316ab0e2d0800000000000000
-      internalID: -3251394004349967680
+      spriteID: c05af4016bd0b0ca0800000000000000
+      internalID: -6049726598833265396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile set 5_3
+      name: Black tiles 01 Artboard 2_11
       rect:
         serializedVersion: 2
-        x: 384
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efa711b588c3d4910800000000000000
-      internalID: 1823179980496009982
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile set 5_4
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e214173c9eda92b0800000000000000
-      internalID: -5576900426024611104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile set 5_5
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 513
         y: 0
         width: 128
         height: 128
@@ -244,17 +411,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d3687c2b807799f0800000000000000
-      internalID: -461776693733334062
+      spriteID: 4368a5f329e008350800000000000000
+      internalID: 6016825123457893940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile set 5_6
+      name: Black tiles 01 Artboard 2_12
       rect:
         serializedVersion: 2
-        x: 128
+        x: 641
         y: 0
         width: 128
         height: 128
@@ -262,20 +429,24 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 32, y: -63}
+        - {x: -30, y: -29}
+        - {x: -64, y: 33}
+        - {x: -64, y: -64}
       tessellationDetail: 0
       bones: []
-      spriteID: ad498a680979ad810800000000000000
-      internalID: 1790910448823473370
+      spriteID: 9a1a59bc61176bc30800000000000000
+      internalID: 4374808430755815849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile set 5_7
+      name: Black tiles 01 Artboard 2_13
       rect:
         serializedVersion: 2
-        x: 256
+        x: 769
         y: 0
         width: 128
         height: 128
@@ -283,53 +454,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 64, y: 32}
+        - {x: 29, y: -29}
+        - {x: -27, y: -64}
+        - {x: 64, y: -64}
       tessellationDetail: 0
       bones: []
-      spriteID: 9546f875c11c4e3a0800000000000000
-      internalID: -6636967623365008295
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile set 5_8
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98980b96074c8cbb0800000000000000
-      internalID: -4915463006186337911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile set 5_9
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0c2ccfcf67292e90800000000000000
-      internalID: -7050060380490683377
+      spriteID: e98463d12c7b9cbc0800000000000000
+      internalID: -3762273969349703522
       vertices: []
       indices: 
       edges: []

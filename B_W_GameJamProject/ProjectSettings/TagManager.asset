@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - BlackWalls
+  - WhiteWalls
   - 
   - 
   - 
@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: background
+    uniqueID: 3526588995
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: grid
+    uniqueID: 2195097061
     locked: 0
