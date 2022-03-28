@@ -514,13 +514,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMoving: 0
   isAtMaxSpeed: 0
+  isTimerActive: 1
   maxSpeed:
     useLocalValue: 1
     localValue: 20
     variable: {fileID: 11400000, guid: c0b204415da112a4d963932a63ddf4e4, type: 2}
   acceleration:
     useLocalValue: 1
-    localValue: 40
+    localValue: 10
     variable: {fileID: 11400000, guid: 0ca508b7977758d4d8e8f4a2ba288515, type: 2}
   deceleration:
     useLocalValue: 1
@@ -533,6 +534,10 @@ MonoBehaviour:
   remainingTime:
     useLocalValue: 1
     localValue: 1
+    variable: {fileID: 0}
+  currentTime:
+    useLocalValue: 1
+    localValue: 0
     variable: {fileID: 0}
   playerRigidBody: {fileID: 802652235}
 --- !u!114 &802652238
