@@ -512,20 +512,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbb583f52634e0d40965dafe0949ad74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMoving: 0
+  isAtMaxSpeed: 0
   maxSpeed:
-    useLocalValue: 0
-    localValue: 0
+    useLocalValue: 1
+    localValue: 20
     variable: {fileID: 11400000, guid: c0b204415da112a4d963932a63ddf4e4, type: 2}
   acceleration:
-    useLocalValue: 0
-    localValue: 0
+    useLocalValue: 1
+    localValue: 40
     variable: {fileID: 11400000, guid: 0ca508b7977758d4d8e8f4a2ba288515, type: 2}
   deceleration:
-    useLocalValue: 0
-    localValue: 0
+    useLocalValue: 1
+    localValue: 5
     variable: {fileID: 11400000, guid: 4d70554f1f015594f9ed87c0326fd2b3, type: 2}
-  isAtMaxSpeed: 0
-  flag: 0
+  debugTresholdForFalseMaxSpeed:
+    useLocalValue: 1
+    localValue: 0.1
+    variable: {fileID: 0}
+  remainingTime:
+    useLocalValue: 1
+    localValue: 1
+    variable: {fileID: 0}
   playerRigidBody: {fileID: 802652235}
 --- !u!114 &802652238
 MonoBehaviour:
@@ -693,6 +701,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1339800471}
+  - component: {fileID: 1339800472}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -707,7 +716,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339800470}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -715,7 +724,33 @@ Transform:
   - {fileID: 392851321}
   m_Father: {fileID: 802652234}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1339800472
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339800470}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.739836, y: 0.29779565}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.4401021, y: 0.4044087}
+  m_EdgeRadius: 0
 --- !u!1 &1641256516
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,7 +890,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 100
+  m_Mass: 300
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -986,7 +1021,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 100
+  m_Mass: 300
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
