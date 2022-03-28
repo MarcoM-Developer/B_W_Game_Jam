@@ -524,16 +524,8 @@ MonoBehaviour:
     variable: {fileID: 11400000, guid: 0ca508b7977758d4d8e8f4a2ba288515, type: 2}
   deceleration:
     useLocalValue: 1
-    localValue: 5
+    localValue: 15
     variable: {fileID: 11400000, guid: 4d70554f1f015594f9ed87c0326fd2b3, type: 2}
-  debugTresholdForFalseMaxSpeed:
-    useLocalValue: 1
-    localValue: 0.1
-    variable: {fileID: 0}
-  remainingTime:
-    useLocalValue: 1
-    localValue: 1
-    variable: {fileID: 0}
   playerRigidBody: {fileID: 802652235}
 --- !u!114 &802652238
 MonoBehaviour:

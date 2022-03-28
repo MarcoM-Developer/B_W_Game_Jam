@@ -12,9 +12,6 @@ public class Movement : MonoBehaviour
     [SerializeField] private FloatReference maxSpeed;           //serialize field takes reference from inspector and only if the component is on the same object
     [SerializeField] private FloatReference acceleration;              //otherwise I use getComponent method with GameObject.Find()
     [SerializeField] private FloatReference deceleration;
-    [SerializeField] private FloatReference debugTresholdForFalseMaxSpeed;
-
-    [SerializeField] private FloatReference remainingTime;
 
 
     [Header("Components")]
@@ -40,13 +37,13 @@ public class Movement : MonoBehaviour
             Move();
             CheckIfMaxSpeedReached();
         }
-        else if ((directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0))
+        if ((directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0))
         {
             isMoving = false;
             isAtMaxSpeed = false;
             StopMove();
-            Move();
-            CheckIfMaxSpeedReached();
+            //Move();
+            //CheckIfMaxSpeedReached();
         }
         else if (directionVector.x == 0)
         {
@@ -60,17 +57,21 @@ public class Movement : MonoBehaviour
 
     private void Move()
     {
+        Debug.Log(2);
         if (isMoving && !isAtMaxSpeed)
         {
             playerRigidBody.AddForce(directionVector * acceleration.Value);
+            playerRigidBody.drag = 0;
         }
     }
 
     private void StopMove()
     {
-        if (!isMoving)
+        
+        if (Mathf.Abs(playerRigidBody.velocity.x) > 0)
         {
-            playerRigidBody.velocity = new Vector2(0, playerRigidBody.velocity.y);
+            Debug.Log("1");
+            playerRigidBody.drag = deceleration.Value;
         }
     }
 
