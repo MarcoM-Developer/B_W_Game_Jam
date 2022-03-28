@@ -34,25 +34,19 @@ public class Movement : MonoBehaviour
     {
         directionVector = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
 
-        if (directionVector.x > 0 && !isAtMaxSpeed)
+       /*playerRigidBody.velocity = new Vector2(directionVector.x * acceleration.Value, playerRigidBody.velocity.y);
+    }*/
+        if (directionVector.x > 0 || directionVector.x < 0)
         {
             isMoving = true;
         }
-        if (directionVector.x < 0 && !isAtMaxSpeed)
-        {
-            isMoving = true;
-        }
-        if (directionVector.x > 0 && playerRigidBody.velocity.x < 0)
+        else if((directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0))
         {
             isMoving = false;
             isAtMaxSpeed = false;
+            playerRigidBody.velocity = new Vector2(0, playerRigidBody.velocity.y);
         }
-        if (directionVector.x < 0 && playerRigidBody.velocity.x > 0)
-        {
-            isMoving = false;
-            isAtMaxSpeed = false;
-        }
-        if (directionVector.x == 0)
+        else if (directionVector.x == 0)
         {
             isMoving = false;
             isAtMaxSpeed = false;
@@ -107,4 +101,6 @@ public class Movement : MonoBehaviour
             transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, 0, transform.rotation.eulerAngles.z);
         }
     }
+
+    
 }
