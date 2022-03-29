@@ -31,7 +31,7 @@ public class Movement : MonoBehaviour
     {
         directionVector = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
 
-        if ((directionVector.x > 0 && !isAtMaxSpeed) || ((directionVector.x < 0 && !isAtMaxSpeed)))
+        if ((directionVector.x > 0) || ((directionVector.x < 0)))
         {
             isMoving = true;
             Move();
@@ -60,7 +60,7 @@ public class Movement : MonoBehaviour
         Debug.Log(2);
         if (isMoving && !isAtMaxSpeed)
         {
-            playerRigidBody.AddForce(directionVector * acceleration.Value);
+            playerRigidBody.AddForce(directionVector * acceleration.Value, ForceMode2D.Force);
             playerRigidBody.drag = 0;
         }
     }
@@ -71,7 +71,8 @@ public class Movement : MonoBehaviour
         if (Mathf.Abs(playerRigidBody.velocity.x) > 0)
         {
             Debug.Log("1");
-            playerRigidBody.drag = deceleration.Value;
+            //playerRigidBody.drag = deceleration.Value;
+            playerRigidBody.velocity = new Vector2(0,playerRigidBody.velocity.y);
         }
     }
 
