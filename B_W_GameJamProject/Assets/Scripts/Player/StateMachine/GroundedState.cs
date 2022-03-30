@@ -60,6 +60,7 @@ public class GroundedState : PlayerState
     private void EnablePlayerJump()
     {
         playerJump.enabled = true;
+        playerJump.CanJump = true;
     }
 
 }

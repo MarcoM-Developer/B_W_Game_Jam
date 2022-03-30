@@ -10,7 +10,7 @@ public class JumpingState : PlayerState
     public override void StartState()
     {
         playerMovement.enabled = true;
-        playerJump.enabled = false;
+        playerJump.CanJump = false;
     }
 
     public override void UpdateState()
