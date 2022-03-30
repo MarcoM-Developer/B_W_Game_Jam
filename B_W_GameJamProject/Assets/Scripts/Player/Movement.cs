@@ -6,7 +6,6 @@ public class Movement : MonoBehaviour
 {
     [Header("Velocity")]
 
-    [SerializeField] private bool isMoving;
     [SerializeField] private bool isAtMaxSpeed = false;
 
     [SerializeField] private FloatReference maxSpeed;           //serialize field takes reference from inspector and only if the component is on the same object
@@ -29,50 +28,46 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        directionVector = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
-
-        if ((directionVector.x > 0 && !isAtMaxSpeed) || ((directionVector.x < 0 && !isAtMaxSpeed)))
-        {
-            isMoving = true;
-            Move();
-            CheckIfMaxSpeedReached();
-        }
-        if ((directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0))
-        {
-            isMoving = false;
-            isAtMaxSpeed = false;
-            StopMove();
-            //Move();
-            //CheckIfMaxSpeedReached();
-        }
-        else if (directionVector.x == 0)
-        {
-            isMoving = false;
-            isAtMaxSpeed = false;
-            StopMove();
-        }
+        Move();
         FlipGameObjectLeftOrRight();
-
     }
 
     private void Move()
     {
-        Debug.Log(2);
-        if (isMoving && !isAtMaxSpeed)
+        directionVector = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
+
+        if ((directionVector.x > 0) || ((directionVector.x < 0)))
         {
-            playerRigidBody.AddForce(directionVector * acceleration.Value);
-            playerRigidBody.drag = 0;
+            CheckIfMaxSpeedReached();
+            if (!isAtMaxSpeed)
+            {
+                playerRigidBody.AddForce(directionVector * acceleration.Value, ForceMode2D.Force);
+            }
+        }
+
+        else if ((directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0))
+        {
+            //Debug.Log("you are not at max speed and your input is in other direction compared to your movement");
+            CheckIfMaxSpeedReached();
+            if (!isAtMaxSpeed)
+            {
+                playerRigidBody.AddForce(directionVector * acceleration.Value, ForceMode2D.Force);
+            }
+        }
+
+        else if (directionVector.x == 0)
+        {
+            isAtMaxSpeed = false;
+            StopMove();
         }
     }
 
     private void StopMove()
     {
-        
-        if (Mathf.Abs(playerRigidBody.velocity.x) > 0)
-        {
-            Debug.Log("1");
-            playerRigidBody.drag = deceleration.Value;
-        }
+         if (Mathf.Abs(playerRigidBody.velocity.x) > 0)
+         {
+             playerRigidBody.velocity = new Vector2(0,playerRigidBody.velocity.y);
+         }
     }
 
     private void CheckIfMaxSpeedReached()
@@ -81,6 +76,16 @@ public class Movement : MonoBehaviour
         {
             playerRigidBody.velocity = new Vector2(maxSpeed.Value * directionVector.x, playerRigidBody.velocity.y);
             isAtMaxSpeed = true;
+        }
+        else if ((Mathf.Abs(playerRigidBody.velocity.x) >= maxSpeed.Value && isAtMaxSpeed) && ((directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0)) )
+        {
+            //Debug.Log("you are at max speed and your input is in other direction compared to your movement");
+            isAtMaxSpeed = false;
+            StopMove();
+        }
+        else if (Mathf.Abs(playerRigidBody.velocity.x) < maxSpeed.Value)
+        {
+            isAtMaxSpeed = false;
         }
 
     }
