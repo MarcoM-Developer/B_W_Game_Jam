@@ -29,6 +29,7 @@ public class Jump : MonoBehaviour
     {
         if (jump)
         {
+            playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x , 0);
             playerRigidBody.AddForce(new Vector2(0,jumpHeight.Value), ForceMode2D.Impulse);
             jump = false;
         }

@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class TerrainDetection : MonoBehaviour
 {
-    [SerializeField] private FloatReference range;
+    [SerializeField] private FloatReference detectionRange;
     [SerializeField] private LayerMask layerTarget;
     [SerializeField] private PlayerStateManager playerStateManager;
+    [SerializeField] private float groundedTimer;
+    [SerializeField] private float groundedTimerValue;
+    private bool isInAir;
 
     // Start is called before the first frame update
     void Start()
@@ -17,9 +20,9 @@ public class TerrainDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        groundedTimerValue -= Time.deltaTime;
 
-        Collider2D groundCollider = Physics2D.OverlapCircle(transform.position, range.Value, layerTarget);
+        Collider2D groundCollider = Physics2D.OverlapCircle(transform.position, detectionRange.Value, layerTarget);
 
         if(groundCollider != null)
         {
@@ -41,9 +44,18 @@ public class TerrainDetection : MonoBehaviour
         {
             if (playerStateManager.CurrentState is GroundedState)
             {
-                playerStateManager.CurrentState.EndingState();
-                playerStateManager.CurrentState = playerStateManager.JumpingState;
-                playerStateManager.CurrentState.StartState();
+                if (!isInAir)
+                {
+                    groundedTimerValue = groundedTimer;
+                    isInAir = true;
+                }
+                if (groundedTimerValue <= 0)
+                {
+                    playerStateManager.CurrentState.EndingState();
+                    playerStateManager.CurrentState = playerStateManager.JumpingState;
+                    playerStateManager.CurrentState.StartState();
+                    isInAir = false;
+                }
             }
             else if (playerStateManager.CurrentState is OnState)
             {
@@ -54,8 +66,9 @@ public class TerrainDetection : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(transform.position, range.Value);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, detectionRange.Value);
     }
 }

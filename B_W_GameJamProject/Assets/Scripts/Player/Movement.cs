@@ -64,10 +64,10 @@ public class Movement : MonoBehaviour
 
     private void StopMove()
     {
-        if (Mathf.Abs(playerRigidBody.velocity.x) > 0)
-        {
-            playerRigidBody.velocity = new Vector2(0,playerRigidBody.velocity.y);
-        }
+         if (Mathf.Abs(playerRigidBody.velocity.x) > 0)
+         {
+             playerRigidBody.velocity = new Vector2(0,playerRigidBody.velocity.y);
+         }
     }
 
     private void CheckIfMaxSpeedReached()

@@ -131,33 +131,69 @@ public class MapRotation : MonoBehaviour
 
                     transform.RotateAround(playerTransform.position, new Vector3(1, 0, 0), rotationSpeed.Value * Time.deltaTime);
 
-                    if (transform.eulerAngles.x >= currentRotationValue + angleToAddForRotation.Value)
+                    if (currentRotationValue == 270)
                     {
-                        isAnimationRunning = false;
-                        transform.eulerAngles = new Vector3(currentRotationValue + angleToAddForRotation.Value, transform.eulerAngles.y, transform.eulerAngles.z);
+                        if (transform.eulerAngles.z < 10)
+                        {
+                            isAnimationRunning = false;
+                            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, transform.eulerAngles.z);
+                        }
                     }
+                    else 
+                    {
+                        if (transform.eulerAngles.x >= currentRotationValue + angleToAddForRotation.Value)
+                        {
+                            isAnimationRunning = false;
+                            transform.eulerAngles = new Vector3(currentRotationValue + angleToAddForRotation.Value, transform.eulerAngles.y, transform.eulerAngles.z);
+                        }
+                    }
+                    
                     break;
 
                 case RotationAxis.Y:
 
                     transform.RotateAround(playerTransform.position, new Vector3(0, 1, 0), rotationSpeed.Value * Time.deltaTime);
 
-                    if (transform.eulerAngles.y >= currentRotationValue + angleToAddForRotation.Value)
+                    if (currentRotationValue == 270)
                     {
-                        isAnimationRunning = false;
-                        transform.eulerAngles = new Vector3(transform.eulerAngles.x, currentRotationValue + angleToAddForRotation.Value, transform.eulerAngles.z);
+                        if (transform.eulerAngles.z < 10)
+                        {
+                            isAnimationRunning = false;
+                            transform.eulerAngles = new Vector3(transform.eulerAngles.x, 0, transform.eulerAngles.z);
+                        }
                     }
+                    else
+                    {
+                        if (transform.eulerAngles.y >= currentRotationValue + angleToAddForRotation.Value)
+                        {
+                            isAnimationRunning = false;
+                            transform.eulerAngles = new Vector3(transform.eulerAngles.x, currentRotationValue + angleToAddForRotation.Value, transform.eulerAngles.z);
+                        }
+                    }
+                    
                     break;
 
                 case RotationAxis.Z:
 
                     transform.RotateAround(playerTransform.position, new Vector3(0, 0, 1), rotationSpeed.Value * Time.deltaTime);
-
-                    if (transform.eulerAngles.z >= currentRotationValue + angleToAddForRotation.Value)
+                    
+                    if (currentRotationValue == 270)
                     {
-                        isAnimationRunning = false;
-                        transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, currentRotationValue + angleToAddForRotation.Value);
+                        if (transform.eulerAngles.z < 10)
+                        {
+                            isAnimationRunning = false;
+                            transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0);
+                        }
                     }
+                    else
+                    {
+                        if (transform.eulerAngles.z >= currentRotationValue + angleToAddForRotation.Value)
+                        {
+                            isAnimationRunning = false;
+                            transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, currentRotationValue + angleToAddForRotation.Value);
+                        }
+                    }
+                    
                     break;
             }
             
