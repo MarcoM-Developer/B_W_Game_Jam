@@ -19,11 +19,11 @@ public class TerrainDetection : MonoBehaviour
     {
         
 
-        Collider2D collider = Physics2D.OverlapCircle(transform.position, range.Value, layerTarget);
+        Collider2D groundCollider = Physics2D.OverlapCircle(transform.position, range.Value, layerTarget);
 
-        Debug.Log(collider); 
+        Debug.Log(groundCollider); 
 
-        if(collider != null)
+        if(groundCollider != null)
         {
             if (playerStateManager.CurrentState is JumpingState)
             {
@@ -31,11 +31,23 @@ public class TerrainDetection : MonoBehaviour
                 playerStateManager.CurrentState = playerStateManager.GroundedState;
                 playerStateManager.CurrentState.StartState();
             }
+            else if (playerStateManager.CurrentState is OnState)
+            {
+                playerStateManager.CurrentState.EndingState();
+                playerStateManager.CurrentState = playerStateManager.GroundedState;
+                playerStateManager.CurrentState.StartState();
+            }
             
         }
-        else if (collider == null)
+        else if (groundCollider == null)
         {
             if (playerStateManager.CurrentState is GroundedState)
+            {
+                playerStateManager.CurrentState.EndingState();
+                playerStateManager.CurrentState = playerStateManager.JumpingState;
+                playerStateManager.CurrentState.StartState();
+            }
+            else if (playerStateManager.CurrentState is OnState)
             {
                 playerStateManager.CurrentState.EndingState();
                 playerStateManager.CurrentState = playerStateManager.JumpingState;
