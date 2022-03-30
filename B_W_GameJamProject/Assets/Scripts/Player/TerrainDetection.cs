@@ -21,8 +21,6 @@ public class TerrainDetection : MonoBehaviour
 
         Collider2D groundCollider = Physics2D.OverlapCircle(transform.position, range.Value, layerTarget);
 
-        Debug.Log(groundCollider); 
-
         if(groundCollider != null)
         {
             if (playerStateManager.CurrentState is JumpingState)
