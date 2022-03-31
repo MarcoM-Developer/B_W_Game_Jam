@@ -5,7 +5,8 @@ using UnityEngine;
 public class TerrainDetection : MonoBehaviour
 {
     [SerializeField] private FloatReference detectionRange;
-    [SerializeField] private LayerMask layerTarget;
+    private LayerMask layerTarget;
+    [SerializeField] private Player player;
     [SerializeField] private PlayerStateManager playerStateManager;
     [SerializeField] private float groundedTimer;
     [SerializeField] private float groundedTimerValue;
@@ -15,6 +16,8 @@ public class TerrainDetection : MonoBehaviour
     void Start()
     {
         flag = false;
+        CheckPlayerTypeForCollisionTargets();
+
     }
 
     // Update is called once per frame
@@ -68,6 +71,20 @@ public class TerrainDetection : MonoBehaviour
             playerStateManager.CurrentState = playerStateManager.InAirState;
             playerStateManager.CurrentState.StartState();
             flag = false;
+        }
+    }
+
+    private void CheckPlayerTypeForCollisionTargets()
+    {
+        switch (player.PlayerType)
+        {
+            case PlayerType.White:
+                layerTarget = LayerMask.GetMask("WhiteWalls");
+                break;
+
+            case PlayerType.Black:
+                layerTarget = LayerMask.GetMask("BlackWalls");
+                break;
         }
     }
 

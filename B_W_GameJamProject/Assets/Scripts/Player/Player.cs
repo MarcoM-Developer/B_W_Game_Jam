@@ -7,9 +7,11 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private bool isActive;
     [SerializeField] private PlayerStateManager playerStateManager;
+    [SerializeField] private PlayerType playerType;
 
 
     public bool IsActive { get => isActive; set => isActive = value; }
+    public PlayerType PlayerType { get => playerType; set => playerType = value; }
 
     private void OnEnable()
     {
