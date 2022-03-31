@@ -31,10 +31,7 @@ public class PlayerStateManager : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (currentState != null)
-        {
-            currentState.UpdateState();
-        }
+        currentState.UpdateState();
     }
 
     private void OnDisable()

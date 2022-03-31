@@ -5,9 +5,11 @@ using UnityEngine;
 public class GamePlayState : GameState
 {
 
+    [SerializeField] private int frameRate;
+
     public override void StartState()
     {
-
+        Application.targetFrameRate = frameRate;
     }
 
     public override void UpdateState()

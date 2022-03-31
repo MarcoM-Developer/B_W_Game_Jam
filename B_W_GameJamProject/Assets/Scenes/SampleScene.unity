@@ -414,7 +414,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &468981964
 MonoBehaviour:
@@ -442,6 +442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStateManager: {fileID: 468981966}
+  frameRate: 10
 --- !u!114 &468981966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -861,7 +862,7 @@ Transform:
   - {fileID: 1339800471}
   - {fileID: 1129833747}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &802652235
 Rigidbody2D:
@@ -921,7 +922,7 @@ MonoBehaviour:
     variable: {fileID: 11400000, guid: c0b204415da112a4d963932a63ddf4e4, type: 2}
   acceleration:
     useLocalValue: 1
-    localValue: 40
+    localValue: 70
     variable: {fileID: 11400000, guid: 0ca508b7977758d4d8e8f4a2ba288515, type: 2}
   deceleration:
     useLocalValue: 1
@@ -951,7 +952,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802652232}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c68f2fd67dedff540ac49867863fc978, type: 3}
   m_Name: 
@@ -1782,7 +1783,7 @@ Transform:
   - {fileID: 1414148536}
   - {fileID: 505937062}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1343790169
 MonoBehaviour:
@@ -2282,7 +2283,7 @@ MonoBehaviour:
     localValue: 0.005
     variable: {fileID: 0}
   rotationAxis: 2
-  rotationCenter: 0
+  rotationCenter: 1
 --- !u!1 &2088884427
 GameObject:
   m_ObjectHideFlags: 0

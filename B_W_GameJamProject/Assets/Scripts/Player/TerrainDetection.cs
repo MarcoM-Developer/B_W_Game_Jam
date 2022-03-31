@@ -23,7 +23,7 @@ public class TerrainDetection : MonoBehaviour
         groundedTimerValue -= Time.deltaTime;
 
         Collider2D groundCollider = Physics2D.OverlapCircle(transform.position, detectionRange.Value, layerTarget);
-
+        Debug.Log(groundCollider);
         if(groundCollider != null)
         {
             if (playerStateManager.CurrentState is JumpingState)

@@ -9,7 +9,7 @@ public class OnState : PlayerState, IScriptComponentsHandler
     public override void StartState()
     {
         //EnableScripts();
-        scripts = ChangeScriptStatus(scripts,true);
+        ChangeScriptStatus(scripts,true);
     }
 
     public override void UpdateState()
