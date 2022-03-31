@@ -879,7 +879,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0c29f1957b34b664e859ffdd110e8e5b, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -901,6 +901,7 @@ MonoBehaviour:
     useLocalValue: 1
     localValue: 25
     variable: {fileID: 0}
+  jumpReducer: 0
 --- !u!114 &802652237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -920,7 +921,7 @@ MonoBehaviour:
     variable: {fileID: 11400000, guid: c0b204415da112a4d963932a63ddf4e4, type: 2}
   acceleration:
     useLocalValue: 1
-    localValue: 10
+    localValue: 40
     variable: {fileID: 11400000, guid: 0ca508b7977758d4d8e8f4a2ba288515, type: 2}
   deceleration:
     useLocalValue: 1
@@ -1013,7 +1014,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b3ed4fa6c5b3742ae689c560e969a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrainDetection: {fileID: 1129833748}
+  scripts:
+  - {fileID: 1129833748}
 --- !u!1 &805419846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1644,6 +1646,7 @@ MonoBehaviour:
     useLocalValue: 1
     localValue: 25
     variable: {fileID: 0}
+  jumpReducer: 0
 --- !u!114 &1343790161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1809,7 +1812,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b3ed4fa6c5b3742ae689c560e969a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrainDetection: {fileID: 505937063}
+  scripts:
+  - {fileID: 505937063}
 --- !u!1 &1414148535
 GameObject:
   m_ObjectHideFlags: 0

@@ -49,6 +49,7 @@ public class Movement : MonoBehaviour
         {
             //Debug.Log("you are not at max speed and your input is in other direction compared to your movement");
             CheckIfMaxSpeedReached();
+            StopMove();
             if (!isAtMaxSpeed)
             {
                 playerRigidBody.AddForce(directionVector * acceleration.Value, ForceMode2D.Force);

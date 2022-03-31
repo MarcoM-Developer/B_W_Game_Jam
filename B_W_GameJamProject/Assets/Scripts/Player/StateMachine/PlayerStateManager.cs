@@ -25,17 +25,16 @@ public class PlayerStateManager : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+
     }
 
     // Update is called once per frame
     private void Update()
     {
-        currentState.UpdateState();
-        /*if (currentState != null)
+        if (currentState != null)
         {
             currentState.UpdateState();
-        }*/
-        
+        }
     }
 
     private void OnDisable()

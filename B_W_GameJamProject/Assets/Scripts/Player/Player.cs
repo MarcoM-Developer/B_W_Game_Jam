@@ -19,8 +19,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        //CheckIfPlayerIsActive();
-        CheckIsActiveThenActivatePlayer();
+        CheckIsActiveThenPassState();
     }
 
     // Update is called once per frame
@@ -28,12 +27,11 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            isActive = !isActive;
-            CheckIsActiveThenActivatePlayer();
+            SwitchCharacter();
         }
     }
 
-    private void CheckIsActiveThenActivatePlayer()
+    private void CheckIsActiveThenPassState()
     {
         if (isActive)
         {
@@ -47,34 +45,9 @@ public class Player : MonoBehaviour
         }
     }
 
-    /*private void SwitchPlayerControlOverScripts()
+    private void SwitchCharacter()
     {
-        foreach (Behaviour behaviour in scriptsList)
-        {
-            if (IsActive)
-            {
-                behaviour.enabled = true;
-                behaviour.enabled = false;
-            }
-            else
-            {
-                behaviour.enabled = false;
-            }
-        }
+        isActive = !isActive;
+        CheckIsActiveThenPassState();
     }
-
-    private void CheckIfPlayerIsActive()
-    {
-        foreach (Behaviour behaviour in scriptsList)
-        {
-            if (IsActive)
-            {
-                behaviour.enabled = true;
-            }
-            else
-            {
-                behaviour.enabled = false;
-            }
-        }
-    }*/
 }
