@@ -8,7 +8,6 @@ public class OnState : PlayerState, IScriptComponentsHandler
 
     public override void StartState()
     {
-        //EnableScripts();
         ChangeScriptStatus(scripts,true);
     }
 
@@ -22,20 +21,11 @@ public class OnState : PlayerState, IScriptComponentsHandler
        
     }
 
-    private void EnableScripts()
-    {
-        foreach (Behaviour script in scripts)
-        {
-            script.enabled = true;
-        }
-    }
-
-    public List<Behaviour> ChangeScriptStatus(List<Behaviour> scripts, bool isActive)
+    public void ChangeScriptStatus(List<Behaviour> scripts, bool isActive)
     {
         foreach (Behaviour script in scripts)
         {
             script.enabled = isActive;
         }
-        return scripts;
     }
 }

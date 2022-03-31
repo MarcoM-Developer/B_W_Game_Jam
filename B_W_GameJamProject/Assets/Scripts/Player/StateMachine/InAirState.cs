@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JumpingState : PlayerState
+public class InAirState : PlayerState
 {
+
     [SerializeField] private Movement playerMovement;
     [SerializeField] private Jump playerJump;
 

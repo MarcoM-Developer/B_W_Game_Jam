@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IScriptComponentsHandler
 {
-    public List<Behaviour> ChangeScriptStatus(List<Behaviour> scripts, bool isActive);
+    public void ChangeScriptStatus(List<Behaviour> scripts, bool isActive);
 }

@@ -11,13 +11,6 @@ public class GroundedState : PlayerState
 
     public override void StartState()
     {
-        PauseState.OnPause += DisablePlayerMovement;
-        PauseState.OnPause += DisablePlayerJump;
-
-        PauseState.OnResume += EnablePlayerMovement;
-        PauseState.OnResume += EnablePlayerJump;
-
-
         EnablePlayerMovement();
         EnablePlayerJump();
     }
@@ -32,30 +25,12 @@ public class GroundedState : PlayerState
 
     }
 
-    private void OnDisable()
-    {
-        PauseState.OnPause -= DisablePlayerMovement;
-        PauseState.OnPause -= DisablePlayerJump;
-
-        PauseState.OnResume -= EnablePlayerMovement;
-        PauseState.OnResume -= EnablePlayerJump;
-
-    }
-
-    private void DisablePlayerMovement()
-    {
-        playerMovement.enabled = false;
-    }
 
     private void EnablePlayerMovement()
     {
         playerMovement.enabled = true;
     }
 
-    private void DisablePlayerJump()
-    {
-        playerJump.enabled = false;
-    }
 
     private void EnablePlayerJump()
     {

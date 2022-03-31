@@ -44,7 +44,7 @@ public class Movement : MonoBehaviour
 
     private void Move()
     {
-        if ((directionVector.x > 0) || ((directionVector.x < 0)))
+        if (directionVector.x > 0 || directionVector.x < 0)
         {
             CheckIfMaxSpeedReached();
             if (!isAtMaxSpeed)
@@ -53,7 +53,7 @@ public class Movement : MonoBehaviour
             }
         }
 
-        if ((directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0))
+        if ( (directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0) )
         {
             //Debug.Log("you are not at max speed and your input is in other direction compared to your movement");
             CheckIfMaxSpeedReached();
