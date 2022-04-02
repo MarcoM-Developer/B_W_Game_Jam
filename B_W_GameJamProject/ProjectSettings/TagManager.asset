@@ -50,3 +50,6 @@ TagManager:
   - name: players
     uniqueID: 595510155
     locked: 0
+  - name: pickables
+    uniqueID: 3703989429
+    locked: 0

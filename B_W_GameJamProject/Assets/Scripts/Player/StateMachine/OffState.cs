@@ -25,7 +25,10 @@ public class OffState : PlayerState , IScriptComponentsHandler
     {
         foreach (Behaviour script in scripts)
         {
-            script.enabled = isActive;
+            if (script != null)
+            {
+                script.enabled = isActive;
+            }
         }
     }
 }

@@ -71,7 +71,6 @@ GameObject:
   - component: {fileID: 1896984858695495448}
   - component: {fileID: 1896984858695495449}
   - component: {fileID: 1896984858695495446}
-  - component: {fileID: 1896984858695495447}
   m_Layer: 9
   m_Name: PlayerBlack
   m_TagString: Player
@@ -174,24 +173,6 @@ MonoBehaviour:
     localValue: 10
     variable: {fileID: 11400000, guid: 4d70554f1f015594f9ed87c0326fd2b3, type: 2}
   playerRigidBody: {fileID: 1896984858695495448}
---- !u!114 &1896984858695495447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1896984858695495444}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 248b7db8e1ea47247b176aad838a9e3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerRigidBody: {fileID: 1896984858695495448}
-  jumpHeight:
-    useLocalValue: 1
-    localValue: 25
-    variable: {fileID: 0}
-  jumpReducer: 0
 --- !u!1 &1896984858749909191
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,7 +303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scripts:
   - {fileID: 1896984858695495446}
-  - {fileID: 1896984858695495447}
+  - {fileID: 0}
   - {fileID: 1896984858749909190}
 --- !u!114 &1896984858794961669
 MonoBehaviour:
@@ -337,7 +318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 1896984858695495446}
-  playerJump: {fileID: 1896984858695495447}
+  playerJump: {fileID: 0}
 --- !u!114 &1896984858794961666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,7 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 1896984858695495446}
-  playerJump: {fileID: 1896984858695495447}
+  playerJump: {fileID: 0}
 --- !u!1 &1896984859278150738
 GameObject:
   m_ObjectHideFlags: 0

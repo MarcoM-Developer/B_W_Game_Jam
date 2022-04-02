@@ -22,6 +22,7 @@ public class MapRotation : MonoBehaviour
 
     private float currentRotationValue;
 
+
     private void OnEnable()
     {
         MapRotator.RotateMap += RotateMap;
@@ -31,7 +32,7 @@ public class MapRotation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        Debug.Log("Map Rotation Script Loaded");
     }
 
     // Update is called once per frame
@@ -39,6 +40,7 @@ public class MapRotation : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
+            Debug.Log("E key down");
             RotateMap();
         }
         
