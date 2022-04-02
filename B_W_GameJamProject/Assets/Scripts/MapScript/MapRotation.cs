@@ -6,32 +6,31 @@ using UnityEngine;
 
 public class MapRotation : MonoBehaviour
 {
-    [SerializeField] private FloatReference angleToAddForRotation;
-    [SerializeField] private FloatReference animationTime;
-    [SerializeField] private FloatReference rotationSpeed;
+    [SerializeField] private FloatReference byAngle;
     [SerializeField] private FloatReference waitTimeForCoroutineRotateAroundPLayer;
-    
-    private Transform playerTransform;
-
     [SerializeField] private RotationCenter rotationCenter;
 
     private Player[] players;
 
-    private bool isAnimationRunning;
+    private float animationTime = 20;
+    private float rotationSpeed = 100;
 
+    private Transform playerTransform;
+
+    private bool isAnimationRunning;
     private float currentRotationValue;
 
 
     private void OnEnable()
     {
-        MapRotator.RotateMap += RotateMap;
+        //MapRotator.RotateMap += RotateMap;
         
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Map Rotation Script Loaded");
+        //Debug.Log("Map Rotation Script Loaded");
     }
 
     // Update is called once per frame
@@ -40,16 +39,16 @@ public class MapRotation : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("E key down");
-            RotateMap();
+            RotateMap(byAngle.Value);
         }
         
     }
     private void OnDisable()
     {
-        MapRotator.RotateMap -= RotateMap;
+       // MapRotator.RotateMap -= RotateMap;
     }
 
-    private void RotateMap()
+    private void RotateMap(float byAngle)
     {
         switch (rotationCenter)
         {
@@ -57,7 +56,7 @@ public class MapRotation : MonoBehaviour
                 if (!isAnimationRunning)
                 {
                     isAnimationRunning = true;
-                    transform.DORotate(new Vector3(0, 0, transform.eulerAngles.z + angleToAddForRotation.Value), animationTime.Value).OnComplete(() => { isAnimationRunning = false; });
+                    transform.DORotate(new Vector3(0, 0, transform.eulerAngles.z + byAngle), animationTime.Value).OnComplete(() => { isAnimationRunning = false; });
                 }
                 break;
 
@@ -65,14 +64,14 @@ public class MapRotation : MonoBehaviour
 
                if (!isAnimationRunning)
                {
-                    StartCoroutine(CRotateAroundPlayer());
+                    StartCoroutine(CRotateAroundPlayer(byAngle));
                }
                break;
         }
         
     }
 
-    private IEnumerator CRotateAroundPlayer()
+    private IEnumerator CRotateAroundPlayer(float byAngle)
     {
         players = FindObjectsOfType<Player>();
         currentRotationValue = transform.eulerAngles.z;
@@ -104,10 +103,10 @@ public class MapRotation : MonoBehaviour
             }
             else
             {
-                if (transform.eulerAngles.z >= currentRotationValue + angleToAddForRotation.Value)
+                if (transform.eulerAngles.z >= currentRotationValue + byAngle)
                 {
                     isAnimationRunning = false;
-                    transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, currentRotationValue + angleToAddForRotation.Value);
+                    transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, currentRotationValue + byAngle);
                 }
             } 
         }
