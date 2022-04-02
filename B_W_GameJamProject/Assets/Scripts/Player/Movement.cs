@@ -22,21 +22,29 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     private void Update()
     {
-        Move();
+        DetectInput();
         FlipGameObjectLeftOrRight();
+    }
+
+    private void FixedUpdate()
+    {
+        Move();
+    }
+
+    private void DetectInput()
+    {
+        directionVector = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
     }
 
     private void Move()
     {
-        directionVector = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
-
-        if ((directionVector.x > 0) || ((directionVector.x < 0)))
+        if (directionVector.x > 0 || directionVector.x < 0)
         {
             CheckIfMaxSpeedReached();
             if (!isAtMaxSpeed)
@@ -45,17 +53,18 @@ public class Movement : MonoBehaviour
             }
         }
 
-        else if ((directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0))
+        if ( (directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0) )
         {
             //Debug.Log("you are not at max speed and your input is in other direction compared to your movement");
             CheckIfMaxSpeedReached();
+            StopMove();
             if (!isAtMaxSpeed)
             {
                 playerRigidBody.AddForce(directionVector * acceleration.Value, ForceMode2D.Force);
             }
         }
 
-        else if (directionVector.x == 0)
+        if (directionVector.x == 0)
         {
             isAtMaxSpeed = false;
             StopMove();

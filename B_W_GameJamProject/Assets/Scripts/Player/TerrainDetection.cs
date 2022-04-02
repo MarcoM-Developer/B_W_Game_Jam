@@ -5,16 +5,19 @@ using UnityEngine;
 public class TerrainDetection : MonoBehaviour
 {
     [SerializeField] private FloatReference detectionRange;
-    [SerializeField] private LayerMask layerTarget;
+    private LayerMask layerTarget;
+    [SerializeField] private Player player;
     [SerializeField] private PlayerStateManager playerStateManager;
     [SerializeField] private float groundedTimer;
     [SerializeField] private float groundedTimerValue;
-    private bool isInAir;
+    private bool flag;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        flag = false;
+        CheckPlayerTypeForCollisionTargets();
+
     }
 
     // Update is called once per frame
@@ -23,10 +26,10 @@ public class TerrainDetection : MonoBehaviour
         groundedTimerValue -= Time.deltaTime;
 
         Collider2D groundCollider = Physics2D.OverlapCircle(transform.position, detectionRange.Value, layerTarget);
-
+        //Debug.Log(groundCollider);
         if(groundCollider != null)
         {
-            if (playerStateManager.CurrentState is JumpingState)
+            if (playerStateManager.CurrentState is InAirState)
             {
                 playerStateManager.CurrentState.EndingState();
                 playerStateManager.CurrentState = playerStateManager.GroundedState;
@@ -44,25 +47,44 @@ public class TerrainDetection : MonoBehaviour
         {
             if (playerStateManager.CurrentState is GroundedState)
             {
-                if (!isInAir)
-                {
-                    groundedTimerValue = groundedTimer;
-                    isInAir = true;
-                }
-                if (groundedTimerValue <= 0)
-                {
-                    playerStateManager.CurrentState.EndingState();
-                    playerStateManager.CurrentState = playerStateManager.JumpingState;
-                    playerStateManager.CurrentState.StartState();
-                    isInAir = false;
-                }
+                GoToJumpingstateAfterBriefTimeInterval();
             }
             else if (playerStateManager.CurrentState is OnState)
             {
                 playerStateManager.CurrentState.EndingState();
-                playerStateManager.CurrentState = playerStateManager.JumpingState;
+                playerStateManager.CurrentState = playerStateManager.InAirState;
                 playerStateManager.CurrentState.StartState();
             }
+        }
+    }
+
+    private void GoToJumpingstateAfterBriefTimeInterval()
+    {
+        if (!flag)
+        {
+            groundedTimerValue = groundedTimer;
+            flag = true;
+        }
+        if (groundedTimerValue <= 0)
+        {
+            playerStateManager.CurrentState.EndingState();
+            playerStateManager.CurrentState = playerStateManager.InAirState;
+            playerStateManager.CurrentState.StartState();
+            flag = false;
+        }
+    }
+
+    private void CheckPlayerTypeForCollisionTargets()
+    {
+        switch (player.PlayerType)
+        {
+            case PlayerType.White:
+                layerTarget = LayerMask.GetMask("WhiteWalls");
+                break;
+
+            case PlayerType.Black:
+                layerTarget = LayerMask.GetMask("BlackWalls");
+                break;
         }
     }
 

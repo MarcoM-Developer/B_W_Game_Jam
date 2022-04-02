@@ -7,13 +7,13 @@ public class PlayerStateManager : MonoBehaviour
     [SerializeField] private OnState onState;
     [SerializeField] private OffState offState;
     [SerializeField] private GroundedState groundedState;
-    [SerializeField] private JumpingState jumpingState;
+    [SerializeField] private InAirState inAirState;
     
     private PlayerState currentState;
 
     public PlayerState CurrentState { get => currentState; set => currentState = value; }
     public GroundedState GroundedState { get => groundedState; set => groundedState = value; }
-    public JumpingState JumpingState { get => jumpingState; set => jumpingState = value; }
+    public InAirState InAirState { get => inAirState; set => inAirState = value; }
     public OnState OnState { get => onState; set => onState = value; }
     public OffState OffState { get => offState; set => offState = value; }
 
@@ -25,17 +25,13 @@ public class PlayerStateManager : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+
     }
 
     // Update is called once per frame
     private void Update()
     {
         currentState.UpdateState();
-        /*if (currentState != null)
-        {
-            currentState.UpdateState();
-        }*/
-        
     }
 
     private void OnDisable()
