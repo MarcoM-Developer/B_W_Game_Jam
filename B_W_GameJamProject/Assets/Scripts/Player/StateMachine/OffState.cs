@@ -9,6 +9,8 @@ public class OffState : PlayerState , IScriptComponentsHandler
     public override void StartState()
     {
         ChangeScriptStatus(scripts, false);
+        Rigidbody2D playerRigidBody = GetComponentInParent<Rigidbody2D>();
+        playerRigidBody.velocity = new Vector2(0 , playerRigidBody.velocity.y);
     }
 
     public override void UpdateState()
