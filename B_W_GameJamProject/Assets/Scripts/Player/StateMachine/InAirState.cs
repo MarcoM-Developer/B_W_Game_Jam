@@ -11,7 +11,13 @@ public class InAirState : PlayerState
     public override void StartState()
     {
         playerMovement.enabled = true;
-        playerJump.CanJump = false;
+
+        if (playerJump != null)
+        {
+            Debug.Log("Player does not jump here");
+            playerJump.CanJump = false;
+        }
+
     }
 
     public override void UpdateState()

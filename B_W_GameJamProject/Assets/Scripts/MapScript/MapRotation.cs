@@ -6,32 +6,29 @@ using UnityEngine;
 
 public class MapRotation : MonoBehaviour
 {
-    [SerializeField] private FloatReference angleToAddForRotation;
-    [SerializeField] private FloatReference animationTime;
-    [SerializeField] private FloatReference rotationSpeed;
+    //[SerializeField] private FloatReference byAngle;
     [SerializeField] private FloatReference waitTimeForCoroutineRotateAroundPLayer;
-    
-    private Transform playerTransform;
-
-    [SerializeField] private RotationAxis rotationAxis;
     [SerializeField] private RotationCenter rotationCenter;
 
     private Player[] players;
 
-    private bool isAnimationRunning;
+    private float animationTime = 20;
+    private float rotationSpeed = 100;
 
+    private Transform playerTransform;
+
+    [SerializeField] private BoolReference isAnimationRunning;
     private float currentRotationValue;
 
     private void OnEnable()
     {
-        MapRotator.RotateMap += RotateMap;
-        
+        MapRotator.OnMapRotate += RotateMap;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-       
+        //Debug.Log("Map Rotation Script Loaded");
     }
 
     // Update is called once per frame
@@ -39,164 +36,68 @@ public class MapRotation : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            RotateMap();
+            Debug.Log("E key down");
+            //RotateMap(byAngle.Value);
         }
         
     }
     private void OnDisable()
     {
-        MapRotator.RotateMap -= RotateMap;
+      MapRotator.OnMapRotate -= RotateMap;
     }
 
-    private void RotateMap()
+    private void RotateMap(float byAngle, Transform center)
     {
         switch (rotationCenter)
         {
             case RotationCenter.Self:
-                if (!isAnimationRunning)
+
+                if (!isAnimationRunning.Value)
                 {
-                    isAnimationRunning = true;
-
-                    switch (rotationAxis)
-                    {
-                        case RotationAxis.X:
-
-                            transform.DORotate(new Vector3(transform.eulerAngles.x + angleToAddForRotation.Value, 0, 0), animationTime.Value).OnComplete(() => { isAnimationRunning = false; });
-                            break;
-
-                        case RotationAxis.Y:
-
-                            transform.DORotate(new Vector3(0, transform.eulerAngles.y + angleToAddForRotation.Value, 0), animationTime.Value).OnComplete(() => { isAnimationRunning = false; });
-                            break;
-
-                        case RotationAxis.Z:
-
-                            transform.DORotate(new Vector3(0, 0, transform.eulerAngles.z + angleToAddForRotation.Value), animationTime.Value).OnComplete(() => { isAnimationRunning = false; });
-                            break;
-                    }
+                    isAnimationRunning.Value = true;
+                    transform.DORotate(new Vector3(0, 0, transform.eulerAngles.z + byAngle), animationTime).OnComplete(() => { isAnimationRunning.Value = false; });
                 }
                 break;
 
-            case RotationCenter.Player:
+            case RotationCenter.Object:
 
-               if (!isAnimationRunning)
-               {
-                    StartCoroutine(CRotateAroundPlayer());
-               }
-
-               break;
+                if (!isAnimationRunning.Value)
+                {
+                    StartCoroutine(CRotateAroundObject(byAngle, center));
+                }
+                break;
         }
         
     }
 
-    private IEnumerator CRotateAroundPlayer()
+    private IEnumerator CRotateAroundObject(float byAngle, Transform center)
     {
-        players = FindObjectsOfType<Player>();
+        currentRotationValue = transform.eulerAngles.z;
 
-        switch (rotationAxis)
-        {
-            case RotationAxis.X:
+        isAnimationRunning.Value = true;
 
-                currentRotationValue = transform.eulerAngles.x;
-                break;
-
-            case RotationAxis.Y:
-
-                currentRotationValue = transform.eulerAngles.y;
-                break;
-
-            case RotationAxis.Z:
-
-                currentRotationValue = transform.eulerAngles.z;
-                break;
-        }
-
-        foreach (var player in players)
-        {
-            Debug.Log(player);
-            if (player.IsActive)
-            {
-                playerTransform = player.transform;
-            }
-        }
-
-        isAnimationRunning = true;
-
-        while (isAnimationRunning)
+        while (isAnimationRunning.Value)
         {
             yield return new WaitForSecondsRealtime(waitTimeForCoroutineRotateAroundPLayer.Value);
-            switch (rotationAxis)
+
+            transform.RotateAround(center.position, new Vector3(0, 0, 1), rotationSpeed * Time.deltaTime);
+
+            if (currentRotationValue == 270)
             {
-                case RotationAxis.X:
-
-                    transform.RotateAround(playerTransform.position, new Vector3(1, 0, 0), rotationSpeed.Value * Time.deltaTime);
-
-                    if (currentRotationValue == 270)
-                    {
-                        if (transform.eulerAngles.z < 10)
-                        {
-                            isAnimationRunning = false;
-                            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, transform.eulerAngles.z);
-                        }
-                    }
-                    else 
-                    {
-                        if (transform.eulerAngles.x >= currentRotationValue + angleToAddForRotation.Value)
-                        {
-                            isAnimationRunning = false;
-                            transform.eulerAngles = new Vector3(currentRotationValue + angleToAddForRotation.Value, transform.eulerAngles.y, transform.eulerAngles.z);
-                        }
-                    }
-                    
-                    break;
-
-                case RotationAxis.Y:
-
-                    transform.RotateAround(playerTransform.position, new Vector3(0, 1, 0), rotationSpeed.Value * Time.deltaTime);
-
-                    if (currentRotationValue == 270)
-                    {
-                        if (transform.eulerAngles.z < 10)
-                        {
-                            isAnimationRunning = false;
-                            transform.eulerAngles = new Vector3(transform.eulerAngles.x, 0, transform.eulerAngles.z);
-                        }
-                    }
-                    else
-                    {
-                        if (transform.eulerAngles.y >= currentRotationValue + angleToAddForRotation.Value)
-                        {
-                            isAnimationRunning = false;
-                            transform.eulerAngles = new Vector3(transform.eulerAngles.x, currentRotationValue + angleToAddForRotation.Value, transform.eulerAngles.z);
-                        }
-                    }
-                    
-                    break;
-
-                case RotationAxis.Z:
-
-                    transform.RotateAround(playerTransform.position, new Vector3(0, 0, 1), rotationSpeed.Value * Time.deltaTime);
-                    
-                    if (currentRotationValue == 270)
-                    {
-                        if (transform.eulerAngles.z < 10)
-                        {
-                            isAnimationRunning = false;
-                            transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0);
-                        }
-                    }
-                    else
-                    {
-                        if (transform.eulerAngles.z >= currentRotationValue + angleToAddForRotation.Value)
-                        {
-                            isAnimationRunning = false;
-                            transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, currentRotationValue + angleToAddForRotation.Value);
-                        }
-                    }
-                    
-                    break;
+                if (transform.eulerAngles.z < 10)
+                {
+                    isAnimationRunning.Value = false;
+                    transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0);
+                }
             }
-            
+            else
+            {
+                if (transform.eulerAngles.z >= currentRotationValue + byAngle)
+                {
+                    isAnimationRunning.Value = false;
+                    transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, currentRotationValue + byAngle);
+                }
+            }
         }
     }
 }
@@ -205,5 +106,6 @@ public class MapRotation : MonoBehaviour
 public enum RotationCenter
 {
     Player,
-    Self
+    Self,
+    Object
 }

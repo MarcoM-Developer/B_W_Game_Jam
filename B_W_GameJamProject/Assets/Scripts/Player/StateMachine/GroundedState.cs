@@ -34,8 +34,11 @@ public class GroundedState : PlayerState
 
     private void EnablePlayerJump()
     {
-        playerJump.enabled = true;
-        playerJump.CanJump = true;
+        if (playerJump != null)
+        {
+            playerJump.enabled = true;
+            playerJump.CanJump = true;
+        }
     }
 
 }
