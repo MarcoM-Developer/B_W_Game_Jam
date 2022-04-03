@@ -25,9 +25,9 @@ public class TerrainDetection : MonoBehaviour
     {
         groundedTimerValue -= Time.deltaTime;
 
-        Collider2D groundCollider = Physics2D.OverlapCircle(transform.position, detectionRange.Value, layerTarget);
+        Collider2D groundCollider = Physics2D.OverlapCircle(transform.position, transform.parent.transform.lossyScale.x / detectionRange.Value, layerTarget);
         //Debug.Log(groundCollider);
-        if(groundCollider != null)
+        if (groundCollider != null)
         {
             if (playerStateManager.CurrentState is InAirState)
             {
@@ -41,7 +41,7 @@ public class TerrainDetection : MonoBehaviour
                 playerStateManager.CurrentState = playerStateManager.GroundedState;
                 playerStateManager.CurrentState.StartState();
             }
-            
+
         }
         else if (groundCollider == null)
         {
@@ -91,6 +91,6 @@ public class TerrainDetection : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, detectionRange.Value);
+        Gizmos.DrawWireSphere(transform.position, transform.parent.transform.lossyScale.x / detectionRange.Value);
     }
 }
