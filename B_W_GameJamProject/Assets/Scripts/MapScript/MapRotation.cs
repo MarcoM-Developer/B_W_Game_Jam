@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class MapRotation : MonoBehaviour
 {
-    [SerializeField] private FloatReference byAngle;
+    //[SerializeField] private FloatReference byAngle;
     [SerializeField] private FloatReference waitTimeForCoroutineRotateAroundPLayer;
     [SerializeField] private RotationCenter rotationCenter;
 
@@ -17,14 +17,12 @@ public class MapRotation : MonoBehaviour
 
     private Transform playerTransform;
 
-    private bool isAnimationRunning;
+    [SerializeField] private BoolReference isAnimationRunning;
     private float currentRotationValue;
-
 
     private void OnEnable()
     {
-        //MapRotator.RotateMap += RotateMap;
-        
+        MapRotator.OnMapRotate += RotateMap;
     }
 
     // Start is called before the first frame update
@@ -39,65 +37,56 @@ public class MapRotation : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("E key down");
-            RotateMap(byAngle.Value);
+            //RotateMap(byAngle.Value);
         }
         
     }
     private void OnDisable()
     {
-       // MapRotator.RotateMap -= RotateMap;
+      MapRotator.OnMapRotate -= RotateMap;
     }
 
-    private void RotateMap(float byAngle)
+    private void RotateMap(float byAngle, Transform center)
     {
         switch (rotationCenter)
         {
             case RotationCenter.Self:
-                if (!isAnimationRunning)
+
+                if (!isAnimationRunning.Value)
                 {
-                    isAnimationRunning = true;
-                    transform.DORotate(new Vector3(0, 0, transform.eulerAngles.z + byAngle), animationTime.Value).OnComplete(() => { isAnimationRunning = false; });
+                    isAnimationRunning.Value = true;
+                    transform.DORotate(new Vector3(0, 0, transform.eulerAngles.z + byAngle), animationTime).OnComplete(() => { isAnimationRunning.Value = false; });
                 }
                 break;
 
-            case RotationCenter.Player:
+            case RotationCenter.Object:
 
-               if (!isAnimationRunning)
-               {
-                    StartCoroutine(CRotateAroundPlayer(byAngle));
-               }
-               break;
+                if (!isAnimationRunning.Value)
+                {
+                    StartCoroutine(CRotateAroundObject(byAngle, center));
+                }
+                break;
         }
         
     }
 
-    private IEnumerator CRotateAroundPlayer(float byAngle)
+    private IEnumerator CRotateAroundObject(float byAngle, Transform center)
     {
-        players = FindObjectsOfType<Player>();
         currentRotationValue = transform.eulerAngles.z;
-        
-        foreach (var player in players)
-        {
-            Debug.Log(player);
-            if (player.IsActive)
-            {
-                playerTransform = player.transform;
-            }
-        }
 
-        isAnimationRunning = true;
+        isAnimationRunning.Value = true;
 
-        while (isAnimationRunning)
+        while (isAnimationRunning.Value)
         {
             yield return new WaitForSecondsRealtime(waitTimeForCoroutineRotateAroundPLayer.Value);
-            
-            transform.RotateAround(playerTransform.position, new Vector3(0, 0, 1), rotationSpeed.Value * Time.deltaTime);
-            
+
+            transform.RotateAround(center.position, new Vector3(0, 0, 1), rotationSpeed * Time.deltaTime);
+
             if (currentRotationValue == 270)
             {
                 if (transform.eulerAngles.z < 10)
                 {
-                    isAnimationRunning = false;
+                    isAnimationRunning.Value = false;
                     transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0);
                 }
             }
@@ -105,10 +94,10 @@ public class MapRotation : MonoBehaviour
             {
                 if (transform.eulerAngles.z >= currentRotationValue + byAngle)
                 {
-                    isAnimationRunning = false;
+                    isAnimationRunning.Value = false;
                     transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, currentRotationValue + byAngle);
                 }
-            } 
+            }
         }
     }
 }
@@ -117,5 +106,6 @@ public class MapRotation : MonoBehaviour
 public enum RotationCenter
 {
     Player,
-    Self
+    Self,
+    Object
 }
