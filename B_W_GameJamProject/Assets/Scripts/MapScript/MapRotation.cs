@@ -56,7 +56,7 @@ public class MapRotation : MonoBehaviour
                 if (!isAnimationRunning)
                 {
                     isAnimationRunning = true;
-                    transform.DORotate(new Vector3(0, 0, transform.eulerAngles.z + byAngle), animationTime.Value).OnComplete(() => { isAnimationRunning = false; });
+                    transform.DORotate(new Vector3(0, 0, transform.eulerAngles.z + byAngle), animationTime).OnComplete(() => { isAnimationRunning = false; });
                 }
                 break;
 
@@ -91,7 +91,7 @@ public class MapRotation : MonoBehaviour
         {
             yield return new WaitForSecondsRealtime(waitTimeForCoroutineRotateAroundPLayer.Value);
             
-            transform.RotateAround(playerTransform.position, new Vector3(0, 0, 1), rotationSpeed.Value * Time.deltaTime);
+            transform.RotateAround(playerTransform.position, new Vector3(0, 0, 1), rotationSpeed * Time.deltaTime);
             
             if (currentRotationValue == 270)
             {

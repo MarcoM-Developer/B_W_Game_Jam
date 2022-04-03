@@ -12,7 +12,7 @@ public class MapRotator : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            RotateMap(byAngle.Value);
+            //RotateMap(byAngle);
         }
     }
 }
