@@ -17313,10 +17313,6 @@ PrefabInstance:
       propertyPath: scripts.Array.data[2]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 7252736448132094147, guid: 60781969efbe9440eabf815e6faaf682, type: 3}
-      propertyPath: detectionRange.localValue
-      value: 0.23
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60781969efbe9440eabf815e6faaf682, type: 3}
 --- !u!1 &1113526514 stripped
@@ -17734,10 +17730,6 @@ PrefabInstance:
     - target: {fileID: 1896984858695495450, guid: 5c2beabf55e904b8eaf85357762c62ed, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1896984858749909190, guid: 5c2beabf55e904b8eaf85357762c62ed, type: 3}
-      propertyPath: detectionRange.localValue
-      value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 1896984858794961668, guid: 5c2beabf55e904b8eaf85357762c62ed, type: 3}
       propertyPath: scripts.Array.size
