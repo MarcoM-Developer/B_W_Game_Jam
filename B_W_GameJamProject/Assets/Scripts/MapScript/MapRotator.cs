@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
 
 public class MapRotator : MonoBehaviour
 {
@@ -8,14 +7,12 @@ public class MapRotator : MonoBehaviour
     [SerializeField] private BoolReference isMapRotating;
     private MapRotation mapRotationScript;
 
+
     public delegate void MapRotate(float angle, Transform center);
 
     public static event MapRotate OnMapRotate;
 
-    private void Start()
-    {
-        
-    }
+    [SerializeField] private GameObject objectBody;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -24,6 +21,7 @@ public class MapRotator : MonoBehaviour
         {
             // RotateMap(byAngle.Value);
             Debug.Log("Collision with player, now the map will rotate");
+            SoundManager.PlaySound(SoundManager.Sound.Plyr_Coll_Switch);
 
             if (!isMapRotating.Value)
             {
@@ -35,5 +33,8 @@ public class MapRotator : MonoBehaviour
                 }
             }
         }
+        
     }
+
+
 }

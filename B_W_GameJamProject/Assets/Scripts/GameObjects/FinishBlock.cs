@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class FinishBlock : MonoBehaviour
 {
     /**
@@ -15,6 +16,8 @@ public class FinishBlock : MonoBehaviour
 
     private static int instanceTriggerCount = 0; // how many times were this triggered in a game
 
+
+    [SerializeField] private GameObject objectBody;
 
 
     // Start is called before the first frame update (on a scene?)
@@ -35,7 +38,7 @@ public class FinishBlock : MonoBehaviour
 
         if (other.tag == "Player")
 		{
-           
+            //SoundManager.PlaySound(SoundManager.Sound.Itm_Pu_Generic, GetCurrentPosition());
             instanceTriggerCount++;
 
 			if (instanceTriggerCount == 2)
@@ -51,4 +54,9 @@ public class FinishBlock : MonoBehaviour
         }
 		
     }
+/*    private Vector2 GetCurrentPosition()
+    {
+        return objectBody.transform.position;
+    }*/
+
 }

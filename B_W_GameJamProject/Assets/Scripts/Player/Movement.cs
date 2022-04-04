@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -22,7 +20,7 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -40,12 +38,21 @@ public class Movement : MonoBehaviour
     private void DetectInput()
     {
         directionVector = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
+        //if player is W play W sound, is player is B play B sound
+
+
     }
 
     private void Move()
     {
+
         if (directionVector.x > 0 || directionVector.x < 0)
         {
+            if (gameObject.layer == 8)//8 = white layer
+                SoundManager.PlaySound2D(SoundManager.Sound.Plyr_W_Move, GetCurrentPosition());
+            else if (gameObject.layer == 9) //9 = black layer
+                SoundManager.PlaySound2D(SoundManager.Sound.Plyr_B_Move, GetCurrentPosition());
+
             CheckIfMaxSpeedReached();
             if (!isAtMaxSpeed)
             {
@@ -53,7 +60,7 @@ public class Movement : MonoBehaviour
             }
         }
 
-        if ( (directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0) )
+        if ((directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0))
         {
             //Debug.Log("you are not at max speed and your input is in other direction compared to your movement");
             CheckIfMaxSpeedReached();
@@ -73,10 +80,10 @@ public class Movement : MonoBehaviour
 
     private void StopMove()
     {
-         if (Mathf.Abs(playerRigidBody.velocity.x) > 0)
-         {
-             playerRigidBody.velocity = new Vector2(0,playerRigidBody.velocity.y);
-         }
+        if (Mathf.Abs(playerRigidBody.velocity.x) > 0)
+        {
+            playerRigidBody.velocity = new Vector2(0, playerRigidBody.velocity.y);
+        }
     }
 
     private void CheckIfMaxSpeedReached()
@@ -86,7 +93,7 @@ public class Movement : MonoBehaviour
             playerRigidBody.velocity = new Vector2(maxSpeed.Value * directionVector.x, playerRigidBody.velocity.y);
             isAtMaxSpeed = true;
         }
-        else if ((Mathf.Abs(playerRigidBody.velocity.x) >= maxSpeed.Value && isAtMaxSpeed) && ((directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0)) )
+        else if ((Mathf.Abs(playerRigidBody.velocity.x) >= maxSpeed.Value && isAtMaxSpeed) && ((directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0)))
         {
             //Debug.Log("you are at max speed and your input is in other direction compared to your movement");
             isAtMaxSpeed = false;
@@ -109,5 +116,10 @@ public class Movement : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, 0, transform.rotation.eulerAngles.z);
         }
+    }
+
+    private Vector2 GetCurrentPosition()
+    {
+        return playerRigidBody.transform.position;
     }
 }

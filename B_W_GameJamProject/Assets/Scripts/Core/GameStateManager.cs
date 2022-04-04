@@ -12,6 +12,7 @@ public class GameStateManager : MonoBehaviour
     public PauseState PauseState { get => pauseState; set => pauseState = value; }
     public GamePlayState GamePlayState { get => gamePlayState; set => gamePlayState = value; }
 
+
     // Start is called before the first frame update
     void Start()
     {

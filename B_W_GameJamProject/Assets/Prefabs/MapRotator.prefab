@@ -96,6 +96,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fd827d553ce6d140ac0b2ce003df094, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  byAngle:
+    useLocalValue: 1
+    localValue: 0
+    variable: {fileID: 0}
+  isMapRotating:
+    useLocalValue: 1
+    localValue: 0
+    variable: {fileID: 0}
+  objectBody: {fileID: 2589871052666898644}
 --- !u!58 &2589871052666898648
 CircleCollider2D:
   m_ObjectHideFlags: 0
