@@ -1,0 +1,43 @@
+Event	ID	Name			Wwise Object Path	Notes
+	27511013	Play_Test_Beep			\Default Work Unit\Play_Test_Beep	
+	641054882	Stop_Test_Beep_Lp			\Default Work Unit\Stop_Test_Beep_Lp	
+	701599435	Stop_Test_Beep			\Default Work Unit\Stop_Test_Beep	
+	1549592196	Play_Obj_Map_Rotate			\Default Work Unit\Play_Obj_Map_Rotate	
+	2235959444	Play_Test_Beep_Lp			\Default Work Unit\Play_Test_Beep_Lp	
+	2271622313	Play_Plyr_Movement			\Default Work Unit\Play_Plyr_Movement	
+	3113730691	Play_BG_Music			\Default Work Unit\Play_BG_Music	
+	3386221183	Play_Plyr_Collide_Switch			\Default Work Unit\Play_Plyr_Collide_Switch	
+	3893138630	Play_Itm_Pu_Generic			\Default Work Unit\Play_Itm_Pu_Generic	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	470853287	CurrentPlayer			\Default Work Unit\CurrentPlayer	
+
+State	ID	Name	State Group			Notes
+	748895195	None	CurrentPlayer			
+	3178740632	White	CurrentPlayer			
+	3730873346	Black	CurrentPlayer			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1493153371	PlayerSpeed			\Default Work Unit\PlayerSpeed	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	146820984	Test_Beep	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\SFX\Test_Beep_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Testing\Test_Beep		47620
+	179657955	Itm_Pu_Generic-003	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\SFX\Itm_Pu_Generic\Itm_Pu_Generic-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Items\Itm_Pu_Generic\Itm_Pu_Generic-003		430076
+	192266125	Test_Beep_Lp	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\SFX\Test_Beep_Lp_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Testing\Test_Beep_Lp		47288
+	205686353	Obj_Map_Rotate-004	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\SFX\Obj_Map_Rotate\Obj_Map_Rotate-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Objects\Obj_Map_Rotate\Obj_Map_Rotate-004		375012
+	244755149	Ply_Col_Switch-001	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\SFX\Plyr_Collide_Switch\Ply_Col_Switch-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Plyr_Collide_Switch\Ply_Col_Switch-001		119204
+	317365277	Obj_Map_Rotate-005	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\SFX\Obj_Map_Rotate\Obj_Map_Rotate-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Objects\Obj_Map_Rotate\Obj_Map_Rotate-005		375012
+	332171398	Obj_Map_Rotate-003	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\SFX\Obj_Map_Rotate\Obj_Map_Rotate-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Objects\Obj_Map_Rotate\Obj_Map_Rotate-003		375012
+	369038104	Play_B_Movement	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\SFX\334223__jradcoolness__marble-rolling_C218D71F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Plyr_Movement\Play_B_Movement		97612
+	426177637	Itm_Pu_Generic-004	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\SFX\Itm_Pu_Generic\Itm_Pu_Generic-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Items\Itm_Pu_Generic\Itm_Pu_Generic-004		430076
+	443754999	Ply_Col_Switch-003	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\SFX\Plyr_Collide_Switch\Ply_Col_Switch-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Plyr_Collide_Switch\Ply_Col_Switch-003		119204
+	464293935	Ply_Col_Switch-004	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\SFX\Plyr_Collide_Switch\Ply_Col_Switch-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Plyr_Collide_Switch\Ply_Col_Switch-004		119204
+	496191469	Itm_Pu_Generic-001	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\SFX\Itm_Pu_Generic\Itm_Pu_Generic-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Items\Itm_Pu_Generic\Itm_Pu_Generic-001		430076
+	528771306	Itm_Pu_Generic-005	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\SFX\Itm_Pu_Generic\Itm_Pu_Generic-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Items\Itm_Pu_Generic\Itm_Pu_Generic-005		430076
+	654344421	Obj_Map_Rotate-006	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\SFX\Obj_Map_Rotate\Obj_Map_Rotate-006_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Objects\Obj_Map_Rotate\Obj_Map_Rotate-006		375012
+	654685175	Obj_Map_Rotate-001	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\SFX\Obj_Map_Rotate\Obj_Map_Rotate-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Objects\Obj_Map_Rotate\Obj_Map_Rotate-001		375012
+	744929917	Ply_Col_Switch-002	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\SFX\Plyr_Collide_Switch\Ply_Col_Switch-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Plyr_Collide_Switch\Ply_Col_Switch-002		119204
+	753708542	Itm_Pu_Generic-002	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\SFX\Itm_Pu_Generic\Itm_Pu_Generic-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Items\Itm_Pu_Generic\Itm_Pu_Generic-002		430076
+	924732565	HoCThemeMusic_128_1P_1C	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\SFX\HoCThemeMusic_128_1P_1C_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\HoCThemeMusic_128_1P_1C\HoCThemeMusic_128_1P_1C		11520064
+	1073607487	Obj_Map_Rotate-002	D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\SFX\Obj_Map_Rotate\Obj_Map_Rotate-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Objects\Obj_Map_Rotate\Obj_Map_Rotate-002		375012
+

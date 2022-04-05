@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\</ProjectRoot>
+		<SourceFilesRoot>D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\B_W_Game_Jam\B_W_GameJamProject\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\LooseLeafTea\_GameAudio\2022 Game Jams\BnW-Duality\WwiseProejct\BnW-Duality\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1123926324">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="2108585614">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3113730691" Name="Play_BG_Music" ObjectPath="\Events\Default Work Unit\Play_BG_Music" DurationType="OneShot" DurationMin="60.000000" DurationMax="60.000000">
+					<IncludedMemoryFiles>
+						<File Id="924732565" Language="SFX">
+							<ShortName>HoCThemeMusic_128_1P_1C.wav</ShortName>
+							<Path>SFX\HoCThemeMusic_128_1P_1C_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3893138630" Name="Play_Itm_Pu_Generic" ObjectPath="\Events\Default Work Unit\Play_Itm_Pu_Generic" DurationType="OneShot" DurationMin="2.239646" DurationMax="2.239646">
+					<IncludedMemoryFiles>
+						<File Id="179657955" Language="SFX">
+							<ShortName>Itm_Pu_Generic\Itm_Pu_Generic-003.wav</ShortName>
+							<Path>SFX\Itm_Pu_Generic\Itm_Pu_Generic-003_10C4C929.wem</Path>
+						</File>
+						<File Id="426177637" Language="SFX">
+							<ShortName>Itm_Pu_Generic\Itm_Pu_Generic-004.wav</ShortName>
+							<Path>SFX\Itm_Pu_Generic\Itm_Pu_Generic-004_10C4C929.wem</Path>
+						</File>
+						<File Id="496191469" Language="SFX">
+							<ShortName>Itm_Pu_Generic\Itm_Pu_Generic-001.wav</ShortName>
+							<Path>SFX\Itm_Pu_Generic\Itm_Pu_Generic-001_10C4C929.wem</Path>
+						</File>
+						<File Id="528771306" Language="SFX">
+							<ShortName>Itm_Pu_Generic\Itm_Pu_Generic-005.wav</ShortName>
+							<Path>SFX\Itm_Pu_Generic\Itm_Pu_Generic-005_10C4C929.wem</Path>
+						</File>
+						<File Id="753708542" Language="SFX">
+							<ShortName>Itm_Pu_Generic\Itm_Pu_Generic-002.wav</ShortName>
+							<Path>SFX\Itm_Pu_Generic\Itm_Pu_Generic-002_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1549592196" Name="Play_Obj_Map_Rotate" ObjectPath="\Events\Default Work Unit\Play_Obj_Map_Rotate" DurationType="OneShot" DurationMin="1.952854" DurationMax="1.952854">
+					<IncludedMemoryFiles>
+						<File Id="205686353" Language="SFX">
+							<ShortName>Obj_Map_Rotate\Obj_Map_Rotate-004.wav</ShortName>
+							<Path>SFX\Obj_Map_Rotate\Obj_Map_Rotate-004_10C4C929.wem</Path>
+						</File>
+						<File Id="317365277" Language="SFX">
+							<ShortName>Obj_Map_Rotate\Obj_Map_Rotate-005.wav</ShortName>
+							<Path>SFX\Obj_Map_Rotate\Obj_Map_Rotate-005_10C4C929.wem</Path>
+						</File>
+						<File Id="332171398" Language="SFX">
+							<ShortName>Obj_Map_Rotate\Obj_Map_Rotate-003.wav</ShortName>
+							<Path>SFX\Obj_Map_Rotate\Obj_Map_Rotate-003_10C4C929.wem</Path>
+						</File>
+						<File Id="654344421" Language="SFX">
+							<ShortName>Obj_Map_Rotate\Obj_Map_Rotate-006.wav</ShortName>
+							<Path>SFX\Obj_Map_Rotate\Obj_Map_Rotate-006_10C4C929.wem</Path>
+						</File>
+						<File Id="654685175" Language="SFX">
+							<ShortName>Obj_Map_Rotate\Obj_Map_Rotate-001.wav</ShortName>
+							<Path>SFX\Obj_Map_Rotate\Obj_Map_Rotate-001_10C4C929.wem</Path>
+						</File>
+						<File Id="1073607487" Language="SFX">
+							<ShortName>Obj_Map_Rotate\Obj_Map_Rotate-002.wav</ShortName>
+							<Path>SFX\Obj_Map_Rotate\Obj_Map_Rotate-002_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3386221183" Name="Play_Plyr_Collide_Switch" ObjectPath="\Events\Default Work Unit\Play_Plyr_Collide_Switch" DurationType="OneShot" DurationMin="0.620521" DurationMax="0.620521">
+					<IncludedMemoryFiles>
+						<File Id="244755149" Language="SFX">
+							<ShortName>Plyr_Collide_Switch\Ply_Col_Switch-001.wav</ShortName>
+							<Path>SFX\Plyr_Collide_Switch\Ply_Col_Switch-001_10C4C929.wem</Path>
+						</File>
+						<File Id="443754999" Language="SFX">
+							<ShortName>Plyr_Collide_Switch\Ply_Col_Switch-003.wav</ShortName>
+							<Path>SFX\Plyr_Collide_Switch\Ply_Col_Switch-003_10C4C929.wem</Path>
+						</File>
+						<File Id="464293935" Language="SFX">
+							<ShortName>Plyr_Collide_Switch\Ply_Col_Switch-004.wav</ShortName>
+							<Path>SFX\Plyr_Collide_Switch\Ply_Col_Switch-004_10C4C929.wem</Path>
+						</File>
+						<File Id="744929917" Language="SFX">
+							<ShortName>Plyr_Collide_Switch\Ply_Col_Switch-002.wav</ShortName>
+							<Path>SFX\Plyr_Collide_Switch\Ply_Col_Switch-002_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2271622313" Name="Play_Plyr_Movement" ObjectPath="\Events\Default Work Unit\Play_Plyr_Movement" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="369038104" Language="SFX">
+							<ShortName>334223__jradcoolness__marble-rolling.wav</ShortName>
+							<Path>SFX\334223__jradcoolness__marble-rolling_C218D71F.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{4761FAE4-93D9-4A94-AAD9-FC7680EB3635}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{02B18B09-2B2B-4FD8-B217-BE3035F0F15C}">
+							<Media>
+								<File Id="369038104"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{045C633C-A901-4C1D-AEC5-7AC9A72D70DD}">
+							<Media>
+								<File Id="369038104"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="27511013" Name="Play_Test_Beep" ObjectPath="\Events\Default Work Unit\Play_Test_Beep" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="146820984" Language="SFX">
+							<ShortName>Test_Beep.wav</ShortName>
+							<Path>SFX\Test_Beep_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2235959444" Name="Play_Test_Beep_Lp" ObjectPath="\Events\Default Work Unit\Play_Test_Beep_Lp" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="192266125" Language="SFX">
+							<ShortName>Test_Beep_Lp.wav</ShortName>
+							<Path>SFX\Test_Beep_Lp_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="701599435" Name="Stop_Test_Beep" ObjectPath="\Events\Default Work Unit\Stop_Test_Beep" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="641054882" Name="Stop_Test_Beep_Lp" ObjectPath="\Events\Default Work Unit\Stop_Test_Beep_Lp" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="1493153371" Name="PlayerSpeed" ObjectPath="\Game Parameters\Default Work Unit\PlayerSpeed"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="470853287" Name="CurrentPlayer" ObjectPath="\States\Default Work Unit\CurrentPlayer" GUID="{736249C8-8FD9-4DB0-8F88-2CE9657E0D48}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\CurrentPlayer\None" GUID="{045C633C-A901-4C1D-AEC5-7AC9A72D70DD}"/>
+						<State Id="3730873346" Name="Black" ObjectPath="\States\Default Work Unit\CurrentPlayer\Black" GUID="{02B18B09-2B2B-4FD8-B217-BE3035F0F15C}"/>
+						<State Id="3178740632" Name="White" ObjectPath="\States\Default Work Unit\CurrentPlayer\White" GUID="{4761FAE4-93D9-4A94-AAD9-FC7680EB3635}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
