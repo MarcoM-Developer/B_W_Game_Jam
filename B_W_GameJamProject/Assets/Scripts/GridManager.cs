@@ -13,7 +13,21 @@ public class GridManager : MonoBehaviour
     private Tilemap whiteTileMap;
 
     [SerializeField]
-    private List<TileData> tileDatas; // Load tile data here.
+    private TileData blackWire;
+
+    [SerializeField]
+    private TileData whiteWire;
+
+    [SerializeField]
+    private TileData checkerboard;
+
+    [SerializeField]
+    private TileData tempWhiteWall;
+
+    [SerializeField]
+    private TileData tempBlackWall;
+
+ 
     // TODO: add explicit reference to white and black walls
 
     private Dictionary<TileBase, TileData> dataFromTiles;
@@ -26,16 +40,17 @@ public class GridManager : MonoBehaviour
 	{
        
         dataFromTiles = new Dictionary<TileBase, TileData>();
+        TileData[] tileData = { blackWire, whiteWire, checkerboard, tempWhiteWall, tempBlackWall };
 
-        foreach(var tileData in tileDatas)
+
+        foreach(var data in tileData)
 		{
-           
-                if (tileData.tile != null)
-                {
-                    Debug.Log("Nonnull tile added");
+            Debug.Log("Nonnull tile added");
 
-                    dataFromTiles.Add(tileData.tile, tileData);
-                }
+            if (data.tile != null)
+            {
+               dataFromTiles.Add(data.tile, data);
+            }
 			
 		}
 	}
@@ -80,9 +95,6 @@ public class GridManager : MonoBehaviour
             {
                 Debug.Log("Black Tile: " + whiteTile.name);
             }
-
-
-
         }
     }
 
@@ -111,11 +123,8 @@ public class GridManager : MonoBehaviour
                 {
                     case "Checkerboard":
                         blackTileMap.SetTile(position, null);
+                        whiteTileMap.SetTile(position, tempWhiteWall.tile); // Do the positions match?
 
-                        // HACK below!!! I don't know how to fetch the tile otherwise :)
-                        //whiteTile = whiteTileMap.GetTile();
-
-                        //whiteTileMap.SetTile(position, ); // Do the positions match?
                         Spread(position);
                         break;
 

@@ -890,12 +890,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackTileMap: {fileID: 476272640244761068}
   whiteTileMap: {fileID: 7361746752097879009}
-  tileDatas:
-  - {fileID: 11400000, guid: 5afb04bc97a74479497b24e2893e393a, type: 2}
-  - {fileID: 11400000, guid: e6331aaec49ac41c9956016efe643a1b, type: 2}
-  - {fileID: 11400000, guid: ad1bd423679d84d54baaeb20f4a0f27c, type: 2}
-  - {fileID: 11400000, guid: b032ce9ec35794ad09e784de0963b3eb, type: 2}
-  - {fileID: 11400000, guid: edb4a0a6f850d48098c1134bf00be7e0, type: 2}
+  blackWire: {fileID: 11400000, guid: 5afb04bc97a74479497b24e2893e393a, type: 2}
+  whiteWire: {fileID: 11400000, guid: e6331aaec49ac41c9956016efe643a1b, type: 2}
+  checkerboard: {fileID: 11400000, guid: ad1bd423679d84d54baaeb20f4a0f27c, type: 2}
+  tempWhiteWall: {fileID: 11400000, guid: edb4a0a6f850d48098c1134bf00be7e0, type: 2}
+  tempBlackWall: {fileID: 11400000, guid: b032ce9ec35794ad09e784de0963b3eb, type: 2}
 --- !u!1001 &1941497030
 PrefabInstance:
   m_ObjectHideFlags: 0
