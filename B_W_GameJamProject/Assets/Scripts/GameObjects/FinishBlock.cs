@@ -19,6 +19,9 @@ public class FinishBlock : MonoBehaviour
 
     [SerializeField] private GameObject objectBody;
 
+    [Header("Audio Events")]
+    [SerializeField] private AK.Wwise.Event playItemPu;
+
 
     // Start is called before the first frame update (on a scene?)
     void Start()
@@ -38,7 +41,8 @@ public class FinishBlock : MonoBehaviour
 
         if (other.tag == "Player")
 		{
-            SoundManager.PlaySound2D(SoundManager.Sound.Itm_Pu_Generic, GetCurrentPosition());
+           //play sound
+           playItemPu.Post(gameObject); 
             instanceTriggerCount++;
 
 			if (instanceTriggerCount == 2)
@@ -53,10 +57,6 @@ public class FinishBlock : MonoBehaviour
 			Destroy(gameObject); // Remove the game object.
         }
 		
-    }
-    private Vector2 GetCurrentPosition()
-    {
-        return objectBody.transform.position;
     }
 
 }

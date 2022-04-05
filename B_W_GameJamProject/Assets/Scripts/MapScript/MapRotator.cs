@@ -14,6 +14,8 @@ public class MapRotator : MonoBehaviour
 
     [SerializeField] private GameObject objectBody;
 
+    [Header("Audio Events")]
+    [SerializeField] private AK.Wwise.Event playSwitchSound;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,7 +23,7 @@ public class MapRotator : MonoBehaviour
         {
             // RotateMap(byAngle.Value);
             Debug.Log("Collision with player, now the map will rotate");
-            SoundManager.PlaySound(SoundManager.Sound.Plyr_Coll_Switch);
+            playSwitchSound.Post(gameObject);
 
             if (!isMapRotating.Value)
             {

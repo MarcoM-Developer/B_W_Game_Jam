@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a9e517562d6f3f448ca11dbc6ef2bc46
     GuidInternal: 
-    m_lastTime: -8585524856140405528
+    m_lastTime: -8585524840647351289
     List:
     - name: Play_BG_Music
       guid: 4c01c11892c9314190a57ac9b8a31630
@@ -164,6 +164,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.620521
       minDuration: 0.620521
+    - name: Play_Plyr_Jump
+      guid: 7d4dc31627e775419d1b7678b0621d77
+      id: 1864999798
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a9e517562d6f3f448ca11dbc6ef2bc46
+      - ElementName: Play_Plyr_Jump
+        ObjectType: 3
+        guid: 7d4dc31627e775419d1b7678b0621d77
+      Path: Events\Default Work Unit\Play_Plyr_Jump
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Plyr_Land
+      guid: dac93711290daf4a8eba0d552aee3ee2
+      id: 4227840961
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a9e517562d6f3f448ca11dbc6ef2bc46
+      - ElementName: Play_Plyr_Land
+        ObjectType: 3
+        guid: dac93711290daf4a8eba0d552aee3ee2
+      Path: Events\Default Work Unit\Play_Plyr_Land
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Plyr_Movement
       guid: e0431bd5280c77468f06f6f9a288f9eb
       id: 2271622313
@@ -386,7 +420,7 @@ MonoBehaviour:
     m_lastTime: -8585524878874882782
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000006000000070000001200000013000000140000001b0000001c0000001d000000410000004200000043000000
+  ExpandedWaapiItemIds: 01000000050000000600000007000000120000001300000014000000150000001b0000001c0000001d000000410000004200000043000000
   AutoSyncSelection: 1
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -10,6 +10,9 @@ public class Jump : MonoBehaviour
     private bool jump;
     private bool canJump;
 
+    [Header("Audio Events")]
+    [SerializeField] private AK.Wwise.Event playPlayerJump;
+
 
     public Rigidbody2D PlayerRigidBody { get => playerRigidBody; set => playerRigidBody = value; }
     public bool CanJump { get => canJump; set => canJump = value; }
@@ -28,6 +31,8 @@ public class Jump : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 jump = true;
+                //play jump
+                playPlayerJump.Post(gameObject);
             }
         }
 

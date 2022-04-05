@@ -123,3 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectBody: {fileID: 2108062005832969574}
+  playItemPu:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e1a78439c18d97a49bb9d04f3a4a332c, type: 2}

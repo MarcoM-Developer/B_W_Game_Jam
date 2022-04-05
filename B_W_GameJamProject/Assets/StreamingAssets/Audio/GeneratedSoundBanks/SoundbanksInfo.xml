@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1123926324">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2201105670">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2108585614">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1736051985">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -57,27 +57,27 @@
 					<IncludedMemoryFiles>
 						<File Id="205686353" Language="SFX">
 							<ShortName>Obj_Map_Rotate\Obj_Map_Rotate-004.wav</ShortName>
-							<Path>SFX\Obj_Map_Rotate\Obj_Map_Rotate-004_10C4C929.wem</Path>
+							<Path>SFX\Obj_Map_Rotate\Obj_Map_Rotate-004_4CCD7E8E.wem</Path>
 						</File>
 						<File Id="317365277" Language="SFX">
 							<ShortName>Obj_Map_Rotate\Obj_Map_Rotate-005.wav</ShortName>
-							<Path>SFX\Obj_Map_Rotate\Obj_Map_Rotate-005_10C4C929.wem</Path>
+							<Path>SFX\Obj_Map_Rotate\Obj_Map_Rotate-005_039FCEE4.wem</Path>
 						</File>
 						<File Id="332171398" Language="SFX">
 							<ShortName>Obj_Map_Rotate\Obj_Map_Rotate-003.wav</ShortName>
-							<Path>SFX\Obj_Map_Rotate\Obj_Map_Rotate-003_10C4C929.wem</Path>
+							<Path>SFX\Obj_Map_Rotate\Obj_Map_Rotate-003_23C507DE.wem</Path>
 						</File>
 						<File Id="654344421" Language="SFX">
 							<ShortName>Obj_Map_Rotate\Obj_Map_Rotate-006.wav</ShortName>
-							<Path>SFX\Obj_Map_Rotate\Obj_Map_Rotate-006_10C4C929.wem</Path>
+							<Path>SFX\Obj_Map_Rotate\Obj_Map_Rotate-006_F3D2D04A.wem</Path>
 						</File>
 						<File Id="654685175" Language="SFX">
 							<ShortName>Obj_Map_Rotate\Obj_Map_Rotate-001.wav</ShortName>
-							<Path>SFX\Obj_Map_Rotate\Obj_Map_Rotate-001_10C4C929.wem</Path>
+							<Path>SFX\Obj_Map_Rotate\Obj_Map_Rotate-001_F01E4FE4.wem</Path>
 						</File>
 						<File Id="1073607487" Language="SFX">
 							<ShortName>Obj_Map_Rotate\Obj_Map_Rotate-002.wav</ShortName>
-							<Path>SFX\Obj_Map_Rotate\Obj_Map_Rotate-002_10C4C929.wem</Path>
+							<Path>SFX\Obj_Map_Rotate\Obj_Map_Rotate-002_C0A69CCB.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -98,6 +98,50 @@
 						<File Id="744929917" Language="SFX">
 							<ShortName>Plyr_Collide_Switch\Ply_Col_Switch-002.wav</ShortName>
 							<Path>SFX\Plyr_Collide_Switch\Ply_Col_Switch-002_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1864999798" Name="Play_Plyr_Jump" ObjectPath="\Events\Default Work Unit\Play_Plyr_Jump" DurationType="OneShot" DurationMin="0.151752" DurationMax="0.167208">
+					<IncludedMemoryFiles>
+						<File Id="512274381" Language="SFX">
+							<ShortName>Plyr_Motn_Dash.wav</ShortName>
+							<Path>SFX\Plyr_Motn_Dash_BEE1A929.wem</Path>
+						</File>
+						<File Id="540599994" Language="SFX">
+							<ShortName>Plyr_Motn_Dash.wav</ShortName>
+							<Path>SFX\Plyr_Motn_Dash_B831CCA6.wem</Path>
+						</File>
+						<File Id="1016008364" Language="SFX">
+							<ShortName>Plyr_Motn_Dash.wav</ShortName>
+							<Path>SFX\Plyr_Motn_Dash_AF4A22E3.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4227840961" Name="Play_Plyr_Land" ObjectPath="\Events\Default Work Unit\Play_Plyr_Land" DurationType="OneShot" DurationMin="0.126020" DurationMax="0.192888">
+					<IncludedMemoryFiles>
+						<File Id="292115477" Language="SFX">
+							<ShortName>Plyr_Atk_Hvy_Deal_Dmg.wav</ShortName>
+							<Path>SFX\Plyr_Atk_Hvy_Deal_Dmg_B3A48795.wem</Path>
+						</File>
+						<File Id="338914414" Language="SFX">
+							<ShortName>Plyr_Atk_Hvy_Deal_Dmg.wav</ShortName>
+							<Path>SFX\Plyr_Atk_Hvy_Deal_Dmg_E5B00AA5.wem</Path>
+						</File>
+						<File Id="473157067" Language="SFX">
+							<ShortName>Plyr_Atk_Hvy_Deal_Dmg.wav</ShortName>
+							<Path>SFX\Plyr_Atk_Hvy_Deal_Dmg_0C47C756.wem</Path>
+						</File>
+						<File Id="706215001" Language="SFX">
+							<ShortName>Plyr_Atk_Hvy_Deal_Dmg.wav</ShortName>
+							<Path>SFX\Plyr_Atk_Hvy_Deal_Dmg_D76C0E90.wem</Path>
+						</File>
+						<File Id="725133133" Language="SFX">
+							<ShortName>Plyr_Atk_Hvy_Deal_Dmg.wav</ShortName>
+							<Path>SFX\Plyr_Atk_Hvy_Deal_Dmg_57DC9BB6.wem</Path>
+						</File>
+						<File Id="729968323" Language="SFX">
+							<ShortName>Plyr_Atk_Hvy_Deal_Dmg.wav</ShortName>
+							<Path>SFX\Plyr_Atk_Hvy_Deal_Dmg_B3116F35.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
