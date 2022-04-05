@@ -7,7 +7,10 @@ using UnityEngine.Tilemaps;
 public class GridManager : MonoBehaviour
 {
     [SerializeField]
-    private Tilemap map; // Work with BlackMap for now 
+    private Tilemap blackTileMap; // Work with BlackMap for now
+
+    [SerializeField]
+    private Tilemap whiteTileMap;
 
     // Setup the dual map?
     void Start()
@@ -22,16 +25,23 @@ public class GridManager : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
 		{
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector3Int position = map.WorldToCell(mousePosition);
+            Vector3Int blackTilePosition = blackTileMap.WorldToCell(mousePosition);
+            Vector3Int whiteTilePosition = whiteTileMap.WorldToCell(mousePosition);
 
-            TileBase tile = map.GetTile(position);
+            TileBase blackTile = blackTileMap.GetTile(blackTilePosition);
+            TileBase whiteTile = whiteTileMap.GetTile(whiteTilePosition);
 
-            if (tile != null)
+            if (blackTile != null)
             {
-                Debug.Log("Tile: " + tile.name);
+                Debug.Log("Tile: " + blackTile.name);
             }
 
-            Spread(position);
+            if (whiteTile != null)
+			{
+                Debug.Log("Tile: " + whiteTile.name);
+			}
+
+            Spread(blackTilePosition);
 
         }
     }
@@ -53,11 +63,11 @@ public class GridManager : MonoBehaviour
           
         void TryToSpreadTile(Vector3Int position)
         {
-            TileBase tile = map.GetTile(position);
+            TileBase tile = blackTileMap.GetTile(position);
 
             if (tile != null && tile.name=="Checkerboard")
             {
-                map.SetTile(position, null);
+                blackTileMap.SetTile(position, null);
                 Spread(position);
             }
         }
