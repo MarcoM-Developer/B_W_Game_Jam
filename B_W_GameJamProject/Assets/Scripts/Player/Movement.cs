@@ -17,6 +17,9 @@ public class Movement : MonoBehaviour
 
     private Vector2 directionVector;
 
+    //For audio transforming
+    private float currentVelocity;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -38,9 +41,6 @@ public class Movement : MonoBehaviour
     private void DetectInput()
     {
         directionVector = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
-        //if player is W play W sound, is player is B play B sound
-
-
     }
 
     private void Move()
@@ -48,10 +48,11 @@ public class Movement : MonoBehaviour
 
         if (directionVector.x > 0 || directionVector.x < 0)
         {
+            //Play player movement
             if (gameObject.layer == 8)//8 = white layer
-                SoundManager.PlaySound2D(SoundManager.Sound.Plyr_W_Move, GetCurrentPosition());
-            else if (gameObject.layer == 9) //9 = black layer
-                SoundManager.PlaySound2D(SoundManager.Sound.Plyr_B_Move, GetCurrentPosition());
+                SoundManager.PlayPlayerMovement(SoundManager.Sound.Plyr_W_Move, GetCurrentVelocity());
+            else if(gameObject.layer == 9) //9 = black layer
+                SoundManager.PlayPlayerMovement(SoundManager.Sound.Plyr_B_Move, GetCurrentVelocity());
 
             CheckIfMaxSpeedReached();
             if (!isAtMaxSpeed)
@@ -121,5 +122,31 @@ public class Movement : MonoBehaviour
     private Vector2 GetCurrentPosition()
     {
         return playerRigidBody.transform.position;
+    }
+
+    private float GetCurrentVelocity()
+    {
+        
+        if (playerRigidBody.velocity.x < 0)
+         currentVelocity = -playerRigidBody.velocity.x;
+        else
+            currentVelocity = playerRigidBody.velocity.x;
+
+        //(V × R2 ÷ R1) + (M2 - M1) V = the value you want to convert. R1 and R2 are both differential values of each ranges (maximum value - minimum value). M1 and M2 are both minimal values of each range.
+        // float endPitch = 2f;
+        //float startingPitch = 1f;
+        //float maxVelocity = 15f;
+        //float result = (currentVelocity * (endPitch - startingPitch) / maxVelocity) + (startingPitch - endPitch);
+        //(15 *( 2 - 1) / 15) + (2-1)
+        //(15 * 1 / 15) + (1)
+
+
+        float result = Mathf.SmoothStep(1f, 2f, currentVelocity);
+
+        //float result = Mathf.Lerp(1f, 1.5f, currentVelocity);
+        print("Current: " + currentVelocity + " Adjusted: " + result);
+        //print("Adjusted: " + result);
+
+        return result;
     }
 }

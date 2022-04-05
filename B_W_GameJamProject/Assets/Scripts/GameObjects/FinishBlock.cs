@@ -38,7 +38,7 @@ public class FinishBlock : MonoBehaviour
 
         if (other.tag == "Player")
 		{
-            //SoundManager.PlaySound(SoundManager.Sound.Itm_Pu_Generic, GetCurrentPosition());
+            SoundManager.PlaySound2D(SoundManager.Sound.Itm_Pu_Generic, GetCurrentPosition());
             instanceTriggerCount++;
 
 			if (instanceTriggerCount == 2)
@@ -54,9 +54,9 @@ public class FinishBlock : MonoBehaviour
         }
 		
     }
-/*    private Vector2 GetCurrentPosition()
+    private Vector2 GetCurrentPosition()
     {
         return objectBody.transform.position;
-    }*/
+    }
 
 }

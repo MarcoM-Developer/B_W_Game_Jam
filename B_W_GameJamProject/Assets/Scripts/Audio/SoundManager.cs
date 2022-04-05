@@ -18,10 +18,13 @@ public static class SoundManager
     }
 
     private static Dictionary<Sound, float> soundTimerDictionary;
+
+    //For all one shots
     private static GameObject oneShotGameObject;
     private static AudioSource oneShotAudioSource;
-
-
+    //For just the player movement
+    private static GameObject PlyrMvmGameObject;
+    private static AudioSource plyrMvmnAudioSource;
 
 
     public static void Intialize()
@@ -37,8 +40,9 @@ public static class SoundManager
     {
         if (CanPlaySound(sound))
         {
-            GameObject soundGameObject = new GameObject("Sound2D");
-            soundGameObject.layer = 1;
+            GameObject soundGameObject = new GameObject("Audio - Sound 2D");
+
+
             soundGameObject.transform.position = position;
             AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
             audioSource.clip = GetAudioClip(sound);
@@ -52,6 +56,32 @@ public static class SoundManager
         }
     }
 
+    //--------------Player Movement----------//
+    //Allow for a repitch of the sound over time to relate to velocity
+    public static void PlayPlayerMovement(Sound sound, float velocity)
+    {
+        if (PlyrMvmGameObject == null)
+        {
+            PlyrMvmGameObject = new GameObject("Audio - PlayerMovement");
+            plyrMvmnAudioSource = PlyrMvmGameObject.AddComponent<AudioSource>();
+        }
+
+        plyrMvmnAudioSource.clip = GetAudioClip(sound);
+        plyrMvmnAudioSource.loop = true;
+
+        plyrMvmnAudioSource.pitch = velocity;
+        //plyrMvmnAudioSource.volume = Mathf.SmoothStep(-6f, 0f, velocity);
+
+        plyrMvmnAudioSource.maxDistance = 100f;
+        plyrMvmnAudioSource.spatialBlend = 1f;
+        plyrMvmnAudioSource.rolloffMode = AudioRolloffMode.Linear;
+        plyrMvmnAudioSource.dopplerLevel = 0f;
+        plyrMvmnAudioSource.Play();
+
+        //Object.Destroy(soundPlayerGameObject, audioSource.clip.length);
+        // }
+    }
+
 
 
     public static void PlaySound(Sound sound)
@@ -60,10 +90,11 @@ public static class SoundManager
         {
             if (oneShotGameObject == null)
             {
-                oneShotGameObject = new GameObject("One Shot Sound");
+                oneShotGameObject = new GameObject("Audio - One Shot Sound");
                 oneShotAudioSource = oneShotGameObject.AddComponent<AudioSource>();
             }
             oneShotAudioSource.PlayOneShot(GetAudioClip(sound));
+            //Object.Destroy(oneShotAudioSource, oneShotAudioSource.clip.length);
         }
     }
 
@@ -91,7 +122,7 @@ public static class SoundManager
                 {
                     return true;
                 }
-        
+
             case Sound.Plyr_B_Move: //call only when you want based on time interval. so it doesn't play always
                 if (soundTimerDictionary.ContainsKey(sound))
                 {
@@ -111,7 +142,7 @@ public static class SoundManager
                 {
                     return true;
                 }
-   
+
             default:
                 return true;
         }
