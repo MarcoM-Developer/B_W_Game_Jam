@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class MainMenuAnimations : MonoBehaviour
 {
-    [SerializeField] private GameObject mainMenuImage,  startButton, loadButton, settingsButton;
+    [SerializeField] private GameObject mainMenuImage,  startButton, loadButton;
     [SerializeField] private Image mainMenuOpacityLayer;
 
     [SerializeField] private float mainMenuImageHeight;
@@ -33,7 +33,6 @@ public class MainMenuAnimations : MonoBehaviour
         mySequence.Append(mainMenuOpacityLayer.DOFade(opacityLayerValue, opacityLayerAnimationTime));
         mySequence.Append(startButton.transform.DOScaleX(buttonXScaleValue, buttonScaleAnimationTime));
         mySequence.Append(loadButton.transform.DOScaleX(buttonXScaleValue, buttonScaleAnimationTime));
-        mySequence.Append(settingsButton.transform.DOScaleX(buttonXScaleValue, buttonScaleAnimationTime));
     }
 
     // Update is called once per frame
