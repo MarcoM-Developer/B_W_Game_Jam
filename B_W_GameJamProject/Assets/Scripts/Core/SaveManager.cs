@@ -60,18 +60,21 @@ public class SaveManager : MonoBehaviour
             playerBlackPosition.Value = loadedSaveObject.playerBlackPosition;
         }
 
+        if (SceneManager.GetActiveScene().buildIndex != sceneIndex.Value)
+        {
+            loadedOtherScene.Value = true;
+            SceneManager.LoadScene((int)sceneIndex.Value, LoadSceneMode.Single);
+        }
+
         if (OnLoad != null)
         {
-            if (SceneManager.GetActiveScene().buildIndex != sceneIndex.Value)
-            {
-                loadedOtherScene.Value = true;
-                SceneManager.LoadScene((int)sceneIndex.Value);
-            }
-            else
-            {
-                OnLoad();
-            }
+            OnLoad();
         }
+    }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 
 }
