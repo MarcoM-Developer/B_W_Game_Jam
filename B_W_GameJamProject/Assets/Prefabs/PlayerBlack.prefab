@@ -147,6 +147,7 @@ MonoBehaviour:
   isActive: 0
   playerStateManager: {fileID: 1896984858794961667}
   playerType: 1
+  playerPosition: {fileID: 11400000, guid: 14b83a373d1036f4caf0b71a273fc441, type: 2}
 --- !u!114 &1896984858695495446
 MonoBehaviour:
   m_ObjectHideFlags: 0
