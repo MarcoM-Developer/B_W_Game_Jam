@@ -1,0 +1,1032 @@
+fileFormatVersion: 2
+guid: 73cbd5b483c9a427d84f1b53c641f452
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8402943039552650612
+    second: Wires 05 Artboard 10_0
+  - first:
+      213: -913396441587882849
+    second: Wires 05 Artboard 10_1
+  - first:
+      213: 2964110312332261870
+    second: Wires 05 Artboard 10_2
+  - first:
+      213: 261120771737242768
+    second: Wires 05 Artboard 10_3
+  - first:
+      213: -5719852624678920204
+    second: Wires 05 Artboard 10_4
+  - first:
+      213: -4713449867888389374
+    second: Wires 05 Artboard 10_5
+  - first:
+      213: -8905314894382080863
+    second: Wires 05 Artboard 10_6
+  - first:
+      213: 6360149069538610273
+    second: Wires 05 Artboard 10_7
+  - first:
+      213: -8249950929923633560
+    second: Wires 05 Artboard 10_8
+  - first:
+      213: 8235620712674906481
+    second: Wires 05 Artboard 10_9
+  - first:
+      213: -1685310726209017453
+    second: Wires 05 Artboard 10_10
+  - first:
+      213: -3782045896466496646
+    second: Wires 05 Artboard 10_11
+  - first:
+      213: -6220133158022953838
+    second: Wires 05 Artboard 10_12
+  - first:
+      213: 6824231507067543531
+    second: Wires 05 Artboard 10_13
+  - first:
+      213: -1331887519078314227
+    second: Wires 05 Artboard 10_14
+  - first:
+      213: -4948473800719986438
+    second: Wires 05 Artboard 10_15
+  - first:
+      213: -5349284533681710145
+    second: Wires 05 Artboard 10_16
+  - first:
+      213: -6869652644540388470
+    second: Wires 05 Artboard 10_17
+  - first:
+      213: 5586646253009954753
+    second: Wires 05 Artboard 10_18
+  - first:
+      213: 1298975799203020214
+    second: Wires 05 Artboard 10_19
+  - first:
+      213: -3684807488333702651
+    second: Wires 05 Artboard 10_20
+  - first:
+      213: 80849183127513228
+    second: Wires 05 Artboard 10_21
+  - first:
+      213: 4943280310243409770
+    second: Wires 05 Artboard 10_22
+  - first:
+      213: 1686858502384263540
+    second: Wires 05 Artboard 10_23
+  - first:
+      213: -5707914000169491092
+    second: Wires 05 Artboard 10_24
+  - first:
+      213: -1197032093223394306
+    second: Wires 05 Artboard 10_25
+  - first:
+      213: -7567070551027168701
+    second: Wires 05 Artboard 10_26
+  - first:
+      213: -1739002732326163240
+    second: Wires 05 Artboard 10_27
+  - first:
+      213: 4337435627518339356
+    second: Wires 05 Artboard 10_28
+  - first:
+      213: 2863082016053457714
+    second: Wires 05 Artboard 10_29
+  - first:
+      213: 3603730824854841010
+    second: Wires 05 Artboard 10_30
+  - first:
+      213: -1365627542136783848
+    second: Wires 05 Artboard 10_31
+  - first:
+      213: -7203552723899074964
+    second: Wires 05 Artboard 10_32
+  - first:
+      213: 8526443721857601208
+    second: Wires 05 Artboard 10_33
+  - first:
+      213: -2128537628440460510
+    second: Wires 05 Artboard 10_34
+  - first:
+      213: -6413691413656575820
+    second: Wires 05 Artboard 10_35
+  - first:
+      213: 3660140310164263128
+    second: Wires 05 Artboard 10_36
+  - first:
+      213: -2073202685323617135
+    second: Wires 05 Artboard 10_37
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d706c7c204d9470800000000000000
+      internalID: 8402943039552650612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f946c0896c6f253f0800000000000000
+      internalID: -913396441587882849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9f2a1ef92a22920800000000000000
+      internalID: 2964110312332261870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ccfda55ffaf9300800000000000000
+      internalID: 261120771737242768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff5d6ac7500f90b0800000000000000
+      internalID: -5719852624678920204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20396ed6156769eb0800000000000000
+      internalID: -4713449867888389374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac5c533947f96480800000000000000
+      internalID: -8905314894382080863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c416891e9c34850800000000000000
+      internalID: 6360149069538610273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e8f7fd659428d80800000000000000
+      internalID: -8249950929923633560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_9
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17156db676dca4270800000000000000
+      internalID: 8235620712674906481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399e72cd2d29c98e0800000000000000
+      internalID: -1685310726209017453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_11
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7304e89b49738bc0800000000000000
+      internalID: -3782045896466496646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294c96439d5ada9a0800000000000000
+      internalID: -6220133158022953838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef1acb366a84be50800000000000000
+      internalID: 6824231507067543531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f8f88ab5f248de0800000000000000
+      internalID: -1331887519078314227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_15
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af012cfdb4d735bb0800000000000000
+      internalID: -4948473800719986438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_16
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb196fee0683c5b0800000000000000
+      internalID: -5349284533681710145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_17
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8be8d711571aa0a0800000000000000
+      internalID: -6869652644540388470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_18
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7ec64fa21c78d40800000000000000
+      internalID: 5586646253009954753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd335b6b93e60210800000000000000
+      internalID: 1298975799203020214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50a9b20cc1fecdcc0800000000000000
+      internalID: -3684807488333702651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_21
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8822b857eb3f1100800000000000000
+      internalID: 80849183127513228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6fbd35604f0a9440800000000000000
+      internalID: 4943280310243409770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_23
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47126fcdedce86710800000000000000
+      internalID: 1686858502384263540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_24
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c652b6b657a69c0b0800000000000000
+      internalID: -5707914000169491092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_25
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef36da247a9436fe0800000000000000
+      internalID: -1197032093223394306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_26
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ac4b70d6d5cf690800000000000000
+      internalID: -7567070551027168701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_27
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dce3448a32ddd7e0800000000000000
+      internalID: -1739002732326163240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_28
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19aa56f8baa13c30800000000000000
+      internalID: 4337435627518339356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_29
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233fca1ace5bbb720800000000000000
+      internalID: 2863082016053457714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_30
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b629918716030230800000000000000
+      internalID: 3603730824854841010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_31
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c727f5cf05c0de0800000000000000
+      internalID: -1365627542136783848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_32
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66b233b6f6d70c90800000000000000
+      internalID: -7203552723899074964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_33
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be8ea6d363045670800000000000000
+      internalID: 8526443721857601208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22301cded4ae572e0800000000000000
+      internalID: -2128537628440460510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_35
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0e606f3adfdf6a0800000000000000
+      internalID: -6413691413656575820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0dd67483e6bc230800000000000000
+      internalID: 3660140310164263128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wires 05 Artboard 10_37
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c56e954218a33e0800000000000000
+      internalID: -2073202685323617135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

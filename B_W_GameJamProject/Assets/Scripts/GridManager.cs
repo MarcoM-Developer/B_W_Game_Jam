@@ -33,7 +33,7 @@ public class GridManager : MonoBehaviour
 
     private Dictionary<TileBase, TileData> dataFromTiles;
 
-    private List<Vector3Int> activeWires = new List<Vector3Int>();
+    private List<Vector3Int> activeTiles = new List<Vector3Int>();
 
 
     // Populate the dataFromTiles
@@ -48,9 +48,12 @@ public class GridManager : MonoBehaviour
 		{
             Debug.Log("Nonnull tile added");
 
-            if (data.tile != null)
+            if (data.tiles != null)
             {
-               dataFromTiles.Add(data.tile, data);
+                foreach (var tile in data.tiles)
+                {
+                    dataFromTiles.Add(tile, data);
+                }
             }
 			
 		}
@@ -80,20 +83,23 @@ public class GridManager : MonoBehaviour
             Vector3Int blackTilePosition = blackTileMap.WorldToCell(mousePosition);
             Vector3Int whiteTilePosition = whiteTileMap.WorldToCell(mousePosition);
 
+            Debug.Log(blackTilePosition);
+
             TileBase blackTile = blackTileMap.GetTile(blackTilePosition);
             TileBase whiteTile = whiteTileMap.GetTile(whiteTilePosition);
 
             
-
             if (blackTile != null)
             {
                 
                 Debug.Log("Black Tile: " + blackTile.name);
 
                 if (dataFromTiles.ContainsKey(blackTile)) {
-                    Debug.Log("Propagates?: " + dataFromTiles[blackTile].propagatesSignal);
+                    Debug.Log("Propagates?: " + dataFromTiles[blackTile].propagatesSignal +
+                              "Is temp?:" + dataFromTiles[blackTile].isTemp);
                 }
                 Spread(blackTilePosition);
+                PostSpread(blackTilePosition);
             }
 
             if (whiteTile != null)
@@ -101,6 +107,15 @@ public class GridManager : MonoBehaviour
                 Debug.Log("Black Tile: " + whiteTile.name);
             }
         }
+    }
+
+
+    /**
+     * Call this after the spread was finished.
+     */ 
+    public void PostSpread(Vector3Int position)
+	{
+        activeTiles = new List<Vector3Int>();
     }
 
 
@@ -122,27 +137,36 @@ public class GridManager : MonoBehaviour
         {
             TileBase tile = blackTileMap.GetTile(position);
 
-            if (tile != null)
+            if (!activeTiles.Contains(position) &&
+                tile != null &&
+                dataFromTiles.ContainsKey(tile))
             {
-                switch (tile.name)
-                {
-                    case "Checkerboard":
-                        blackTileMap.SetTile(position, null);
-                        whiteTileMap.SetTile(position, tempWhiteWall.tile); // Do the positions match?
+                TileData data = dataFromTiles[tile];
 
-                        Spread(position);
-                        break;
+                // Checkerboard spreading rule
+                if (data.isCheckerboard) { 
+                    blackTileMap.SetTile(position, null);
+                    whiteTileMap.SetTile(position, tempWhiteWall.tiles[0]); // Do the positions match?
 
-                    case "Wire":
-                        if (!activeWires.Contains(position))
-						{
-                            activeWires.Add(position);
-                            Spread(position);
-                        }
-                        
-                        break;
-
+                    activeTiles.Add(position);
+                    Spread(position);
                 }
+                // Wire spreading rule
+                else if (data.isWire)
+                {
+                    activeTiles.Add(position);
+                    Spread(position);
+                
+                }
+                // Switch spreading rule (TODO)
+                else if (data.isTemp)
+				{
+                    blackTileMap.SetTile(position, checkerboard.tiles[0]);
+                    whiteTileMap.SetTile(position, null);
+                    activeTiles.Add(position);
+                    Spread(position);
+                }
+                
             }
         }
     }

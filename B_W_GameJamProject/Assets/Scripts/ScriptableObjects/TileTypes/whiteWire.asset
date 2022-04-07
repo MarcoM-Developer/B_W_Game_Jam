@@ -16,3 +16,5 @@ MonoBehaviour:
   type: whiteWire
   tiles: []
   isTemp: 0
+  isWire: 1
+  isCheckerboard: 0

@@ -17,9 +17,9 @@ public class TileData : ScriptableObject
     public bool propagatesSignal = true; // Does the tile send signal?
     public string type = BLACKWIRE;
 
-    public TileBase tile;
+    public TileBase[] tiles;
 
-    public bool isTemp;
+    public bool isTemp, isWire, isCheckerboard;
     //public float spreadChance, spreadInterval, burnTime;
 }
 
