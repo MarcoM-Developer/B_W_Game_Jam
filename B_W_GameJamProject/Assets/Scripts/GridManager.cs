@@ -27,26 +27,20 @@ public class GridManager : MonoBehaviour
     [SerializeField]
     private TileData tempBlackWall;
 
- 
-    // TODO: add explicit reference to white and black walls
-
     private Dictionary<TileBase, TileData> dataFromTiles;
 
     private List<Vector3Int> activeTiles = new List<Vector3Int>();
 
 
-    // Populate the dataFromTiles
+    // Populate the dataFromTiles, so I can fetch tiles
     private void Awake()
 	{
        
         dataFromTiles = new Dictionary<TileBase, TileData>();
         TileData[] tileData = { blackWire, whiteWire, checkerboard, tempWhiteWall, tempBlackWall };
 
-
         foreach(var data in tileData)
-		{
-            Debug.Log("Nonnull tile added");
-
+        { 
             if (data.tiles != null)
             {
                 foreach (var tile in data.tiles)
@@ -60,7 +54,7 @@ public class GridManager : MonoBehaviour
 
 
 
-    // Setup the dual map?
+    // TODO: Setup the dual map?
     void Start()
     {
 
@@ -78,28 +72,27 @@ public class GridManager : MonoBehaviour
             Vector3Int blackTilePosition = blackTileMap.WorldToCell(mousePosition);
             Vector3Int whiteTilePosition = whiteTileMap.WorldToCell(mousePosition);
 
-            Debug.Log(blackTilePosition);
+            // HACK: WorldToCell gives consistent position on both grids, use just one
+            Vector3Int position = blackTilePosition;
 
-            TileBase blackTile = blackTileMap.GetTile(blackTilePosition);
-            TileBase whiteTile = whiteTileMap.GetTile(whiteTilePosition);
+            TileBase blackTile = blackTileMap.GetTile(position);
+            TileBase whiteTile = whiteTileMap.GetTile(position);
 
             
             if (blackTile != null)
             {
-                
-                Debug.Log("Black Tile: " + blackTile.name);
-
                 if (dataFromTiles.ContainsKey(blackTile)) {
                     Debug.Log("Propagates?: " + dataFromTiles[blackTile].propagatesSignal +
                               "Is temp?:" + dataFromTiles[blackTile].isTemp);
                 }
-                Spread(blackTilePosition);
-                PostSpread(blackTilePosition);
+                Spread(position);
+                PostSpread(position);
             }
-
-            if (whiteTile != null)
+            else if (whiteTile != null)
             {
-                Debug.Log("Black Tile: " + whiteTile.name);
+                Debug.Log("White Tile: " + whiteTile.name);
+                Spread(position);
+                PostSpread(position);
             }
         }
     }
@@ -130,38 +123,50 @@ public class GridManager : MonoBehaviour
 
         void TryToSpreadTile(Vector3Int position)
         {
-            TileBase tile = blackTileMap.GetTile(position);
+            TileBase blackTile = blackTileMap.GetTile(position);
+            TileBase whiteTile = whiteTileMap.GetTile(position);
 
-            if (!activeTiles.Contains(position) &&
-                tile != null &&
-                dataFromTiles.ContainsKey(tile))
+            TileData data;
+
+            if (!activeTiles.Contains(position))
             {
-                TileData data = dataFromTiles[tile];
 
-                // Checkerboard spreading rule
-                if (data.isCheckerboard) { 
-                    blackTileMap.SetTile(position, null);
-                    whiteTileMap.SetTile(position, tempWhiteWall.tiles[0]); // Do the positions match?
-
-                    activeTiles.Add(position);
-                    Spread(position);
-                }
-                // Wire spreading rule
-                else if (data.isWire)
+                if (blackTile != null &&
+                    dataFromTiles.ContainsKey(blackTile))
                 {
-                    activeTiles.Add(position);
-                    Spread(position);
-                
+                    data = dataFromTiles[blackTile];
+
+                    // Checkerboard spreading rule
+                    if (data.isCheckerboard)
+                    {
+                        blackTileMap.SetTile(position, null);
+                        whiteTileMap.SetTile(position, tempWhiteWall.tiles[0]); // Do the positions match?
+
+                        activeTiles.Add(position);
+                        Spread(position);
+                    }
+                    // Wire spreading rule
+                    else if (data.isWire)
+                    {
+                        activeTiles.Add(position);
+                        Spread(position);
+
+                    }
                 }
                 // Switch spreading rule (TODO)
-                else if (data.isTemp)
-				{
-                    blackTileMap.SetTile(position, checkerboard.tiles[0]);
-                    whiteTileMap.SetTile(position, null);
-                    activeTiles.Add(position);
-                    Spread(position);
+                else if (whiteTile != null &&
+                    dataFromTiles.ContainsKey(whiteTile))
+                {
+                    data = dataFromTiles[whiteTile];
+
+                    if (data.isTemp)
+                    {
+                        blackTileMap.SetTile(position, checkerboard.tiles[0]);
+                        whiteTileMap.SetTile(position, null);
+                        activeTiles.Add(position);
+                        Spread(position);
+                    }
                 }
-                
             }
         }
     }
