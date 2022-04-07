@@ -47,9 +47,12 @@ public class GridManager : MonoBehaviour
 		{
             Debug.Log("Nonnull tile added");
 
-            if (data.tile != null)
+            if (data.tiles != null)
             {
-               dataFromTiles.Add(data.tile, data);
+                foreach (var tile in data.tiles)
+                {
+                    dataFromTiles.Add(tile, data);
+                }
             }
 			
 		}
@@ -79,7 +82,6 @@ public class GridManager : MonoBehaviour
             TileBase whiteTile = whiteTileMap.GetTile(whiteTilePosition);
 
             
-
             if (blackTile != null)
             {
                 
@@ -116,27 +118,28 @@ public class GridManager : MonoBehaviour
         void TryToSpreadTile(Vector3Int position)
         {
             TileBase tile = blackTileMap.GetTile(position);
+           
 
             if (tile != null)
             {
-                switch (tile.name)
-                {
-                    case "Checkerboard":
+                Debug.Log(tile.name);
+
+                if (dataFromTiles.ContainsKey(tile)){
+                    TileData data = dataFromTiles[tile];
+                    if (data.isCheckerboard) {
                         blackTileMap.SetTile(position, null);
-                        whiteTileMap.SetTile(position, tempWhiteWall.tile); // Do the positions match?
+                        whiteTileMap.SetTile(position, tempWhiteWall.tiles[0]); // Do the positions match?
 
                         Spread(position);
-                        break;
-
-                    case "Wire":
+					}
+					else if(data.isWire) 
+					{
                         if (!activeWires.Contains(position))
-						{
-                            activeWires.Add(position);
-                            Spread(position);
+                        {
+                                activeWires.Add(position);
+                                Spread(position);
                         }
-                        
-                        break;
-
+                    }
                 }
             }
         }

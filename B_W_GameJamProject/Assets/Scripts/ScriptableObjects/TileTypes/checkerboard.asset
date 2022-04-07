@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   propagatesSignal: 1
   type: checkerboard
-  tile: {fileID: 11400000, guid: 1850e4426ab5b4706a799ededee64099, type: 2}
+  tiles:
+  - {fileID: 11400000, guid: 1850e4426ab5b4706a799ededee64099, type: 2}
   isTemp: 0
+  isWire: 0
+  isCheckerboard: 1

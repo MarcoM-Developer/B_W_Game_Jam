@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   propagatesSignal: 1
   type: tempBlackWall
-  tile: {fileID: 11400000, guid: d7f5d1ec6fa944ce6b3cf06b709f0e64, type: 2}
-  isTemp: 0
+  tiles:
+  - {fileID: 11400000, guid: 01e19e5ba947a4911aae57b5a97d4a68, type: 2}
+  isTemp: 1
+  isWire: 0
+  isCheckerboard: 0
