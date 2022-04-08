@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] private bool isActive;
     [SerializeField] private PlayerStateManager playerStateManager;
     [SerializeField] private PlayerType playerType;
+    [SerializeField] private Vector3Variable playerPosition;
     public static event Action OnSwitchCharacter;
 
 
@@ -16,7 +17,8 @@ public class Player : MonoBehaviour
 
     private void OnEnable()
     {
-       
+        SaveManager.OnSave += StorePlayerPosition;
+        SaveManager.OnLoad += LoadPlayerPosition;
     }
 
     // Start is called before the first frame update
@@ -38,6 +40,12 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void OnDisable()
+    {
+        SaveManager.OnSave -= StorePlayerPosition;
+        SaveManager.OnLoad -= LoadPlayerPosition;
+    }
+
     private void CheckIsActiveThenPassState()
     {
         if (isActive)
@@ -56,5 +64,15 @@ public class Player : MonoBehaviour
     {
         isActive = !isActive;
         CheckIsActiveThenPassState();
+    }
+
+    private void StorePlayerPosition()
+    {
+        playerPosition.Value = transform.position;
+    }
+
+    private void LoadPlayerPosition()
+    {
+        transform.position = playerPosition.Value;
     }
 }

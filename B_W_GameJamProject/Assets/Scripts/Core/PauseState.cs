@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PauseState : GameState
 {
+    private GameObject pauseMenu;
+
     public delegate void Pause();
 
     public static event Pause OnPause;
@@ -14,12 +16,15 @@ public class PauseState : GameState
 
     public override void StartState()
     {
+        pauseMenu = GameObject.FindGameObjectWithTag("PauseMenu");
+
         Debug.Log("Starting pause State");
 
         if (OnPause != null)
         {
             OnPause();
         }
+        pauseMenu.transform.GetChild(0).gameObject.SetActive(true);
     }
 
     public override void UpdateState()
@@ -37,6 +42,7 @@ public class PauseState : GameState
             OnResume();
         }
 
+        pauseMenu.transform.GetChild(0).gameObject.SetActive(false);
         GameStateManager.CurrentGameState = GameStateManager.GamePlayState;
         Debug.Log("Ending Pause State");
         GameStateManager.CurrentGameState.StartState();

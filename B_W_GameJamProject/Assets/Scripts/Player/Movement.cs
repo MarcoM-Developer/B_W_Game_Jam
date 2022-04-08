@@ -6,12 +6,12 @@ public class Movement : MonoBehaviour
 {
     [Header("Velocity")]
 
+    private bool canMove;
     [SerializeField] private bool isAtMaxSpeed = false;
 
     [SerializeField] private FloatReference maxSpeed;           //serialize field takes reference from inspector and only if the component is on the same object
     [SerializeField] private FloatReference acceleration;              //otherwise I use getComponent method with GameObject.Find()
     [SerializeField] private FloatReference deceleration;
-
 
     [Header("Components")]
 
@@ -19,22 +19,37 @@ public class Movement : MonoBehaviour
 
     private Vector2 directionVector;
 
+    private void OnEnable()
+    {
+        PauseState.OnPause += CantMove;
+        PauseState.OnResume += CanMove;
+    }
+
     // Start is called before the first frame update
     private void Start()
     {
-        
+        CanMove();
     }
 
     // Update is called once per frame
     private void Update()
     {
-        DetectInput();
+        if (canMove)
+        {
+            DetectInput();
+        }
         FlipGameObjectLeftOrRight();
     }
 
     private void FixedUpdate()
     {
         Move();
+    }
+
+    private void OnDisable()
+    {
+        PauseState.OnPause -= CantMove;
+        PauseState.OnResume -= CanMove;
     }
 
     private void DetectInput()
@@ -109,5 +124,19 @@ public class Movement : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, 0, transform.rotation.eulerAngles.z);
         }
+    }
+
+    private void CantMove()
+    {
+        canMove = false;
+        directionVector = Vector2.zero;
+        playerRigidBody.velocity = Vector2.zero;
+        playerRigidBody.gravityScale = 0;
+    }
+
+    private void CanMove()
+    {
+        canMove = true;
+        playerRigidBody.gravityScale = 5;
     }
 }
