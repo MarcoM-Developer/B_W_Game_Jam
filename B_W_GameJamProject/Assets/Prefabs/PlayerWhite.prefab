@@ -194,7 +194,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scripts:
   - {fileID: 7252736446462786970}
-  - {fileID: 0}
   - {fileID: 7252736448132094147}
 --- !u!114 &7252736447099933434
 MonoBehaviour:
@@ -409,7 +408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange:
     useLocalValue: 1
-    localValue: 0.477
+    localValue: 2
     variable: {fileID: 11400000, guid: 05a7099d66a90374f89baaff9f375b91, type: 2}
   player: {fileID: 7252736446462786950}
   playerStateManager: {fileID: 7252736447099933436}

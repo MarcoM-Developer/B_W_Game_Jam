@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb23518621e6241fb9b38f137ebede71, type: 3}
+  m_Name: tempBlackWall
+  m_EditorClassIdentifier: 
+  propagatesSignal: 1
+  type: tempBlackWall
+  tiles:
+  - {fileID: 11400000, guid: 01e19e5ba947a4911aae57b5a97d4a68, type: 2}
+  isTemp: 1
+  isWire: 0
+  isCheckerboard: 0
