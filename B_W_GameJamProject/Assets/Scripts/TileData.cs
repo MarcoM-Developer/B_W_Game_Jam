@@ -19,7 +19,7 @@ public class TileData : ScriptableObject
 
     public TileBase[] tiles;
 
-    public bool isTemp, isWire, isCheckerboard;
+    public bool isTemp, isWire, isCheckerboard, isSwitch;
     //public float spreadChance, spreadInterval, burnTime;
 }
 

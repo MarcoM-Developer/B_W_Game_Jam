@@ -1,0 +1,4872 @@
+fileFormatVersion: 2
+guid: 0749f59632c454f9d81cc069a2a4e3a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6259850088066044677
+    second: wire_W_0
+  - first:
+      213: 628972839051127928
+    second: wire_W_1
+  - first:
+      213: -2602928430394315840
+    second: wire_W_2
+  - first:
+      213: -9054060002478127121
+    second: wire_W_3
+  - first:
+      213: -1266964871648224303
+    second: wire_W_4
+  - first:
+      213: -1829996437580971284
+    second: wire_W_5
+  - first:
+      213: -5111497747923360286
+    second: wire_W_6
+  - first:
+      213: 3678004621762509676
+    second: wire_W_7
+  - first:
+      213: -5516219641381985849
+    second: wire_W_8
+  - first:
+      213: -8971842720775644429
+    second: wire_W_9
+  - first:
+      213: -7370466678989832893
+    second: wire_W_10
+  - first:
+      213: -4717491747731940881
+    second: wire_W_11
+  - first:
+      213: -6427510330923585346
+    second: wire_W_12
+  - first:
+      213: -8332449490075468289
+    second: wire_W_13
+  - first:
+      213: 7911723539777555990
+    second: wire_W_14
+  - first:
+      213: -3265678130420208707
+    second: wire_W_15
+  - first:
+      213: 4594980711055183251
+    second: wire_W_16
+  - first:
+      213: 3492630581270130498
+    second: wire_W_17
+  - first:
+      213: -4305076465099259227
+    second: wire_W_18
+  - first:
+      213: -7228952941069641370
+    second: wire_W_19
+  - first:
+      213: 1154187493615295728
+    second: wire_W_20
+  - first:
+      213: -8138541679702529003
+    second: wire_W_21
+  - first:
+      213: 3990310629001333643
+    second: wire_W_22
+  - first:
+      213: -3667228835501170134
+    second: wire_W_23
+  - first:
+      213: 4665993147969224358
+    second: wire_W_24
+  - first:
+      213: 9133653887110141110
+    second: wire_W_25
+  - first:
+      213: -7623369081560675383
+    second: wire_W_26
+  - first:
+      213: 4780297026072577229
+    second: wire_W_27
+  - first:
+      213: 4360453711626717728
+    second: wire_W_28
+  - first:
+      213: -4580744729643366882
+    second: wire_W_29
+  - first:
+      213: 1596939721176153066
+    second: wire_W_30
+  - first:
+      213: 5433829156127166770
+    second: wire_W_31
+  - first:
+      213: 6384154624704202331
+    second: wire_W_32
+  - first:
+      213: -244907645880267807
+    second: wire_W_33
+  - first:
+      213: -2575978819195983851
+    second: wire_W_34
+  - first:
+      213: 2454389573788936303
+    second: wire_W_35
+  - first:
+      213: -8591940885731204277
+    second: wire_W_36
+  - first:
+      213: -8789069609300968563
+    second: wire_W_37
+  - first:
+      213: -1370339607611551302
+    second: wire_W_38
+  - first:
+      213: 1989162713784415715
+    second: wire_W_39
+  - first:
+      213: 4244665952607224429
+    second: wire_W_40
+  - first:
+      213: -5736291452982711658
+    second: wire_W_41
+  - first:
+      213: -5674938518336439598
+    second: wire_W_42
+  - first:
+      213: 5976262370094614752
+    second: wire_W_43
+  - first:
+      213: 5149875111322852073
+    second: wire_W_44
+  - first:
+      213: 6757446858461526980
+    second: wire_W_45
+  - first:
+      213: 4169221239846270696
+    second: wire_W_46
+  - first:
+      213: 1366037638232091172
+    second: wire_W_47
+  - first:
+      213: 6998305978574685215
+    second: wire_W_48
+  - first:
+      213: 170619768492220018
+    second: wire_W_49
+  - first:
+      213: -8532262492243221135
+    second: wire_W_50
+  - first:
+      213: 1863193467237951827
+    second: wire_W_51
+  - first:
+      213: -7082589017228522958
+    second: wire_W_52
+  - first:
+      213: -5340768329912084806
+    second: wire_W_53
+  - first:
+      213: 6254386207510660317
+    second: wire_W_54
+  - first:
+      213: 2407086758554761959
+    second: wire_W_55
+  - first:
+      213: -6223792045760297286
+    second: wire_W_56
+  - first:
+      213: 4205259399285849416
+    second: wire_W_57
+  - first:
+      213: -7486368800478855310
+    second: wire_W_58
+  - first:
+      213: 827628584948413012
+    second: wire_W_59
+  - first:
+      213: 8406886063411516411
+    second: wire_W_60
+  - first:
+      213: -3131028950402458756
+    second: wire_W_61
+  - first:
+      213: -7414850747749624655
+    second: wire_W_62
+  - first:
+      213: 3273703847084885486
+    second: wire_W_63
+  - first:
+      213: 910092869820795594
+    second: wire_W_64
+  - first:
+      213: -7023151592328516218
+    second: wire_W_65
+  - first:
+      213: 7260586632868635577
+    second: wire_W_66
+  - first:
+      213: 4389117137215195094
+    second: wire_W_67
+  - first:
+      213: 6438375433042945912
+    second: wire_W_68
+  - first:
+      213: 5342458076211994957
+    second: wire_W_69
+  - first:
+      213: -7141611193144011446
+    second: wire_W_70
+  - first:
+      213: -7595508491773691498
+    second: wire_W_71
+  - first:
+      213: 3713310063436015410
+    second: wire_W_72
+  - first:
+      213: -22122658040807208
+    second: wire_W_73
+  - first:
+      213: 1315412571469092386
+    second: wire_W_74
+  - first:
+      213: 510697350271521395
+    second: wire_W_75
+  - first:
+      213: -5039510091617807515
+    second: wire_W_76
+  - first:
+      213: 4181342756268791078
+    second: wire_W_77
+  - first:
+      213: 2346389025464023395
+    second: wire_W_78
+  - first:
+      213: 3407034448438877229
+    second: wire_W_79
+  - first:
+      213: -8457857104105278996
+    second: wire_W_80
+  - first:
+      213: -8831549637874922025
+    second: wire_W_81
+  - first:
+      213: -926786573350098272
+    second: wire_W_82
+  - first:
+      213: -1730681507186972561
+    second: wire_W_83
+  - first:
+      213: 5402655841216751081
+    second: wire_W_84
+  - first:
+      213: 5106779706475079845
+    second: wire_W_85
+  - first:
+      213: -6575548905912987276
+    second: wire_W_86
+  - first:
+      213: -6699876396280898043
+    second: wire_W_87
+  - first:
+      213: 2017341191725595167
+    second: wire_W_88
+  - first:
+      213: 8707783107157538100
+    second: wire_W_89
+  - first:
+      213: -1876525645062702483
+    second: wire_W_90
+  - first:
+      213: 3511441989791786693
+    second: wire_W_91
+  - first:
+      213: -3783864522621265658
+    second: wire_W_92
+  - first:
+      213: -6871466717401820696
+    second: wire_W_93
+  - first:
+      213: 1154707879374920887
+    second: wire_W_94
+  - first:
+      213: 5368777162744436817
+    second: wire_W_95
+  - first:
+      213: -263027322641847804
+    second: wire_W_96
+  - first:
+      213: 6074336365635348642
+    second: wire_W_97
+  - first:
+      213: 4354061149343703628
+    second: wire_W_98
+  - first:
+      213: -5552737651644038834
+    second: wire_W_99
+  - first:
+      213: 2707792636482747493
+    second: wire_W_100
+  - first:
+      213: -3784105193614835669
+    second: wire_W_101
+  - first:
+      213: 1546134318790848910
+    second: wire_W_102
+  - first:
+      213: 1770043834508093391
+    second: wire_W_103
+  - first:
+      213: 5659315773304724022
+    second: wire_W_104
+  - first:
+      213: 3060002246557725769
+    second: wire_W_105
+  - first:
+      213: -4242570943670480944
+    second: wire_W_106
+  - first:
+      213: 3879789138403572164
+    second: wire_W_107
+  - first:
+      213: 7400546867030657220
+    second: wire_W_108
+  - first:
+      213: -2344732524082578727
+    second: wire_W_109
+  - first:
+      213: 5837114249842881004
+    second: wire_W_110
+  - first:
+      213: 530925750077341575
+    second: wire_W_111
+  - first:
+      213: 5555788328716937664
+    second: wire_W_112
+  - first:
+      213: -9062922896109846285
+    second: wire_W_113
+  - first:
+      213: -8091490442465589935
+    second: wire_W_114
+  - first:
+      213: -5943344155162290711
+    second: wire_W_115
+  - first:
+      213: 4049835511038727799
+    second: wire_W_116
+  - first:
+      213: 6940158286209766326
+    second: wire_W_117
+  - first:
+      213: -5054552147619340369
+    second: wire_W_118
+  - first:
+      213: 1754555502323923017
+    second: wire_W_119
+  - first:
+      213: -8511444585483633625
+    second: wire_W_120
+  - first:
+      213: 4924748001077385407
+    second: wire_W_121
+  - first:
+      213: 3226029221616839061
+    second: wire_W_122
+  - first:
+      213: -355386201778963322
+    second: wire_W_123
+  - first:
+      213: 5042437781494670944
+    second: wire_W_124
+  - first:
+      213: -3283746940597133001
+    second: wire_W_125
+  - first:
+      213: 3434137969946223347
+    second: wire_W_126
+  - first:
+      213: 4340374880492874142
+    second: wire_W_127
+  - first:
+      213: -1281880609392935100
+    second: wire_W_128
+  - first:
+      213: 8825365891626401058
+    second: wire_W_129
+  - first:
+      213: 1340125219151473692
+    second: wire_W_130
+  - first:
+      213: -2946179103707533339
+    second: wire_W_131
+  - first:
+      213: 2554250529437753018
+    second: wire_W_132
+  - first:
+      213: 3448799048385494005
+    second: wire_W_133
+  - first:
+      213: -3442579806273055456
+    second: wire_W_134
+  - first:
+      213: -967326485569293772
+    second: wire_W_135
+  - first:
+      213: -7617498721830397767
+    second: wire_W_136
+  - first:
+      213: -3139265784588331412
+    second: wire_W_137
+  - first:
+      213: 2579535086731743343
+    second: wire_W_138
+  - first:
+      213: -3977695348604267979
+    second: wire_W_139
+  - first:
+      213: 5401254273659052656
+    second: wire_W_140
+  - first:
+      213: -3030673666498302732
+    second: wire_W_141
+  - first:
+      213: -7220342575938366689
+    second: wire_W_142
+  - first:
+      213: -7312702494055694989
+    second: wire_W_143
+  - first:
+      213: -845533813499173352
+    second: wire_W_144
+  - first:
+      213: -4330227510404347713
+    second: wire_W_145
+  - first:
+      213: -7914810872741704568
+    second: wire_W_146
+  - first:
+      213: 8614609503912127554
+    second: wire_W_147
+  - first:
+      213: -3993336125263807051
+    second: wire_W_148
+  - first:
+      213: 8424253976131039906
+    second: wire_W_149
+  - first:
+      213: 5221409613224061547
+    second: wire_W_150
+  - first:
+      213: 6263776279790119897
+    second: wire_W_151
+  - first:
+      213: -2188914474476252948
+    second: wire_W_152
+  - first:
+      213: 2121961362749148627
+    second: wire_W_153
+  - first:
+      213: -6847927764245586601
+    second: wire_W_154
+  - first:
+      213: 8040314329172216425
+    second: wire_W_155
+  - first:
+      213: -7665471556919288621
+    second: wire_W_156
+  - first:
+      213: 6061809739591941273
+    second: wire_W_157
+  - first:
+      213: 4438085229679457585
+    second: wire_W_158
+  - first:
+      213: -477262023916436926
+    second: wire_W_159
+  - first:
+      213: -3577173617516442519
+    second: wire_W_160
+  - first:
+      213: -7452985322747123439
+    second: wire_W_161
+  - first:
+      213: 1437104316797084214
+    second: wire_W_162
+  - first:
+      213: -1518384251284278266
+    second: wire_W_163
+  - first:
+      213: 3897475177585703044
+    second: wire_W_164
+  - first:
+      213: -5139269932296641853
+    second: wire_W_165
+  - first:
+      213: -1270878532642455507
+    second: wire_W_166
+  - first:
+      213: -8023485743941788002
+    second: wire_W_167
+  - first:
+      213: 5967329515164271905
+    second: wire_W_168
+  - first:
+      213: 907036557149137845
+    second: wire_W_169
+  - first:
+      213: -335700533715660477
+    second: wire_W_170
+  - first:
+      213: -1905901645644061346
+    second: wire_W_171
+  - first:
+      213: -8616887663157088921
+    second: wire_W_172
+  - first:
+      213: 6065148260707134248
+    second: wire_W_173
+  - first:
+      213: 5802736984393151893
+    second: wire_W_174
+  - first:
+      213: -7682800680037955809
+    second: wire_W_175
+  - first:
+      213: -2775829758498539424
+    second: wire_W_176
+  - first:
+      213: -2628533843546689075
+    second: wire_W_177
+  - first:
+      213: 7129447685732515642
+    second: wire_W_178
+  - first:
+      213: 2680726764940175045
+    second: wire_W_179
+  - first:
+      213: 8197913847247982759
+    second: wire_W_180
+  - first:
+      213: 3836053858379886165
+    second: wire_W_181
+  - first:
+      213: -7536263057726923877
+    second: wire_W_182
+  - first:
+      213: 4754070938212095095
+    second: wire_W_183
+  - first:
+      213: -5874605960876620825
+    second: wire_W_184
+  - first:
+      213: 687409782675161627
+    second: wire_W_185
+  - first:
+      213: -6707020269584763426
+    second: wire_W_186
+  - first:
+      213: 8994345449666155958
+    second: wire_W_187
+  - first:
+      213: -1244328848262111228
+    second: wire_W_188
+  - first:
+      213: 8476744072385717391
+    second: wire_W_189
+  - first:
+      213: -7961211134038991274
+    second: wire_W_190
+  - first:
+      213: 6244277062392597761
+    second: wire_W_191
+  - first:
+      213: -954599654896566301
+    second: wire_W_192
+  - first:
+      213: -35348164067298944
+    second: wire_W_193
+  - first:
+      213: -5451588157696360688
+    second: wire_W_194
+  - first:
+      213: -7537870483314169160
+    second: wire_W_195
+  - first:
+      213: -5648891284765752410
+    second: wire_W_196
+  - first:
+      213: 4803018298455046115
+    second: wire_W_197
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wire_W_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc20a1d28b8029a0800000000000000
+      internalID: -6259850088066044677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ce205f67f8ab800800000000000000
+      internalID: 628972839051127928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cbe49a226a80ebd0800000000000000
+      internalID: -2602928430394315840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe70831f564895280800000000000000
+      internalID: -9054060002478127121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db52827926da6ee0800000000000000
+      internalID: -1266964871648224303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce281cd8feb8a96e0800000000000000
+      internalID: -1829996437580971284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5a1d051ef4019b0800000000000000
+      internalID: -5111497747923360286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b366277b5ea0330800000000000000
+      internalID: 3678004621762509676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1e46c56737273b0800000000000000
+      internalID: -5516219641381985849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa5e7f849c9d7380800000000000000
+      internalID: -8971842720775644429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d35f91b97d6b990800000000000000
+      internalID: -7370466678989832893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9d991ff3a188eb0800000000000000
+      internalID: -4717491747731940881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_12
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb0752f8865ecc6a0800000000000000
+      internalID: -6427510330923585346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_13
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffdba2306513d5c80800000000000000
+      internalID: -8332449490075468289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_14
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e898d24a61ccd60800000000000000
+      internalID: 7911723539777555990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_15
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbbaa8dea0bfda2d0800000000000000
+      internalID: -3265678130420208707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_16
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d47388c96a4cf30800000000000000
+      internalID: 4594980711055183251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_17
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 1379
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fa5484201587030800000000000000
+      internalID: 3492630581270130498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a24dd6a3cb4144c0800000000000000
+      internalID: -4305076465099259227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_19
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6695789c9999dab90800000000000000
+      internalID: -7228952941069641370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc5329096f740010800000000000000
+      internalID: 1154187493615295728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_21
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51cae9f46771e0f80800000000000000
+      internalID: -8138541679702529003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_22
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b0711206e606730800000000000000
+      internalID: 3990310629001333643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_23
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2222edcdc26b1dc0800000000000000
+      internalID: -3667228835501170134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_24
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aebc1deb00f0c040800000000000000
+      internalID: 4665993147969224358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_25
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b4d09271d141ce70800000000000000
+      internalID: 9133653887110141110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_26
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb41ede53a543690800000000000000
+      internalID: -7623369081560675383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_27
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc489ef61d6075240800000000000000
+      internalID: 4780297026072577229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_28
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a4b0d4c81738c30800000000000000
+      internalID: 4360453711626717728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_29
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e164dde20fced60c0800000000000000
+      internalID: -4580744729643366882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_30
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb7a682738792610800000000000000
+      internalID: 1596939721176153066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_31
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231de1de3d6d86b40800000000000000
+      internalID: 5433829156127166770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_32
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5649a47ec2199850800000000000000
+      internalID: 6384154624704202331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_33
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb878c2bc9e99cf0800000000000000
+      internalID: -244907645880267807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_34
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518a4ec79e8404cd0800000000000000
+      internalID: -2575978819195983851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_35
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 1251
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68ac1e305ebf0220800000000000000
+      internalID: 2454389573788936303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4326d6594b43c880800000000000000
+      internalID: -8591940885731204277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_37
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b3f6fb1c3f60680800000000000000
+      internalID: -8789069609300968563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab15aa223639bfce0800000000000000
+      internalID: -1370339607611551302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_39
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5729bf2fcea9b10800000000000000
+      internalID: 1989162713784415715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_40
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d624957d13518ea30800000000000000
+      internalID: 4244665952607224429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_41
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a2bd0d0599460b0800000000000000
+      internalID: -5736291452982711658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_42
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2daff541c719e31b0800000000000000
+      internalID: -5674938518336439598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_43
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8060646f2ffe250800000000000000
+      internalID: 5976262370094614752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_44
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea1608e028087740800000000000000
+      internalID: 5149875111322852073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_45
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cbbd238d1647cd50800000000000000
+      internalID: 6757446858461526980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_46
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6fc0fc0ac0cd930800000000000000
+      internalID: 4169221239846270696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_47
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a23a09ef325f210800000000000000
+      internalID: 1366037638232091172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_48
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14cf6a753afe1160800000000000000
+      internalID: 6998305978574685215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_49
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e53a486c92e5200800000000000000
+      internalID: 170619768492220018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_50
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175247b1870579980800000000000000
+      internalID: -8532262492243221135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_51
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359eb8a36946bd910800000000000000
+      internalID: 1863193467237951827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_52
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ac20260d695bd90800000000000000
+      internalID: -7082589017228522958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_53
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 1123
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab61fe32087c1e5b0800000000000000
+      internalID: -5340768329912084806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd486ca5e1b0cc650800000000000000
+      internalID: 6254386207510660317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_55
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eaf33357a0b76120800000000000000
+      internalID: 2407086758554761959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_56
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab64e840c16a0a9a0800000000000000
+      internalID: -6223792045760297286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_57
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d3ecaa4251c5a30800000000000000
+      internalID: 4205259399285849416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_58
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ff3ed8d331b1890800000000000000
+      internalID: -7486368800478855310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_59
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4523fc320d35c7b00800000000000000
+      internalID: 827628584948413012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_60
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf353d445524ba470800000000000000
+      internalID: 8406886063411516411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_61
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b1ccd22c95c84d0800000000000000
+      internalID: -3131028950402458756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_62
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b418ddc788291990800000000000000
+      internalID: -7414850747749624655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_63
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee50359dd488e6d20800000000000000
+      internalID: 3273703847084885486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_64
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acac84aa4ac41ac00800000000000000
+      internalID: 910092869820795594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_65
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d2a8746d0c88e90800000000000000
+      internalID: -7023151592328516218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_66
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3a5190319c2c460800000000000000
+      internalID: 7260586632868635577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_67
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d78a4128c649ec30800000000000000
+      internalID: 4389117137215195094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_68
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87760292854b95950800000000000000
+      internalID: 6438375433042945912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_69
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4168049059342a40800000000000000
+      internalID: 5342458076211994957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_70
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4592bc2576e3ec90800000000000000
+      internalID: -7141611193144011446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_71
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 995
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699bd5bf445579690800000000000000
+      internalID: -7595508491773691498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237acf724d3588330800000000000000
+      internalID: 3713310063436015410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_73
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d08df94f8761bff0800000000000000
+      internalID: -22122658040807208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_74
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2269f7fa3c8414210800000000000000
+      internalID: 1315412571469092386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_75
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372daa6c88c561700800000000000000
+      internalID: 510697350271521395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_76
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563df1ba540101ab0800000000000000
+      internalID: -5039510091617807515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_77
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625dd87451d170a30800000000000000
+      internalID: 4181342756268791078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_78
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36978af036c009020800000000000000
+      internalID: 2346389025464023395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_79
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2cd7b497c7384f20800000000000000
+      internalID: 3407034448438877229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_80
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce17ac486c7af9a80800000000000000
+      internalID: -8457857104105278996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_81
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd4c3a5568007580800000000000000
+      internalID: -8831549637874922025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_82
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aaadd895846323f0800000000000000
+      internalID: -926786573350098272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_83
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6868c8b6526bf7e0800000000000000
+      internalID: -1730681507186972561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_84
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5e963fcd61afa40800000000000000
+      internalID: 5402655841216751081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_85
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a8ee9e061deed640800000000000000
+      internalID: 5106779706475079845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_86
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47119dbdb15feb4a0800000000000000
+      internalID: -6575548905912987276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_87
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e17a04ae14503a0800000000000000
+      internalID: -6699876396280898043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_88
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a319320290ffb10800000000000000
+      internalID: 2017341191725595167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_89
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 867
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435b543a99248d870800000000000000
+      internalID: 8707783107157538100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a702a3edd35f5e0800000000000000
+      internalID: -1876525645062702483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_91
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c62ee2a2e52bb030800000000000000
+      internalID: 3511441989791786693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_92
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609d4f2b3430d7bc0800000000000000
+      internalID: -3783864522621265658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_93
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e158575d65a3a0a0800000000000000
+      internalID: -6871466717401820696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_94
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc9c79c2b8560010800000000000000
+      internalID: 1154707879374920887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_95
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1589c9f626ab18a40800000000000000
+      internalID: 5368777162744436817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_96
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ae5bb2b0a895cf0800000000000000
+      internalID: -263027322641847804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_97
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8aee7cdb06c4450800000000000000
+      internalID: 6074336365635348642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_98
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42e5f8eb8bbc6c30800000000000000
+      internalID: 4354061149343703628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_99
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4102d68686b0f2b0800000000000000
+      internalID: -5552737651644038834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_100
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56cf8fe6e03049520800000000000000
+      internalID: 2707792636482747493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_101
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2080ed10682c7bc0800000000000000
+      internalID: -3784105193614835669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_102
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81b19e98f8f47510800000000000000
+      internalID: 1546134318790848910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_103
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7a9b84d75709810800000000000000
+      internalID: 1770043834508093391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_104
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ad79326bde98e40800000000000000
+      internalID: 5659315773304724022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_105
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94478f5a4df477a20800000000000000
+      internalID: 3060002246557725769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_106
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df8020743c5f15c0800000000000000
+      internalID: -4242570943670480944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_107
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 739
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9b6f55aa7c7d530800000000000000
+      internalID: 3879789138403572164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c80ef07a2604b660800000000000000
+      internalID: 7400546867030657220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_109
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dab0c83136d57fd0800000000000000
+      internalID: -2344732524082578727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_110
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1714fdb78910150800000000000000
+      internalID: 5837114249842881004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_111
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78fb77f182a3e5700800000000000000
+      internalID: 530925750077341575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_112
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c92f649c002a1d40800000000000000
+      internalID: 5555788328716937664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_113
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f04e96b4a70a3280800000000000000
+      internalID: -9062922896109846285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_114
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155ce59205045bf80800000000000000
+      internalID: -8091490442465589935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_115
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e558a5eafff48da0800000000000000
+      internalID: -5943344155162290711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_116
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776d93ab0f7e33830800000000000000
+      internalID: 4049835511038727799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_117
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b35486d035605060800000000000000
+      internalID: 6940158286209766326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_118
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf16761a9f9ad9b0800000000000000
+      internalID: -5054552147619340369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_119
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94879beeeee695810800000000000000
+      internalID: 1754555502323923017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_120
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c73dcbe3641e980800000000000000
+      internalID: -8511444585483633625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_121
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8588ce638385440800000000000000
+      internalID: 4924748001077385407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_122
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 599608d1c7825cc20800000000000000
+      internalID: 3226029221616839061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_123
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68cb3e4e12a611bf0800000000000000
+      internalID: -355386201778963322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_124
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066afff32765af540800000000000000
+      internalID: 5042437781494670944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_125
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 611
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731ae693e89cd62d0800000000000000
+      internalID: -3283746940597133001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 483
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f26350f94288af20800000000000000
+      internalID: 3434137969946223347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_127
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 483
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e996ecf15fb1c3c30800000000000000
+      internalID: 4340374880492874142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_128
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 483
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f3ca0a068d53ee0800000000000000
+      internalID: -1281880609392935100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_129
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 483
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d7d37058ff97a70800000000000000
+      internalID: 8825365891626401058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_130
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 483
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ce01a59c4199210800000000000000
+      internalID: 1340125219151473692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_131
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 483
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef65d6f6b11d17d0800000000000000
+      internalID: -2946179103707533339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_132
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 483
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe9d72d255827320800000000000000
+      internalID: 2554250529437753018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_133
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 483
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbf8b446789cdf20800000000000000
+      internalID: 3448799048385494005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_134
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 483
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0255920e7ef7930d0800000000000000
+      internalID: -3442579806273055456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_135
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 483
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432b0ddbfad5392f0800000000000000
+      internalID: -967326485569293772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_136
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 483
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b89e409545394690800000000000000
+      internalID: -7617498721830397767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_137
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 483
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c661316c6661f64d0800000000000000
+      internalID: -3139265784588331412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_138
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 483
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f605d429e795cc320800000000000000
+      internalID: 2579535086731743343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_139
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 483
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53218b9b7236cc8c0800000000000000
+      internalID: -3977695348604267979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_140
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 483
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0722203152c15fa40800000000000000
+      internalID: 5401254273659052656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_141
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 483
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fcec368b52e0f5d0800000000000000
+      internalID: -3030673666498302732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_142
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 483
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f139094aea03ccb90800000000000000
+      internalID: -7220342575938366689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_143
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 483
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d72b573df048a90800000000000000
+      internalID: -7312702494055694989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 355
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816ecc8f97f0444f0800000000000000
+      internalID: -845533813499173352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_145
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 355
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb889b59501f7e3c0800000000000000
+      internalID: -4330227510404347713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_146
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 355
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88cc4d91271f82290800000000000000
+      internalID: -7914810872741704568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_147
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 355
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ce26f93bd3d8770800000000000000
+      internalID: 8614609503912127554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_148
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 355
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd7ae0a3f1d498c0800000000000000
+      internalID: -3993336125263807051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_149
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 355
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a276f09b56f8e470800000000000000
+      internalID: 8424253976131039906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_150
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 355
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6aa707016c267840800000000000000
+      internalID: 5221409613224061547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_151
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 355
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db686de6576de650800000000000000
+      internalID: 6263776279790119897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_152
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 355
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0d12102e96f91e0800000000000000
+      internalID: -2188914474476252948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_153
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 355
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd44c5ed98b27d10800000000000000
+      internalID: 2121961362749148627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_154
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 355
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d5b94faf547f0a0800000000000000
+      internalID: -6847927764245586601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_155
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 355
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a0bc0784fe49f60800000000000000
+      internalID: 8040314329172216425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_156
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 355
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc17fd7b36ce9590800000000000000
+      internalID: -7665471556919288621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_157
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 355
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c716067dfdf1450800000000000000
+      internalID: 6061809739591941273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_158
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 355
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135b3fd900f379d30800000000000000
+      internalID: 4438085229679457585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_159
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 355
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2424da7c7bc6069f0800000000000000
+      internalID: -477262023916436926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_160
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 355
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c880c2c835b5ec0800000000000000
+      internalID: -3577173617516442519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_161
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 355
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1192579265da19890800000000000000
+      internalID: -7452985322747123439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_162
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 227
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632eed313ce91f310800000000000000
+      internalID: 1437104316797084214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_163
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 227
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60437a5719d9deae0800000000000000
+      internalID: -1518384251284278266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_164
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 227
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488f5e8360d961630800000000000000
+      internalID: 3897475177585703044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_165
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 227
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2ec90c935ada8b0800000000000000
+      internalID: -5139269932296641853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_166
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 227
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d204d2d35beec5ee0800000000000000
+      internalID: -1270878532642455507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_167
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 227
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e50f3e93ad6a090800000000000000
+      internalID: -8023485743941788002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_168
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 227
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1250219e39630d250800000000000000
+      internalID: 5967329515164271905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_169
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 227
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbea2b61f0769c00800000000000000
+      internalID: 907036557149137845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_170
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 227
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34118f8a42a575bf0800000000000000
+      internalID: -335700533715660477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_171
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 227
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55ad8a1d80ec85e0800000000000000
+      internalID: -1905901645644061346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_172
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 227
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d6318135aaa6880800000000000000
+      internalID: -8616887663157088921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_173
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 227
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82be685653cbb2450800000000000000
+      internalID: 6065148260707134248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_174
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 227
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59576c70b86778050800000000000000
+      internalID: 5802736984393151893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_175
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 227
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17453a9c75316590800000000000000
+      internalID: -7682800680037955809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_176
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 227
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0687cb7aa854a79d0800000000000000
+      internalID: -2775829758498539424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_177
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 227
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1be475562958bd0800000000000000
+      internalID: -2628533843546689075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_178
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 227
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f31d095e2e0f260800000000000000
+      internalID: 7129447685732515642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_179
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 227
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c624242acad33520800000000000000
+      internalID: 2680726764940175045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_180
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 99
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0d87ca537d4c170800000000000000
+      internalID: 8197913847247982759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_181
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 99
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55eefffe8a66c3530800000000000000
+      internalID: 3836053858379886165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_182
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 99
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b99468da0d96790800000000000000
+      internalID: -7536263057726923877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_183
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 99
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774d325845ad9f140800000000000000
+      internalID: 4754070938212095095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_184
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 99
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e38e8ae005397ea0800000000000000
+      internalID: -5874605960876620825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_185
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 99
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b124b772e8b2a8900800000000000000
+      internalID: 687409782675161627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_186
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 99
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed53e02a990ebe2a0800000000000000
+      internalID: -6707020269584763426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_187
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 99
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5908a488552dc70800000000000000
+      internalID: 8994345449666155958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_188
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 99
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400e09751814bbee0800000000000000
+      internalID: -1244328848262111228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_189
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 99
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84e27672d173a570800000000000000
+      internalID: 8476744072385717391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_190
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 99
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e98b567a8148190800000000000000
+      internalID: -7961211134038991274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_191
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 99
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10dc70797e028a650800000000000000
+      internalID: 6244277062392597761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_192
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 99
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3effd2beba490c2f0800000000000000
+      internalID: -954599654896566301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_193
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 99
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0817e45380b628ff0800000000000000
+      internalID: -35348164067298944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_194
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 99
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f38ce44711854b0800000000000000
+      internalID: -5451588157696360688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_195
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 99
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba28279bba146790800000000000000
+      internalID: -7537870483314169160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_196
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 99
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3ccbc3e4b1b91b0800000000000000
+      internalID: -5648891284765752410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wire_W_197
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 99
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e73d19e1bfb7a240800000000000000
+      internalID: 4803018298455046115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

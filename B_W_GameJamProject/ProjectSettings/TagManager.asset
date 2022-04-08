@@ -45,7 +45,10 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: grid
+  - name: black-grid
+    uniqueID: 3522185113
+    locked: 0
+  - name: white-grid
     uniqueID: 2195097061
     locked: 0
   - name: players
