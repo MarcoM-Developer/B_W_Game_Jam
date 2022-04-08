@@ -83,6 +83,7 @@ public class GridManager : MonoBehaviour
     private bool whiteOnSwitch = false; 
     private bool blackOnSwitch = false;
 
+    // TODO: Implement white wire controls
 
     // Update is called once per frame
     void Update()
@@ -141,7 +142,7 @@ public class GridManager : MonoBehaviour
 		}
 
         // Mouse (for testing)
-        if (Input.GetMouseButtonDown(0))
+        /* if (Input.GetMouseButtonDown(0))
         {
             // Test the activation
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -167,7 +168,7 @@ public class GridManager : MonoBehaviour
                 Spread(position);
                 PostSpread(position);
             }
-        }
+        }*/
     }
 
 
@@ -235,7 +236,7 @@ public class GridManager : MonoBehaviour
                     if (data.isTemp)
                     {
                         blackTileMap.SetTile(position, checkerboard.tiles[0]);
-                        whiteTileMap.SetTile(position, null);
+                        whiteTileMap.SetTile(position, checkerboard.tiles[0]);
                         activeTiles.Add(position);
                         Spread(position);
                     }
