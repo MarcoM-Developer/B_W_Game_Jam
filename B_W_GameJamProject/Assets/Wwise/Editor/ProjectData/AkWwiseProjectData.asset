@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 4257b23a1d85d4438948312a4824cde6
     GuidInternal: 
-    m_lastTime: -8585522609026644701
+    m_lastTime: -8585521708612872275
     List:
     - name: Main
       guid: bcb0127336087a4b926a0e27bf590cbf
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a9e517562d6f3f448ca11dbc6ef2bc46
     GuidInternal: 
-    m_lastTime: -8585522626099716706
+    m_lastTime: -8585521709213250449
     List:
     - name: Play_BG_Music
       guid: 4c01c11892c9314190a57ac9b8a31630
@@ -111,8 +111,8 @@ MonoBehaviour:
         guid: 4c01c11892c9314190a57ac9b8a31630
       Path: Events\Default Work Unit\Play_BG_Music
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 60
+      minDuration: 60
     - name: Play_Btn_Wire_Switch
       guid: 9e758aeeeb9d9d41807fd3ba3deea7e1
       id: 44324533
@@ -128,8 +128,8 @@ MonoBehaviour:
         guid: 9e758aeeeb9d9d41807fd3ba3deea7e1
       Path: Events\Default Work Unit\Play_Btn_Wire_Switch
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.731844
+      minDuration: 0.615405
     - name: Play_Itm_Pu_Generic
       guid: f28ca8dd8a05ad448132528e19eae0bb
       id: 3893138630
@@ -145,8 +145,8 @@ MonoBehaviour:
         guid: f28ca8dd8a05ad448132528e19eae0bb
       Path: Events\Default Work Unit\Play_Itm_Pu_Generic
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.239646
+      minDuration: 2.239646
     - name: Play_Obj_Map_Rotate
       guid: 999fe2d31af6f648ac1929427bc1bf44
       id: 1549592196
@@ -162,8 +162,8 @@ MonoBehaviour:
         guid: 999fe2d31af6f648ac1929427bc1bf44
       Path: Events\Default Work Unit\Play_Obj_Map_Rotate
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.716926
+      minDuration: 1.486063
     - name: Play_Player_Hit_Wall
       guid: 7cc8a84df470224691fa09ef95212746
       id: 4184715450
@@ -179,8 +179,8 @@ MonoBehaviour:
         guid: 7cc8a84df470224691fa09ef95212746
       Path: Events\Default Work Unit\Play_Player_Hit_Wall
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.342335
+      minDuration: 0.221999
     - name: Play_Plyr_Collide_Switch
       guid: a0bb3a2189288142b33b7ae35c4797dd
       id: 3386221183
@@ -196,8 +196,8 @@ MonoBehaviour:
         guid: a0bb3a2189288142b33b7ae35c4797dd
       Path: Events\Default Work Unit\Play_Plyr_Collide_Switch
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.620521
+      minDuration: 0.620521
     - name: Play_Plyr_Jump
       guid: 7d4dc31627e775419d1b7678b0621d77
       id: 1864999798
@@ -213,8 +213,8 @@ MonoBehaviour:
         guid: 7d4dc31627e775419d1b7678b0621d77
       Path: Events\Default Work Unit\Play_Plyr_Jump
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.103383
+      minDuration: 0.103383
     - name: Play_Plyr_Land
       guid: dac93711290daf4a8eba0d552aee3ee2
       id: 4227840961
@@ -230,8 +230,8 @@ MonoBehaviour:
         guid: dac93711290daf4a8eba0d552aee3ee2
       Path: Events\Default Work Unit\Play_Plyr_Land
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.167258
+      minDuration: 0.108464
     - name: Play_Plyr_Movement
       guid: e0431bd5280c77468f06f6f9a288f9eb
       id: 2271622313
@@ -298,8 +298,8 @@ MonoBehaviour:
         guid: 37aa32b1ccf62b4fb400886fa6b8d43c
       Path: Events\Default Work Unit\Stop_Plyr_Movement
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_Test_Beep
       guid: ff03240cdbf5394eba7e81c0dbb773ec
       id: 701599435
@@ -315,8 +315,8 @@ MonoBehaviour:
         guid: ff03240cdbf5394eba7e81c0dbb773ec
       Path: Events\Default Work Unit\Stop_Test_Beep
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_Test_Beep_Lp
       guid: ee56160bf5cb574182e7513c040fe702
       id: 641054882
@@ -332,8 +332,8 @@ MonoBehaviour:
         guid: ee56160bf5cb574182e7513c040fe702
       Path: Events\Default Work Unit\Stop_Test_Beep_Lp
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -471,8 +471,8 @@ MonoBehaviour:
     m_lastTime: -8585524878874882782
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000300000004000000050000000600000007000000120000001300000014000000150000001600000017000000180000001b0000001c0000001d000000410000004200000043000000
-  AutoSyncSelection: 1
+  ExpandedWaapiItemIds: 
+  AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
   CurrentPluginConfig: 

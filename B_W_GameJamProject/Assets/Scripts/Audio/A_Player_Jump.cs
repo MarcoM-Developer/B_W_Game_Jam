@@ -21,7 +21,7 @@ RTPCs:
 States:
 -Surface type
 */
-public class A_Player : MonoBehaviour
+public class A_Player_Jump : MonoBehaviour
 {
 
     //Things to be accessed by anyone
@@ -55,7 +55,7 @@ public class A_Player : MonoBehaviour
 
         PlayerMotionLR();
        
-       // PlayerJump();
+        PlayerJump();
 
         PlayerLand();
 
