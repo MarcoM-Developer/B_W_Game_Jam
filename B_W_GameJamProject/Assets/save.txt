@@ -1,1 +1,1 @@
-{"sceneIndex":0,"playerWhitePosition":{"x":-1.7492793798446656,"y":-8.734938621520996,"z":0.0},"playerBlackPosition":{"x":2.880295515060425,"y":-12.7349271774292,"z":0.0}}
+{"sceneIndex":0,"playerWhitePosition":{"x":6.7079997062683109,"y":-9.260359764099121,"z":0.0},"playerBlackPosition":{"x":2.8804128170013429,"y":-12.7349271774292,"z":0.0}}
