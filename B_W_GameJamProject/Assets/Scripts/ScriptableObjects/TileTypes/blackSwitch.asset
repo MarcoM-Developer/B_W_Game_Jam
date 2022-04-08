@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb23518621e6241fb9b38f137ebede71, type: 3}
+  m_Name: blackSwitch
+  m_EditorClassIdentifier: 
+  propagatesSignal: 1
+  type: blackSwitch
+  tiles:
+  - {fileID: 11400000, guid: 7983f1e114e8a4b0c981236d07f9b5ed, type: 2}
+  isTemp: 0
+  isWire: 1
+  isCheckerboard: 0
+  isSwitch: 1

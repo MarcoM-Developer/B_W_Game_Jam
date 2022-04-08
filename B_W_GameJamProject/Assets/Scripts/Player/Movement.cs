@@ -1,15 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
     [Header("Velocity")]
 
+    private bool canMove;
     [SerializeField] private bool isAtMaxSpeed = false;
 
     [SerializeField] private FloatReference maxSpeed;           //serialize field takes reference from inspector and only if the component is on the same object
     [SerializeField] private FloatReference acceleration;              //otherwise I use getComponent method with GameObject.Find()
     [SerializeField] private FloatReference deceleration;
-
 
     [Header("Components")]
 
@@ -17,20 +19,26 @@ public class Movement : MonoBehaviour
 
     private Vector2 directionVector;
 
-
+    private void OnEnable()
+    {
+        PauseState.OnPause += CantMove;
+        PauseState.OnResume += CanMove;
+    }
 
     // Start is called before the first frame update
     private void Start()
     {
-
+        CanMove();
     }
 
     // Update is called once per frame
     private void Update()
     {
-        DetectInput();
+        if (canMove)
+        {
+            DetectInput();
+        }
         FlipGameObjectLeftOrRight();
-
     }
 
     private void FixedUpdate()
@@ -38,18 +46,21 @@ public class Movement : MonoBehaviour
         Move();
     }
 
+    private void OnDisable()
+    {
+        PauseState.OnPause -= CantMove;
+        PauseState.OnResume -= CanMove;
+    }
+
     private void DetectInput()
     {
         directionVector = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
     }
 
-
     private void Move()
     {
-
         if (directionVector.x > 0 || directionVector.x < 0)
         {
-
             CheckIfMaxSpeedReached();
             if (!isAtMaxSpeed)
             {
@@ -57,7 +68,7 @@ public class Movement : MonoBehaviour
             }
         }
 
-        if ((directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0))
+        if ( (directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0) )
         {
             //Debug.Log("you are not at max speed and your input is in other direction compared to your movement");
             CheckIfMaxSpeedReached();
@@ -72,16 +83,15 @@ public class Movement : MonoBehaviour
         {
             isAtMaxSpeed = false;
             StopMove();
-
         }
     }
 
     private void StopMove()
     {
-        if (Mathf.Abs(playerRigidBody.velocity.x) > 0)
-        {
-            playerRigidBody.velocity = new Vector2(0, playerRigidBody.velocity.y);
-        }
+         if (Mathf.Abs(playerRigidBody.velocity.x) > 0)
+         {
+             playerRigidBody.velocity = new Vector2(0,playerRigidBody.velocity.y);
+         }
     }
 
     private void CheckIfMaxSpeedReached()
@@ -91,7 +101,7 @@ public class Movement : MonoBehaviour
             playerRigidBody.velocity = new Vector2(maxSpeed.Value * directionVector.x, playerRigidBody.velocity.y);
             isAtMaxSpeed = true;
         }
-        else if ((Mathf.Abs(playerRigidBody.velocity.x) >= maxSpeed.Value && isAtMaxSpeed) && ((directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0)))
+        else if ((Mathf.Abs(playerRigidBody.velocity.x) >= maxSpeed.Value && isAtMaxSpeed) && ((directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0)) )
         {
             //Debug.Log("you are at max speed and your input is in other direction compared to your movement");
             isAtMaxSpeed = false;
@@ -116,5 +126,17 @@ public class Movement : MonoBehaviour
         }
     }
 
+    private void CantMove()
+    {
+        canMove = false;
+        directionVector = Vector2.zero;
+        playerRigidBody.velocity = Vector2.zero;
+        playerRigidBody.gravityScale = 0;
+    }
 
+    private void CanMove()
+    {
+        canMove = true;
+        playerRigidBody.gravityScale = 5;
+    }
 }
