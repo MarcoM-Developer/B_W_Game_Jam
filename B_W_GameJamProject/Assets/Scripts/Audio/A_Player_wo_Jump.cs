@@ -45,9 +45,7 @@ public class A_Player_wo_Jump : MonoBehaviour
 
     public void Update()
     {
-        //get and set player health RTPC
-        //AkSoundEngine.SetRTPCValue("PlayerSpeed", pMovement);
-        SetPlayerState();
+
 
         PlayerMotionLR();
 
@@ -88,19 +86,6 @@ public class A_Player_wo_Jump : MonoBehaviour
                 isSoundPlaying = false;
                 print("Stop");
             }
-        }
-    }
-    private void SetPlayerState()
-    {
-        //Player Type Swap State
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            //set player state B or W
-            if (sPlayer.gameObject.layer == 8)
-                AkSoundEngine.SetState("CurrentPlayer", "White");
-            else if (sPlayer.gameObject.layer == 9)
-                AkSoundEngine.SetState("CurrentPlayer", "Black");
-
         }
     }
 

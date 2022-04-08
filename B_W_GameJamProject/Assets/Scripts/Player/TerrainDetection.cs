@@ -44,7 +44,8 @@ public class TerrainDetection : MonoBehaviour
                 playerStateManager.CurrentState.EndingState();
                 playerStateManager.CurrentState = playerStateManager.GroundedState;
                 playerStateManager.CurrentState.StartState();
-                
+                playerLanded = true;// to tell audio script
+
             }
 
         }
@@ -53,7 +54,7 @@ public class TerrainDetection : MonoBehaviour
             if (playerStateManager.CurrentState is GroundedState)
             {
                 GoToJumpingstateAfterBriefTimeInterval();
-                playerLanded = true; // to tell audio script
+                
             }
             else if (playerStateManager.CurrentState is OnState)
             {

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4fedc233521844545b8f845f15664e01, type: 3}
-  m_Name: D51B43E0-0C28-4677-8F06-F6F9A288F9EB
+  m_Name: 47105446-2B2D-4147-A9AB-F2FB08CFC305
   m_EditorClassIdentifier: 
-  objectName: Play_Plyr_White_Movement
-  id: 2851239695
-  guid: D51B43E0-0C28-4677-8F06-F6F9A288F9EB
+  objectName: Play_Plyr_Switch_Chars
+  id: 2304023196
+  guid: 47105446-2B2D-4147-A9AB-F2FB08CFC305
