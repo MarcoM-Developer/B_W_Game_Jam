@@ -14,14 +14,9 @@ public class Movement : MonoBehaviour
     [Header("Components")]
 
     [SerializeField] private Rigidbody2D playerRigidBody;
-    
+
     private Vector2 directionVector;
 
-    //For audio transforming
-    private float currentVelocity;
-
-    [Header("Audio Events")]
-    [SerializeField] private AK.Wwise.Event audioPlayerMotion;
 
 
     // Start is called before the first frame update
@@ -35,7 +30,7 @@ public class Movement : MonoBehaviour
     {
         DetectInput();
         FlipGameObjectLeftOrRight();
-        AkSoundEngine.SetRTPCValue("PlayerSpeed", GetCurrentVelocity());
+
     }
 
     private void FixedUpdate()
@@ -48,21 +43,12 @@ public class Movement : MonoBehaviour
         directionVector = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
     }
 
+
     private void Move()
     {
 
         if (directionVector.x > 0 || directionVector.x < 0)
         {
-            //set player state B or W
-            if (gameObject.layer == 8)
-                AkSoundEngine.SetState("CurrentPlayer", "White");
-            else if (gameObject.layer == 9)
-                AkSoundEngine.SetState("CurrentPlayer", "Black");
-            
-           //Play player movement at current player
-            audioPlayerMotion.Post(gameObject);
-
-
 
             CheckIfMaxSpeedReached();
             if (!isAtMaxSpeed)
@@ -86,6 +72,7 @@ public class Movement : MonoBehaviour
         {
             isAtMaxSpeed = false;
             StopMove();
+
         }
     }
 
@@ -129,19 +116,5 @@ public class Movement : MonoBehaviour
         }
     }
 
-    private Vector2 GetCurrentPosition()
-    {
-        return playerRigidBody.transform.position;
-    }
 
-    private float GetCurrentVelocity()
-    {
-        
-        if (playerRigidBody.velocity.x < 0)
-         currentVelocity = -playerRigidBody.velocity.x;
-        else
-            currentVelocity = playerRigidBody.velocity.x;
-
-        return currentVelocity;
-    }
 }

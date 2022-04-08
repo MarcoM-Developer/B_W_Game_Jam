@@ -5,12 +5,15 @@ using UnityEngine;
 public class TerrainDetection : MonoBehaviour
 {
     [SerializeField] private FloatReference detectionRange;
-    private LayerMask layerTarget;
+    public LayerMask layerTarget;
     [SerializeField] private Player player;
     [SerializeField] private PlayerStateManager playerStateManager;
     [SerializeField] private float groundedTimer;
     [SerializeField] private float groundedTimerValue;
     private bool flag;
+
+    //For Audio
+    public bool playerLanded = false;
 
     // Start is called before the first frame update
     void Start()
@@ -34,12 +37,14 @@ public class TerrainDetection : MonoBehaviour
                 playerStateManager.CurrentState.EndingState();
                 playerStateManager.CurrentState = playerStateManager.GroundedState;
                 playerStateManager.CurrentState.StartState();
+                playerLanded = true;// to tell audio script
             }
             else if (playerStateManager.CurrentState is OnState)
             {
                 playerStateManager.CurrentState.EndingState();
                 playerStateManager.CurrentState = playerStateManager.GroundedState;
                 playerStateManager.CurrentState.StartState();
+                
             }
 
         }
@@ -48,6 +53,7 @@ public class TerrainDetection : MonoBehaviour
             if (playerStateManager.CurrentState is GroundedState)
             {
                 GoToJumpingstateAfterBriefTimeInterval();
+                playerLanded = false; // to tell audio script
             }
             else if (playerStateManager.CurrentState is OnState)
             {

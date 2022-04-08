@@ -28,8 +28,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        //Player Movement
         if (Input.GetKeyDown(KeyCode.Q))
         {
+            //Play player movement at current player
             SwitchCharacter();
             if (OnSwitchCharacter != null)
             {

@@ -14,14 +14,17 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_BG_MUSIC = 3113730691U;
+        static const AkUniqueID PLAY_BTN_WIRE_SWITCH = 44324533U;
         static const AkUniqueID PLAY_ITM_PU_GENERIC = 3893138630U;
         static const AkUniqueID PLAY_OBJ_MAP_ROTATE = 1549592196U;
+        static const AkUniqueID PLAY_PLAYER_HIT_WALL = 4184715450U;
         static const AkUniqueID PLAY_PLYR_COLLIDE_SWITCH = 3386221183U;
         static const AkUniqueID PLAY_PLYR_JUMP = 1864999798U;
         static const AkUniqueID PLAY_PLYR_LAND = 4227840961U;
         static const AkUniqueID PLAY_PLYR_MOVEMENT = 2271622313U;
         static const AkUniqueID PLAY_TEST_BEEP = 27511013U;
         static const AkUniqueID PLAY_TEST_BEEP_LP = 2235959444U;
+        static const AkUniqueID STOP_PLYR_MOVEMENT = 369982735U;
         static const AkUniqueID STOP_TEST_BEEP = 701599435U;
         static const AkUniqueID STOP_TEST_BEEP_LP = 641054882U;
     } // namespace EVENTS
