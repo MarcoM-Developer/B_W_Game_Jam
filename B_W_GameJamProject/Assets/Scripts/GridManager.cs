@@ -27,17 +27,35 @@ public class GridManager : MonoBehaviour
     [SerializeField]
     private TileData tempBlackWall;
 
-    private Dictionary<TileBase, TileData> dataFromTiles;
+    [SerializeField]
+    private TileData blackSwitch;
 
+    [SerializeField]
+    private TileData whiteSwitch;
+
+    [SerializeField]
+    private GameObject blackPlayer;
+
+    [SerializeField]
+    private GameObject whitePlayer;
+
+    private Dictionary<TileBase, TileData> dataFromTiles;
     private List<Vector3Int> activeTiles = new List<Vector3Int>();
 
 
-    // Populate the dataFromTiles, so I can fetch tiles
+    /**
+     * Populate the dataFromTiles, so I can fetch the tiles later
+     */ 
     private void Awake()
 	{
-       
         dataFromTiles = new Dictionary<TileBase, TileData>();
-        TileData[] tileData = { blackWire, whiteWire, checkerboard, tempWhiteWall, tempBlackWall };
+        TileData[] tileData = { blackWire,
+                                whiteWire,
+                                checkerboard,
+                                tempWhiteWall,
+                                tempBlackWall,
+                                whiteSwitch,
+                                blackSwitch};
 
         foreach(var data in tileData)
         { 
@@ -61,23 +79,78 @@ public class GridManager : MonoBehaviour
     }
 
 
+    // HACK: This should be done using events, but who cares, it's a GameJam.
+    private bool whiteOnSwitch = false; 
+    private bool blackOnSwitch = false;
+
+
     // Update is called once per frame
     void Update()
     {
+        // Black Player on White Tile
+        Vector2 blackPlayerPosition = blackPlayer.transform.position;
+        Vector3Int whiteTilePosition = whiteTileMap.WorldToCell(blackPlayerPosition);
+        TileBase whiteTile = whiteTileMap.GetTile(whiteTilePosition);
+
+
+        // White Player on Black Tile
+        Vector2 whitePlayerPosition = whitePlayer.transform.position;
+        Vector3Int blackTilePosition = whiteTileMap.WorldToCell(whitePlayerPosition);
+        TileBase blackTile = blackTileMap.GetTile(blackTilePosition);
+
+        // Check if White stands on switch.
+        if (blackTile != null && dataFromTiles.ContainsKey(blackTile))
+		{
+            TileData data = dataFromTiles[blackTile];
+
+            if (data.isSwitch)
+			{
+                // Yes, I stand on switch.
+
+                if (!whiteOnSwitch)
+				{
+                    //... and in fact, I just moved to the switch...
+                    Debug.Log("Entered switch.");
+
+                    //... tell the world I am standing on the switch! 
+                    whiteOnSwitch = true;
+
+                    //... spread the word.
+                    Spread(blackTilePosition);
+                    PostSpread(blackTilePosition);
+                }
+			}else
+			{
+                // No, I do not stand on switch.
+
+                if (whiteOnSwitch)
+				{
+                    //... and truth be told, I just left the switch.
+                    Debug.Log("Exited switch.");
+
+                    //... tell the world I shamelessly quit the switch!
+                    whiteOnSwitch = false;
+
+                    //... spread the word.
+                    Spread(blackTilePosition);
+                    PostSpread(blackTilePosition);
+
+                }
+			}
+            //Debug.Log("Wire: "+data.isWire + "Switch: "+data.isSwitch);
+		}
+
+        // Mouse (for testing)
         if (Input.GetMouseButtonDown(0))
         {
             // Test the activation
-
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector3Int blackTilePosition = blackTileMap.WorldToCell(mousePosition);
-            Vector3Int whiteTilePosition = whiteTileMap.WorldToCell(mousePosition);
 
             // HACK: WorldToCell gives consistent position on both grids, use just one
-            Vector3Int position = blackTilePosition;
+            Vector3Int position = blackTileMap.WorldToCell(mousePosition);
 
-            TileBase blackTile = blackTileMap.GetTile(position);
-            TileBase whiteTile = whiteTileMap.GetTile(position);
-
+            blackTile = blackTileMap.GetTile(position);
+            whiteTile = whiteTileMap.GetTile(position);
             
             if (blackTile != null)
             {
@@ -153,7 +226,7 @@ public class GridManager : MonoBehaviour
 
                     }
                 }
-                // Switch spreading rule (TODO)
+                // Switch ON/OFF
                 else if (whiteTile != null &&
                     dataFromTiles.ContainsKey(whiteTile))
                 {
