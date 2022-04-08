@@ -21,7 +21,7 @@ RTPCs:
 States:
 -Surface type
 */
-public class A_Player : MonoBehaviour
+public class A_Player_w_Jump : MonoBehaviour
 {
 
     //Things to be accessed by anyone
@@ -31,7 +31,7 @@ public class A_Player : MonoBehaviour
     public Jump sJump;
     public TerrainDetection sTerrain;
     //public GameObject playerGameObject;
-    public Rigidbody sRigidbody;
+    public Rigidbody2D sRigidbody;
     #endregion
 
     //Things to be acecessed by only this script
@@ -41,8 +41,6 @@ public class A_Player : MonoBehaviour
     [SerializeField] private AK.Wwise.Event pStopLR;
     [SerializeField] private AK.Wwise.Event plyrJump;
     [SerializeField] private AK.Wwise.Event pLand;
- 
-    [SerializeField] private AK.Wwise.Event pWallCollide;
     private bool isSoundPlaying = false;
     private float currentVelocity;
     #endregion
@@ -54,21 +52,21 @@ public class A_Player : MonoBehaviour
         SetPlayerState();
 
         PlayerMotionLR();
-       
-       // PlayerJump();
 
-        PlayerLand();
+        PlayerJump();
 
-        PlayerWallCollision();
+        //PlayerLand();
+
+   
 
 
     }//end update
 
     private void PlayerLand()
     {
-        if(sTerrain.playerLanded)
+        if (sTerrain.playerLanded)
             pLand.Post(gameObject);
- 
+
     }
 
     private void PlayerMotionLR()
@@ -109,23 +107,6 @@ public class A_Player : MonoBehaviour
         }
     }
 
-    private void PlayerWallCollision()
-    {
-        switch (sPlayer.PlayerType)
-        {
-            case PlayerType.White:
-                sTerrain.layerTarget = LayerMask.GetMask("WhiteWalls");
-                //play wall sound
-                pWallCollide.Post(gameObject);
-                break;
-
-            case PlayerType.Black:
-                sTerrain.layerTarget = LayerMask.GetMask("BlackWalls");
-                //play wall sound
-                pWallCollide.Post(gameObject);
-                break;
-        }
-    }
 
     public float GetCurrentVelocity()
     {

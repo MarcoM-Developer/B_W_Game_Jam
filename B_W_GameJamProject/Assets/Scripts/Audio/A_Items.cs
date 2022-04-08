@@ -7,16 +7,13 @@ public class A_Items : MonoBehaviour
 
     
     #region Public
-    //public Switch sSwitch;
+    public FinishBlock sBlackFinishBlock;
+    public FinishBlock sWhiteFinishBlock;
     #endregion
     #region Private Variables
-    [SerializeField] private AK.Wwise.Event iSwitch;
+    [SerializeField] private AK.Wwise.Event itemPickUp;
     #endregion
 
 
-    public void Update()
-    {
-        
-    }
 
 }

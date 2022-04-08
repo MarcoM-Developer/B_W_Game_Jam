@@ -7,6 +7,7 @@ public class A_Objects : MonoBehaviour
 {
     #region Public
     public MapRotator sMapRotator;
+    public GridManager sGridManager;
     #endregion
     #region Private Variables
     [SerializeField] private AK.Wwise.Event pMapRotate;
@@ -22,12 +23,12 @@ public class A_Objects : MonoBehaviour
     void Update()
     {
         MapRotateSwitch();
-        WireSwitch();
+       // WireSwitch();
     }
 
     private void WireSwitch()
     {
-        throw new NotImplementedException();
+        pSwitch.Post(sGridManager.gameObject);
     }
 
     private void MapRotateSwitch()

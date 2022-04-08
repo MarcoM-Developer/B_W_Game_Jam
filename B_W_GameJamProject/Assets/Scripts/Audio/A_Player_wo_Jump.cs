@@ -21,17 +21,15 @@ RTPCs:
 States:
 -Surface type
 */
-public class A_Player_Jump : MonoBehaviour
+public class A_Player_wo_Jump : MonoBehaviour
 {
 
     //Things to be accessed by anyone
     #region Public Variables
     public Player sPlayer;//get player script
     public Movement sMovement;//get movement script
-    public Jump sJump;
     public TerrainDetection sTerrain;
-    //public GameObject playerGameObject;
-    public Rigidbody sRigidbody;
+    public Rigidbody2D sRigidbody;
     #endregion
 
     //Things to be acecessed by only this script
@@ -41,8 +39,6 @@ public class A_Player_Jump : MonoBehaviour
     [SerializeField] private AK.Wwise.Event pStopLR;
     [SerializeField] private AK.Wwise.Event plyrJump;
     [SerializeField] private AK.Wwise.Event pLand;
- 
-    [SerializeField] private AK.Wwise.Event pWallCollide;
     private bool isSoundPlaying = false;
     private float currentVelocity;
     #endregion
@@ -54,21 +50,20 @@ public class A_Player_Jump : MonoBehaviour
         SetPlayerState();
 
         PlayerMotionLR();
-       
-        PlayerJump();
+
+        // PlayerJump();
 
         PlayerLand();
 
-        PlayerWallCollision();
 
 
     }//end update
 
     private void PlayerLand()
     {
-        if(sTerrain.playerLanded)
+        if (sTerrain.playerLanded)
             pLand.Post(gameObject);
- 
+
     }
 
     private void PlayerMotionLR()
@@ -109,23 +104,6 @@ public class A_Player_Jump : MonoBehaviour
         }
     }
 
-    private void PlayerWallCollision()
-    {
-        switch (sPlayer.PlayerType)
-        {
-            case PlayerType.White:
-                sTerrain.layerTarget = LayerMask.GetMask("WhiteWalls");
-                //play wall sound
-                pWallCollide.Post(gameObject);
-                break;
-
-            case PlayerType.Black:
-                sTerrain.layerTarget = LayerMask.GetMask("BlackWalls");
-                //play wall sound
-                pWallCollide.Post(gameObject);
-                break;
-        }
-    }
 
     public float GetCurrentVelocity()
     {
@@ -138,17 +116,7 @@ public class A_Player_Jump : MonoBehaviour
         return currentVelocity;
     }
 
-    private void PlayerJump()
-    {
-        if (sJump.canJump)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                //play jump
-                plyrJump.Post(gameObject);
-            }
-        }
-    }
+
 
 
 
