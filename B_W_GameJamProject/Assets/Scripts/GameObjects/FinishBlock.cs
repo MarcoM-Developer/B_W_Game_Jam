@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class FinishBlock : MonoBehaviour
 {
     /**
@@ -11,22 +10,23 @@ public class FinishBlock : MonoBehaviour
      * of how many triggers were there and calls ... whe all is done.
      */
 
+    [SerializeField] private BoolReference isPickedUp;
     public delegate void OnFinished();
     public static OnFinished onFinished;
 
-    private static int instanceTriggerCount = 0; // how many times were this triggered in a game
+    public static int instanceTriggerCount = 0; // how many times were this triggered in a game
 
 
-    [SerializeField] private GameObject objectBody;
-
-    [Header("Audio Events")]
-    [SerializeField] private AK.Wwise.Event playItemPu;
-
+    private void OnEnable()
+    {
+        SaveManager.OnLoad += LoadValues;
+    }
 
     // Start is called before the first frame update (on a scene?)
     void Start()
     {
         instanceTriggerCount = 0; // set zero trigger in the beggining.
+
     }
 
     // Update is called once per frame
@@ -35,16 +35,21 @@ public class FinishBlock : MonoBehaviour
         
     }
 
+    private void OnDisable()
+    {
+        SaveManager.OnLoad -= LoadValues;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     { 
         //Debug.Log("Goal collided with " + other.name + " with tag " + other.tag);
 
         if (other.tag == "Player")
 		{
-           //play sound
-           playItemPu.Post(gameObject); 
+           
             instanceTriggerCount++;
-
+            isPickedUp.Value = true;
+            
 			if (instanceTriggerCount == 2)
 			{
                 Debug.Log("Both picked");
@@ -57,6 +62,29 @@ public class FinishBlock : MonoBehaviour
 			Destroy(gameObject); // Remove the game object.
         }
 		
+    }
+
+    private void LoadValues()
+    {
+        if (isPickedUp.Value)
+        {
+            instanceTriggerCount++;
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            gameObject.SetActive(true);
+        }
+
+        if (instanceTriggerCount == 2)
+        {
+            Debug.Log("Both picked");
+
+            if (onFinished != null)
+            {
+                //onFinished(); 
+            }
+        }
     }
 
 }
