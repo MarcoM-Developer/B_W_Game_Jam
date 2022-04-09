@@ -10,6 +10,8 @@ public class SaveManager : MonoBehaviour
     [SerializeField] private UIntReference sceneIndex;
     [SerializeField] private Vector3Variable playerWhitePosition, playerBlackPosition;
     [SerializeField] private BoolVariable loadedOtherScene;
+    [SerializeField] private BoolVariable isPickedUpWhiteGoal;
+    [SerializeField] private BoolVariable isPickedUpBlackGoal;
     public static event Action OnSave;
     public static event Action OnLoad;
 
@@ -41,7 +43,9 @@ public class SaveManager : MonoBehaviour
 
         SaveObject saveObject = new SaveObject { sceneIndex = (int)this.sceneIndex.Value, 
                                                  playerWhitePosition = this.playerWhitePosition.Value, 
-                                                 playerBlackPosition = this.playerBlackPosition.Value 
+                                                 playerBlackPosition = this.playerBlackPosition.Value,
+                                                 isPickedUpBlackGoal = this.isPickedUpBlackGoal.Value,
+                                                 isPickedUpWhiteGoal = this.isPickedUpWhiteGoal.Value,
                                                };
 
         string json = JsonUtility.ToJson(saveObject);
@@ -58,6 +62,8 @@ public class SaveManager : MonoBehaviour
             sceneIndex.Value = (uint)loadedSaveObject.sceneIndex;
             playerBlackPosition.Value = loadedSaveObject.playerWhitePosition;
             playerBlackPosition.Value = loadedSaveObject.playerBlackPosition;
+            isPickedUpBlackGoal.Value = loadedSaveObject.isPickedUpBlackGoal;
+            isPickedUpWhiteGoal.Value = loadedSaveObject.isPickedUpWhiteGoal;
         }
 
         if (SceneManager.GetActiveScene().buildIndex != sceneIndex.Value)
@@ -85,4 +91,5 @@ public class SaveObject
 {
     public int sceneIndex;
     public Vector3 playerWhitePosition, playerBlackPosition;
+    public bool isPickedUpWhiteGoal, isPickedUpBlackGoal;
 }

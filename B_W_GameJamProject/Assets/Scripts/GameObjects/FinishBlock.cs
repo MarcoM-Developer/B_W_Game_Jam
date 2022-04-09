@@ -10,23 +10,34 @@ public class FinishBlock : MonoBehaviour
      * of how many triggers were there and calls ... whe all is done.
      */
 
+    [SerializeField] private BoolReference isPickedUp;
     public delegate void OnFinished();
     public static OnFinished onFinished;
 
-    private static int instanceTriggerCount = 0; // how many times were this triggered in a game
+    public static int instanceTriggerCount = 0; // how many times were this triggered in a game
 
 
+    private void OnEnable()
+    {
+        SaveManager.OnLoad += LoadValues;
+    }
 
     // Start is called before the first frame update (on a scene?)
     void Start()
     {
         instanceTriggerCount = 0; // set zero trigger in the beggining.
+
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    private void OnDisable()
+    {
+        SaveManager.OnLoad -= LoadValues;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -37,7 +48,8 @@ public class FinishBlock : MonoBehaviour
 		{
            
             instanceTriggerCount++;
-
+            isPickedUp.Value = true;
+            
 			if (instanceTriggerCount == 2)
 			{
                 Debug.Log("Both picked");
@@ -51,4 +63,28 @@ public class FinishBlock : MonoBehaviour
         }
 		
     }
+
+    private void LoadValues()
+    {
+        if (isPickedUp.Value)
+        {
+            instanceTriggerCount++;
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            gameObject.SetActive(true);
+        }
+
+        if (instanceTriggerCount == 2)
+        {
+            Debug.Log("Both picked");
+
+            if (onFinished != null)
+            {
+                //onFinished(); 
+            }
+        }
+    }
+
 }
