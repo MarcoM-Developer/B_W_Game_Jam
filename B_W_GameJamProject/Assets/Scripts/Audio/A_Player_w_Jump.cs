@@ -26,8 +26,7 @@ public class A_Player_w_Jump : MonoBehaviour
 
     //Things to be accessed by anyone
     #region Public Variables
-    public Player sWhitePlayer;//get player script
-    public Player sBlackPlayer;//get player script
+    public Player sCurrentPlayer;//get player script
     public PlayerStateManager playerStateManager;
 
 
@@ -54,7 +53,15 @@ public class A_Player_w_Jump : MonoBehaviour
 
     public void Update()
     {
+        if (sCurrentPlayer.gameObject.layer == 8)
+        { //white
+            AkSoundEngine.SetState("CurrentPlayer", "White");
 
+        }
+        else if (sCurrentPlayer.gameObject.layer == 9)
+        {  //black
+            AkSoundEngine.SetState("CurrentPlayer", "Black");
+        }
 
         PlayerMotionLR();
 
@@ -80,9 +87,9 @@ public class A_Player_w_Jump : MonoBehaviour
                if(playerStateManager.CurrentState)
                     
 
-                if (sWhitePlayer.gameObject.layer == 8) //white
+                if (sCurrentPlayer.gameObject.layer == 8) //white
                     pWhiteMoveLR.Post(gameObject);
-                else if (sWhitePlayer.gameObject.layer == 9) //black
+                else if (sCurrentPlayer.gameObject.layer == 9) //black
                     pBlackMoveLR.Post(gameObject);
                 isSoundPlaying = true;
             }
@@ -93,9 +100,9 @@ public class A_Player_w_Jump : MonoBehaviour
             if (isSoundPlaying)//if sound is playing
             {
 
-                if (sWhitePlayer.gameObject.layer == 9) // not white
+                if (sCurrentPlayer.gameObject.layer == 9) // not white
                     pWhiteStopLR.Post(gameObject);
-                else if (sWhitePlayer.gameObject.layer == 8) //not black
+                else if (sCurrentPlayer.gameObject.layer == 8) //not black
                     pBlackStopLR.Post(gameObject);
                 isSoundPlaying = false;
 
