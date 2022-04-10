@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6876960610631508604}
   - component: {fileID: 6876960610631508606}
   - component: {fileID: 6876960610631508607}
+  - component: {fileID: 4060496158016511324}
   m_Layer: 0
   m_Name: WhiteGoal
   m_TagString: Untagged
@@ -126,3 +127,15 @@ MonoBehaviour:
     useLocalValue: 0
     localValue: 0
     variable: {fileID: 11400000, guid: bb584e31c493a0140a8871f0e8b1c268, type: 2}
+--- !u!114 &4060496158016511324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6876960610631508603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5026e8ef517af8c4fb4bab918f457243, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

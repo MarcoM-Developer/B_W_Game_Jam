@@ -17,16 +17,18 @@ namespace AK
         static const AkUniqueID PLAY_ITM_PU_GENERIC = 3893138630U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_OBJ_MAP_ROTATE = 1549592196U;
+        static const AkUniqueID PLAY_PLYR_BLACK_MOVEMENT = 2651892997U;
         static const AkUniqueID PLAY_PLYR_COLLIDE_SWITCH = 3386221183U;
         static const AkUniqueID PLAY_PLYR_JUMP = 1864999798U;
         static const AkUniqueID PLAY_PLYR_LAND = 4227840961U;
-        static const AkUniqueID PLAY_PLYR_MOVEMENT = 2271622313U;
         static const AkUniqueID PLAY_PLYR_SWITCH_CHARS = 2304023196U;
+        static const AkUniqueID PLAY_PLYR_WHITE_MOVEMENT = 2851239695U;
         static const AkUniqueID PLAY_TEST_BEEP = 27511013U;
         static const AkUniqueID PLAY_TEST_BEEP_LP = 2235959444U;
         static const AkUniqueID PLAY_UI_MOUSEOVER = 808445146U;
         static const AkUniqueID PLAY_UI_SELECT = 3308548503U;
-        static const AkUniqueID STOP_PLYR_MOVEMENT = 369982735U;
+        static const AkUniqueID STOP_PLYR_BLACK_MOVEMENT = 3949441195U;
+        static const AkUniqueID STOP_PLYR_WHITE_MOVEMENT = 2478675269U;
         static const AkUniqueID STOP_TEST_BEEP = 701599435U;
         static const AkUniqueID STOP_TEST_BEEP_LP = 641054882U;
     } // namespace EVENTS
@@ -61,7 +63,8 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID PLAYERSPEED = 1493153371U;
+        static const AkUniqueID BLACKPLAYERSPEED = 3543050414U;
+        static const AkUniqueID WHITEPLAYERSPEED = 259534104U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

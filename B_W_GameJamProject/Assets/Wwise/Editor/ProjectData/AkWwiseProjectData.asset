@@ -151,7 +151,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 4257b23a1d85d4438948312a4824cde6
     GuidInternal: 
-    m_lastTime: -8585520603492762279
+    m_lastTime: -8585520397420214498
     List:
     - name: Main
       guid: bcb0127336087a4b926a0e27bf590cbf
@@ -179,7 +179,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a9e517562d6f3f448ca11dbc6ef2bc46
     GuidInternal: 
-    m_lastTime: -8585520654443105658
+    m_lastTime: -8585520397420398032
     List:
     - name: Play_Test_Beep
       guid: 01bd61289825dd4cbe233cfd013a03aa
@@ -367,8 +367,25 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: d07a1c12f3c4aa449f6f86c94d1854a2
     GuidInternal: 
-    m_lastTime: -8585520603492648495
+    m_lastTime: -8585520397420125240
     List:
+    - name: Play_Plyr_Black_Movement
+      guid: 82a0445a4e46b742b1d0032b364d925f
+      id: 2651892997
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: d07a1c12f3c4aa449f6f86c94d1854a2
+      - ElementName: Play_Plyr_Black_Movement
+        ObjectType: 3
+        guid: 82a0445a4e46b742b1d0032b364d925f
+      Path: Events\Player\Play_Plyr_Black_Movement
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Plyr_Collide_Switch
       guid: a0bb3a2189288142b33b7ae35c4797dd
       id: 3386221183
@@ -420,23 +437,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.207249
       minDuration: 0.204398
-    - name: Play_Plyr_Movement
-      guid: e0431bd5280c77468f06f6f9a288f9eb
-      id: 2271622313
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Player
-        ObjectType: 12
-        guid: d07a1c12f3c4aa449f6f86c94d1854a2
-      - ElementName: Play_Plyr_Movement
-        ObjectType: 3
-        guid: e0431bd5280c77468f06f6f9a288f9eb
-      Path: Events\Player\Play_Plyr_Movement
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: Play_Plyr_Switch_Chars
       guid: 465410472d2b4741a9abf2fb08cfc305
       id: 2304023196
@@ -454,9 +454,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.178331
       minDuration: 0.168322
-    - name: Stop_Plyr_Movement
-      guid: 37aa32b1ccf62b4fb400886fa6b8d43c
-      id: 369982735
+    - name: Play_Plyr_White_Movement
+      guid: 3c9a7fffc1309e468fa6fda232133d47
+      id: 2851239695
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -464,10 +464,44 @@ MonoBehaviour:
       - ElementName: Player
         ObjectType: 12
         guid: d07a1c12f3c4aa449f6f86c94d1854a2
-      - ElementName: Stop_Plyr_Movement
+      - ElementName: Play_Plyr_White_Movement
         ObjectType: 3
-        guid: 37aa32b1ccf62b4fb400886fa6b8d43c
-      Path: Events\Player\Stop_Plyr_Movement
+        guid: 3c9a7fffc1309e468fa6fda232133d47
+      Path: Events\Player\Play_Plyr_White_Movement
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Plyr_Black_Movement
+      guid: 253078d26a232044bb8715cd71a4768d
+      id: 3949441195
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: d07a1c12f3c4aa449f6f86c94d1854a2
+      - ElementName: Stop_Plyr_Black_Movement
+        ObjectType: 3
+        guid: 253078d26a232044bb8715cd71a4768d
+      Path: Events\Player\Stop_Plyr_Black_Movement
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Plyr_White_Movement
+      guid: dbbeb2fe136717429e17468e25c5d8af
+      id: 2478675269
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: d07a1c12f3c4aa449f6f86c94d1854a2
+      - ElementName: Stop_Plyr_White_Movement
+        ObjectType: 3
+        guid: dbbeb2fe136717429e17468e25c5d8af
+      Path: Events\Player\Stop_Plyr_White_Movement
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -530,11 +564,11 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 5ace47bb734b1a428120e8f41ceab068
     GuidInternal: 
-    m_lastTime: -8585524870792870867
+    m_lastTime: -8585520397420001233
     List:
-    - name: PlayerSpeed
-      guid: 2668f5ee8e9f9848b0ccf13fea0ecc62
-      id: 1493153371
+    - name: BlackPlayerSpeed
+      guid: 7795d389c4831e4a975001b0a8af80b1
+      id: 3543050414
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
@@ -542,10 +576,24 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 5ace47bb734b1a428120e8f41ceab068
-      - ElementName: PlayerSpeed
+      - ElementName: BlackPlayerSpeed
+        ObjectType: 13
+        guid: 7795d389c4831e4a975001b0a8af80b1
+      Path: Game Parameters\Default Work Unit\BlackPlayerSpeed
+    - name: WhitePlayerSpeed
+      guid: 2668f5ee8e9f9848b0ccf13fea0ecc62
+      id: 259534104
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5ace47bb734b1a428120e8f41ceab068
+      - ElementName: WhitePlayerSpeed
         ObjectType: 13
         guid: 2668f5ee8e9f9848b0ccf13fea0ecc62
-      Path: Game Parameters\Default Work Unit\PlayerSpeed
+      Path: Game Parameters\Default Work Unit\WhitePlayerSpeed
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -721,7 +769,7 @@ MonoBehaviour:
     m_lastTime: -8585524878874882782
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000050000000600000007000000120000001600000018000000190000001c0000002500000028000000ebdd7d00
+  ExpandedWaapiItemIds: 010000000500000006000000070000000f000000120000001600000018000000190000001a0000001c0000002000000021000000250000002700000028000000290000002a000000ebdd7d00
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

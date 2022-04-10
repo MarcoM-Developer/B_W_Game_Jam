@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fedc233521844545b8f845f15664e01, type: 3}
-  m_Name: B132AA37-F6CC-4F2B-B400-886FA6B8D43C
+  m_Script: {fileID: 11500000, guid: 8e6c8a2e29b085c4882e1a34d850b7ef, type: 3}
+  m_Name: EEF56826-9F8E-4898-B0CC-F13FEA0ECC62
   m_EditorClassIdentifier: 
-  objectName: Stop_Plyr_Movement
-  id: 369982735
-  guid: B132AA37-F6CC-4F2B-B400-886FA6B8D43C
+  objectName: WhitePlayerSpeed
+  id: 259534104
+  guid: EEF56826-9F8E-4898-B0CC-F13FEA0ECC62

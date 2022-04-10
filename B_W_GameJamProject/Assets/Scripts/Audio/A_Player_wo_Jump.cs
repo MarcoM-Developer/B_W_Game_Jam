@@ -27,8 +27,8 @@ public class A_Player_wo_Jump : MonoBehaviour
 
     //Things to be accessed by anyone
     #region Public Variables
-    public Player sCurrentPlayer;//get player script
-    public PlayerStateManager playerStateManager;
+    [SerializeField] public Player sCurrentPlayer;//get player script
+    public PlayerState sCurrentState;
     public Movement sMovement;//get movement script
     public TerrainDetection sTerrain;
     public Rigidbody2D sRigidbody;
@@ -46,11 +46,22 @@ public class A_Player_wo_Jump : MonoBehaviour
     private float currentVelocity;
     #endregion
 
+    public void Start()
+    {
+ 
+
+    }
+
     public void Update()
     {
+        if (sCurrentState.enabled)
+        {
+            float currentSpeed = Mathf.Abs(sRigidbody.velocity.x);
+            NoJumpPlayerMotionLR(currentSpeed);
+        }
 
-        NoJumpPlayerMotionLR();
-
+        
+        
         //PlayerJump();
 
         //PlayerLand();
@@ -60,14 +71,14 @@ public class A_Player_wo_Jump : MonoBehaviour
 
 
 
-    private void NoJumpPlayerMotionLR()
+    private void NoJumpPlayerMotionLR(float mySpeed)
     {
         //Player Movement/Speed
-        AkSoundEngine.SetRTPCValue("PlayerSpeed", GetCurrentVelocity());
+        AkSoundEngine.SetRTPCValue("PlayerSpeed", mySpeed);
 
         //if moving in any direction play movement
         //if not focus play movemnt at a lower sound
-
+        Debug.Log(currentVelocity);
 
         if (currentVelocity >= 1)
         {
@@ -115,10 +126,7 @@ public class A_Player_wo_Jump : MonoBehaviour
 
     }
 
-    public float GetCurrentVelocity()
-    {
-        return Mathf.Abs(sRigidbody.velocity.x);
-    }
+  
 
 
     //if speed over x value play sound

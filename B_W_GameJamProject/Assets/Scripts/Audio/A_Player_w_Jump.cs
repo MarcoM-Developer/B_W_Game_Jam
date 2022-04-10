@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 /*
@@ -25,49 +24,32 @@ public class A_Player_w_Jump : MonoBehaviour
 {
 
     //Things to be accessed by anyone
-    #region Public Variables
-    public Player sCurrentPlayer;//get player script
-    public PlayerStateManager playerStateManager;
-
-
-    public Movement sMovement;//get movement script
-    public Jump sJump;
-    public TerrainDetection sTerrain;
-    //public GameObject playerGameObject;
-    public Rigidbody2D sRigidbody;
-    #endregion
+    Rigidbody2D rigidBody;
 
     //Things to be acecessed by only this script
     #region Private Variables
     [Header("Locomotion")]
-    [SerializeField] private AK.Wwise.Event pWhiteMoveLR;
-    [SerializeField] private AK.Wwise.Event pBlackMoveLR;
-    [SerializeField] private AK.Wwise.Event pWhiteStopLR;
-    [SerializeField] private AK.Wwise.Event pBlackStopLR;
-    [SerializeField] private AK.Wwise.Event plyrJump;
+    [SerializeField] private AK.Wwise.Event pMoveLR;
+    [SerializeField] private AK.Wwise.Event pStopLR;
     [SerializeField] private AK.Wwise.Event pLand;
 
     private bool isSoundPlaying = false;
     private float currentVelocity;
     #endregion
 
+    public void Start()
+    {
+        rigidBody = gameObject.GetComponent<Rigidbody2D>();
+    }
     public void Update()
     {
-        if (sCurrentPlayer.gameObject.layer == 8)
-        { //white
-            AkSoundEngine.SetState("CurrentPlayer", "White");
-
-        }
-        else if (sCurrentPlayer.gameObject.layer == 9)
-        {  //black
-            AkSoundEngine.SetState("CurrentPlayer", "Black");
-        }
 
         PlayerMotionLR();
 
-        PlayerJump();
+        if (Input.GetKeyDown(KeyCode.Space))
+            AkSoundEngine.PostEvent("Play_Plyr_Jump", gameObject);
 
-       // PlayerLand();
+        // PlayerLand();
 
     }//end update
 
@@ -76,70 +58,35 @@ public class A_Player_w_Jump : MonoBehaviour
 
     private void PlayerMotionLR()
     {
-        //Player Movement/Speed
-        AkSoundEngine.SetRTPCValue("PlayerSpeed", GetCurrentVelocity());
-
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        if (!rigidBody)
         {
-            if (!isSoundPlaying)//if no sound is playing
-            {
-
-               if(playerStateManager.CurrentState)
-                    
-
-                if (sCurrentPlayer.gameObject.layer == 8) //white
-                    pWhiteMoveLR.Post(gameObject);
-                else if (sCurrentPlayer.gameObject.layer == 9) //black
-                    pBlackMoveLR.Post(gameObject);
-                isSoundPlaying = true;
-            }
-
+            Debug.Log("Nay, no rigid bodies today!");
+            return; // If you don't have a rigid body, leave the scene quietly.
         }
-        else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
-        {
-            if (isSoundPlaying)//if sound is playing
-            {
 
-                if (sCurrentPlayer.gameObject.layer == 9) // not white
-                    pWhiteStopLR.Post(gameObject);
-                else if (sCurrentPlayer.gameObject.layer == 8) //not black
-                    pBlackStopLR.Post(gameObject);
+
+        Debug.Log("Yay, I have a body and it's pretty damn rigid!");
+        float speed = Mathf.Abs(rigidBody.velocity.x); // Check if this works.
+
+        AkSoundEngine.SetRTPCValue("PlayerSpeed", speed);
+        if (speed >= 1)
+        {
+            pMoveLR.Post(gameObject);
+            isSoundPlaying = true;
+            Debug.Log("Sound is Playing");
+        }
+        else if (speed < 1)
+        {
+            if (isSoundPlaying)
+            {
+                pStopLR.Post(gameObject);
                 isSoundPlaying = false;
-
-
+                Debug.Log("Sound is Not Playing");
             }
         }
     }
 
-    private void PlayerJump()
-    {
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            //play jump
-            plyrJump.Post(gameObject);
-        }
-
-    }
-
-
-    private void PlayerLand()
-    {
-        if (sTerrain.playerLanded)
-            pLand.Post(gameObject);
-
-    }
-
-    public float GetCurrentVelocity()
-    {
-
-        if (sRigidbody.velocity.x < 0)
-            currentVelocity = -sRigidbody.velocity.x;
-        else
-            currentVelocity = sRigidbody.velocity.x;
-
-        return currentVelocity;
-    }
 
 
 

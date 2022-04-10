@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5646101225891507392}
   - component: {fileID: 5646101225891507393}
-  - component: {fileID: 5646101225891507406}
-  - component: {fileID: 5646101225891507407}
   - component: {fileID: 5646101225891507395}
   - component: {fileID: 4028113966972308460}
   m_Layer: 0
@@ -59,46 +57,6 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
---- !u!114 &5646101225891507406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5646101225891507404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5026e8ef517af8c4fb4bab918f457243, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sBlackFinishBlock: {fileID: 0}
-  sWhiteFinishBlock: {fileID: 0}
-  itemPickUp:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e1a78439c18d97a49bb9d04f3a4a332c, type: 2}
---- !u!114 &5646101225891507407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5646101225891507404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da7a79054f99b3f4a830ebce029a11c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sMapRotator: {fileID: 0}
-  sGridManager: {fileID: 0}
-  pMapRotate:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: fe63901b300e90045a5e54e67dc16aae, type: 2}
-  pSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 337ed5b2905bdbd45b79afafb577e998, type: 2}
 --- !u!114 &5646101225891507395
 MonoBehaviour:
   m_ObjectHideFlags: 0

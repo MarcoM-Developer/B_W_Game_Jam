@@ -81,8 +81,8 @@ public class GridManager : MonoBehaviour
 
 
     // HACK: This should be done using events, but who cares, it's a GameJam.
-    private bool whiteOnSwitch = false; 
-    private bool blackOnSwitch = false;
+    public bool whiteOnSwitch = false; 
+    public bool blackOnSwitch = false;
 
     // TODO: Implement white wire controls
 
