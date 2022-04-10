@@ -39,6 +39,8 @@ public class GridManager : MonoBehaviour
     [SerializeField]
     private GameObject whitePlayer;
 
+    public AudioManager audioManager; // TODO
+
     private Dictionary<TileBase, TileData> dataFromTiles;
     private List<Vector3Int> activeTiles = new List<Vector3Int>();
 
@@ -122,6 +124,10 @@ public class GridManager : MonoBehaviour
                     //... and in fact, I just moved to the switch...
                     Debug.Log("White Player entered switch.");
 
+                    // ... close the switch
+                    PlayFlickSwitchSound();
+                    blackTileMap.SetTile(blackTilePosition, blackWire.tiles[0]);
+
                     //... tell the world I am standing on the switch! 
                     whiteOnSwitch = true;
 
@@ -165,6 +171,10 @@ public class GridManager : MonoBehaviour
                 {
                     // ... I just moved to the switch
                     Debug.Log("Black Player entered switch.");
+
+                    // ... close the switch
+                    PlayFlickSwitchSound();
+                    whiteTileMap.SetTile(whiteTilePosition, whiteWire.tiles[0]);
 
                     //... tell the world that I am on the switch!
                     blackOnSwitch = true;
@@ -222,6 +232,12 @@ public class GridManager : MonoBehaviour
         }*/
     }
 
+
+    private void PlayFlickSwitchSound()
+	{
+        AudioManager.instance.Play("WireSwitch");
+        //FindObjectOfType<AudioManager>().Play("WireSwitch");
+	}
 
     /**
      * Call this after the spread was finished.

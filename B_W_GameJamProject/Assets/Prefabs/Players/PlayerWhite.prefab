@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdf230f571637bf4b83f2a743b63c08f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isActive: 1
+  isActive: 0
   playerStateManager: {fileID: 6199895609545758222}
   playerType: 0
   playerPosition: {fileID: 11400000, guid: bc8e6cc6599a2e24f931ee8f6a34fe4b, type: 2}
@@ -106,15 +106,15 @@ MonoBehaviour:
   isAtMaxSpeed: 0
   maxSpeed:
     useLocalValue: 1
-    localValue: 15
+    localValue: 4
     variable: {fileID: 11400000, guid: c0b204415da112a4d963932a63ddf4e4, type: 2}
   acceleration:
     useLocalValue: 1
-    localValue: 20
+    localValue: 30
     variable: {fileID: 11400000, guid: 0ca508b7977758d4d8e8f4a2ba288515, type: 2}
   deceleration:
     useLocalValue: 1
-    localValue: 10
+    localValue: 5
     variable: {fileID: 11400000, guid: 4d70554f1f015594f9ed87c0326fd2b3, type: 2}
   playerRigidBody: {fileID: 6199895608155278529}
 --- !u!114 &6199895608155278534

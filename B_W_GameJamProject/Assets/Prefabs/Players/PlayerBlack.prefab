@@ -157,15 +157,15 @@ MonoBehaviour:
   isAtMaxSpeed: 0
   maxSpeed:
     useLocalValue: 1
-    localValue: 15
+    localValue: 5
     variable: {fileID: 11400000, guid: c0b204415da112a4d963932a63ddf4e4, type: 2}
   acceleration:
     useLocalValue: 1
-    localValue: 20
+    localValue: 30
     variable: {fileID: 11400000, guid: 0ca508b7977758d4d8e8f4a2ba288515, type: 2}
   deceleration:
     useLocalValue: 1
-    localValue: 10
+    localValue: 5
     variable: {fileID: 11400000, guid: 4d70554f1f015594f9ed87c0326fd2b3, type: 2}
   playerRigidBody: {fileID: 3939676950502193068}
 --- !u!114 &3939676950502193071

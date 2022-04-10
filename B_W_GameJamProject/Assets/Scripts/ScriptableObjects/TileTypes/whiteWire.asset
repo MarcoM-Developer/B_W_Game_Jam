@@ -15,9 +15,9 @@ MonoBehaviour:
   propagatesSignal: 1
   type: whiteWire
   tiles:
+  - {fileID: 11400000, guid: f3616d82044c34da3803db2abfc8930b, type: 2}
   - {fileID: 11400000, guid: 278e57902c0b044e2a1455465cbfc54f, type: 2}
   - {fileID: 11400000, guid: 367ccc6be9fef404080c81c95b5d7743, type: 2}
-  - {fileID: 11400000, guid: f3616d82044c34da3803db2abfc8930b, type: 2}
   - {fileID: 11400000, guid: 7714c5f099cae42dd934d27794f845ce, type: 2}
   - {fileID: 11400000, guid: f9475bf8b4f6a488c911cceeec27517c, type: 2}
   - {fileID: 11400000, guid: 91d38735222ba41b3a8b9e3468ddd961, type: 2}
@@ -28,3 +28,4 @@ MonoBehaviour:
   isTemp: 0
   isWire: 1
   isCheckerboard: 0
+  isSwitch: 0
