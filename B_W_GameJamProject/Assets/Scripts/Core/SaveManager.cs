@@ -30,6 +30,11 @@ public class SaveManager : MonoBehaviour
             isSceneLoaded.Value = false;
             OnLoad();
         }
+        if (SceneManager.GetActiveScene().name !="MainMenu")
+        {
+            Save();
+        }
+        
     }
 
     private void OnDisable()
@@ -45,10 +50,10 @@ public class SaveManager : MonoBehaviour
         }
 
         SaveObject saveObject = new SaveObject { sceneIndex = (int)this.sceneIndex.Value, 
-                                                 playerWhitePosition = this.playerWhitePosition.Value, 
-                                                 playerBlackPosition = this.playerBlackPosition.Value,
-                                                 isPickedUpBlackGoal = this.isPickedUpBlackGoal.Value,
-                                                 isPickedUpWhiteGoal = this.isPickedUpWhiteGoal.Value,
+                                                 //playerWhitePosition = this.playerWhitePosition.Value, 
+                                                 //playerBlackPosition = this.playerBlackPosition.Value,
+                                                 //isPickedUpBlackGoal = this.isPickedUpBlackGoal.Value,
+                                                 //isPickedUpWhiteGoal = this.isPickedUpWhiteGoal.Value,
                                                };
 
         string json = JsonUtility.ToJson(saveObject);
@@ -63,10 +68,10 @@ public class SaveManager : MonoBehaviour
             string saveString = File.ReadAllText(Application.dataPath + "/save.txt");
             SaveObject loadedSaveObject = JsonUtility.FromJson<SaveObject>(saveString);
             sceneIndex.Value = (uint)loadedSaveObject.sceneIndex;
-            playerBlackPosition.Value = loadedSaveObject.playerWhitePosition;
-            playerBlackPosition.Value = loadedSaveObject.playerBlackPosition;
-            isPickedUpBlackGoal.Value = loadedSaveObject.isPickedUpBlackGoal;
-            isPickedUpWhiteGoal.Value = loadedSaveObject.isPickedUpWhiteGoal;
+            //playerBlackPosition.Value = loadedSaveObject.playerWhitePosition;
+            //playerBlackPosition.Value = loadedSaveObject.playerBlackPosition;
+            //isPickedUpBlackGoal.Value = loadedSaveObject.isPickedUpBlackGoal;
+            //isPickedUpWhiteGoal.Value = loadedSaveObject.isPickedUpWhiteGoal;
         }
 
         /*if (SceneManager.GetActiveScene().buildIndex != sceneIndex.Value)
@@ -94,6 +99,6 @@ public class SaveManager : MonoBehaviour
 public class SaveObject
 {
     public int sceneIndex;
-    public Vector3 playerWhitePosition, playerBlackPosition;
-    public bool isPickedUpWhiteGoal, isPickedUpBlackGoal;
+    //public Vector3 playerWhitePosition, playerBlackPosition;
+    //public bool isPickedUpWhiteGoal, isPickedUpBlackGoal;
 }

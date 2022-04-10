@@ -1,1 +1,1 @@
-{"sceneIndex":2,"playerWhitePosition":{"x":-236.87380981445313,"y":-319.51837158203127,"z":0.0},"playerBlackPosition":{"x":-235.8328857421875,"y":-321.5182800292969,"z":0.0},"isPickedUpWhiteGoal":false,"isPickedUpBlackGoal":false}
+{"sceneIndex":2}
