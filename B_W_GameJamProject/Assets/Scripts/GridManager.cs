@@ -44,6 +44,12 @@ public class GridManager : MonoBehaviour
 
 
     /**
+     * constants for what signal to spread
+     */
+    const string BLACK_SIGNAL = "blackSignal";
+    const string WHITE_SIGNAL = "whiteSignal";
+
+    /**
      * Populate the dataFromTiles, so I can fetch the tiles later
      */ 
     private void Awake()
@@ -99,25 +105,28 @@ public class GridManager : MonoBehaviour
         Vector3Int blackTilePosition = whiteTileMap.WorldToCell(whitePlayerPosition);
         TileBase blackTile = blackTileMap.GetTile(blackTilePosition);
 
+
+        // TODO: De-Spaghetti this code ...
         // Check if White stands on switch.
-        if (blackTile != null && dataFromTiles.ContainsKey(blackTile))
+        if (blackTile != null &&
+            dataFromTiles.ContainsKey(blackTile))
 		{
             TileData data = dataFromTiles[blackTile];
 
             if (data.isSwitch)
 			{
-                // Yes, I stand on switch.
+                // Yes, I White Player stand on switch.
 
                 if (!whiteOnSwitch)
 				{
                     //... and in fact, I just moved to the switch...
-                    Debug.Log("Entered switch.");
+                    Debug.Log("White Player entered switch.");
 
                     //... tell the world I am standing on the switch! 
                     whiteOnSwitch = true;
 
                     //... spread the word.
-                    Spread(blackTilePosition);
+                    Spread(blackTilePosition, WHITE_SIGNAL);
                     PostSpread(blackTilePosition);
                 }
 			}else
@@ -133,13 +142,55 @@ public class GridManager : MonoBehaviour
                     whiteOnSwitch = false;
 
                     //... spread the word.
-                    Spread(blackTilePosition);
+                    Spread(blackTilePosition, WHITE_SIGNAL);
                     PostSpread(blackTilePosition);
 
                 }
 			}
             //Debug.Log("Wire: "+data.isWire + "Switch: "+data.isSwitch);
 		}
+
+        //!!! May be wrong
+        // TODO: Clean the code up, this is a organized mess.
+        // BLACK PLAYER
+        if (whiteTile != null &&
+            dataFromTiles.ContainsKey(whiteTile))
+        {
+            TileData data = dataFromTiles[whiteTile];
+
+            if (data.isSwitch)
+            {
+                // Yes, I Black Player stand on a switch.
+                if (!blackOnSwitch)
+                {
+                    // ... I just moved to the switch
+                    Debug.Log("Black Player entered switch.");
+
+                    //... tell the world that I am on the switch!
+                    blackOnSwitch = true;
+
+                    //... spread the signal;
+                    Spread(whiteTilePosition, BLACK_SIGNAL);
+                    PostSpread(whiteTilePosition);
+                }
+            }
+            else
+            {
+
+                // No, I don't stand on a switch.
+                if (blackOnSwitch)
+                {
+                    //... I just left the switch.
+                    Debug.Log("Black Exited Switch.");
+
+                    blackOnSwitch = false;
+
+                    Spread(whiteTilePosition, BLACK_SIGNAL);
+                    PostSpread(whiteTilePosition);
+
+                }
+            }
+        }
 
         // Mouse (for testing)
         /* if (Input.GetMouseButtonDown(0))
@@ -184,63 +235,112 @@ public class GridManager : MonoBehaviour
     /**
      * Spreads the tiles to nearest neighbors.
      */
-    public void Spread(Vector3Int position)
+    public void Spread(Vector3Int position,
+                       string blackOrWhiteSignal)
     {
         for (int x = position.x - 1; x < position.x + 2; x++)
         {
             for (int y = position.y - 1; y < position.y + 2; y++)
             {
-                TryToSpreadTile(new Vector3Int(x, y, 0));
+                TryToSpreadTile(new Vector3Int(x, y, 0), blackOrWhiteSignal);
             }
         }
 
 
-        void TryToSpreadTile(Vector3Int position)
+        void TryToSpreadTile(Vector3Int position,
+                             string blackOrWhiteSignal)
+                            
         {
             TileBase blackTile = blackTileMap.GetTile(position);
             TileBase whiteTile = whiteTileMap.GetTile(position);
 
-            TileData data;
+            TileData blackTileData;
+            TileData whiteTileData;
 
             if (!activeTiles.Contains(position))
             {
+                bool isWhiteTileAvailable = (whiteTile != null && dataFromTiles.ContainsKey(whiteTile));
+                bool isBlackTileAvailable = (blackTile != null && dataFromTiles.ContainsKey(blackTile));
 
-                if (blackTile != null &&
-                    dataFromTiles.ContainsKey(blackTile))
+                if (isBlackTileAvailable && dataFromTiles[blackTile].propagatesSignal)
                 {
-                    data = dataFromTiles[blackTile];
+                    blackTileData = dataFromTiles[blackTile];
 
                     // Checkerboard spreading rule
-                    if (data.isCheckerboard)
+                    if (blackTileData.isCheckerboard)
                     {
-                        blackTileMap.SetTile(position, null);
-                        whiteTileMap.SetTile(position, tempWhiteWall.tiles[0]); // Do the positions match?
+                        switch (blackOrWhiteSignal)
+                        {
+                            case WHITE_SIGNAL: // White player sent the signal, put a white wall there.
+                                blackTileMap.SetTile(position, null);
+                                whiteTileMap.SetTile(position, tempWhiteWall.tiles[0]); // Do the positions match?
+                                break;
 
+                            case BLACK_SIGNAL: // Black player sent the signal, put a black wall there.
+                                whiteTileMap.SetTile(position, null);
+                                blackTileMap.SetTile(position, tempBlackWall.tiles[0]);
+                                break;
+
+                        }
                         activeTiles.Add(position);
-                        Spread(position);
+                        Spread(position, blackOrWhiteSignal);
                     }
                     // Wire spreading rule
-                    else if (data.isWire)
+                    else if (blackTileData.isWire)
                     {
                         activeTiles.Add(position);
-                        Spread(position);
+                        Spread(position, blackOrWhiteSignal);
 
                     }
                 }
+                // Spaghetti code attacks...
+                else if (isWhiteTileAvailable && dataFromTiles[whiteTile].propagatesSignal)       
+                {
+                    whiteTileData = dataFromTiles[whiteTile];
+
+                    // Checkerboard spreading rule
+                    if (whiteTileData.isCheckerboard)
+                    {
+                        // (blackTile has precedence here btw.)
+                        switch (blackOrWhiteSignal)
+                        {
+                            case WHITE_SIGNAL: // White player sent the signal, put a white wall there.
+                                blackTileMap.SetTile(position, null);
+                                whiteTileMap.SetTile(position, tempWhiteWall.tiles[0]); // Do the positions match?
+                                break;
+
+                            case BLACK_SIGNAL: // Black player sent the signal, put a black wall there.
+                                whiteTileMap.SetTile(position, null);
+                                blackTileMap.SetTile(position, tempBlackWall.tiles[0]);
+                                break;
+
+                        }
+                        activeTiles.Add(position);
+                        Spread(position, blackOrWhiteSignal);
+                    }
+                    // Wire spreading rule
+                    else if (whiteTileData.isWire)
+                    {
+                        activeTiles.Add(position);
+                        Spread(position, blackOrWhiteSignal);
+
+                    }
+                }
+
                 // Switch ON/OFF
-                else if (whiteTile != null &&
+                /* else if (whiteTile != null &&
                     dataFromTiles.ContainsKey(whiteTile))
                 {
-                    data = dataFromTiles[whiteTile];
+                    blackTileData = dataFromTiles[whiteTile];
 
-                    if (data.isTemp)
+                    if (blackTileData.isTemp)
                     {
                         blackTileMap.SetTile(position, checkerboard.tiles[0]);
                         whiteTileMap.SetTile(position, checkerboard.tiles[0]);
                         activeTiles.Add(position);
-                        Spread(position);
+                        Spread(position, blackOrWhiteSignal);
                     }
-                }
+                }*/
             }
         }
     }

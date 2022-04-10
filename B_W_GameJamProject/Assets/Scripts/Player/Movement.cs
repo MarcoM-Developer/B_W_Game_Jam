@@ -10,7 +10,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private bool isAtMaxSpeed = false;
 
     [SerializeField] private FloatReference maxSpeed;           //serialize field takes reference from inspector and only if the component is on the same object
-    [SerializeField] private FloatReference acceleration;              //otherwise I use getComponent method with GameObject.Find()
+    [SerializeField] private FloatReference acceleration;       //otherwise I use getComponent method with GameObject.Find()
     [SerializeField] private FloatReference deceleration;
 
     [Header("Components")]
@@ -111,7 +111,6 @@ public class Movement : MonoBehaviour
         {
             isAtMaxSpeed = false;
         }
-
     }
 
     private void FlipGameObjectLeftOrRight()

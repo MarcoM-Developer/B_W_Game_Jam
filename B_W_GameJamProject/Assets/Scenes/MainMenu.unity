@@ -544,5 +544,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainMenuManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5993408519707395082, guid: b5f9e984a528f7f47ae0e2ad7772c497, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993408519707395082, guid: b5f9e984a528f7f47ae0e2ad7772c497, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993408519707395082, guid: b5f9e984a528f7f47ae0e2ad7772c497, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993408519707395082, guid: b5f9e984a528f7f47ae0e2ad7772c497, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993408519707395082, guid: b5f9e984a528f7f47ae0e2ad7772c497, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993408519707395082, guid: b5f9e984a528f7f47ae0e2ad7772c497, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5f9e984a528f7f47ae0e2ad7772c497, type: 3}
