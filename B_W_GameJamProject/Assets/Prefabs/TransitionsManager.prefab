@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackTransient: {fileID: 0}
   whiteTransient: {fileID: 0}
-  sBlackFinalPosition: -330
-  sWhitFinalPosition: 330
-  eBlackFinalPosition: 300
-  eWhitFinalPosition: -300
+  sBlackFinalPosition: -225
+  sWhitFinalPosition: 225
+  eBlackFinalPosition: 200
+  eWhitFinalPosition: -200
