@@ -1,1 +1,1 @@
-{"sceneIndex":0,"playerWhitePosition":{"x":3.1358482837677,"y":-14.85660457611084,"z":0.0},"playerBlackPosition":{"x":-4.549932479858398,"y":-18.85763931274414,"z":0.0},"isPickedUpWhiteGoal":true,"isPickedUpBlackGoal":true}
+{"sceneIndex":2,"playerWhitePosition":{"x":-236.03378295898438,"y":-319.5183410644531,"z":0.0},"playerBlackPosition":{"x":-235.8328857421875,"y":-321.5182800292969,"z":0.0},"isPickedUpWhiteGoal":false,"isPickedUpBlackGoal":false}

@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1506bb58d07f4bd0a0d516d3b42b97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPickedUp:
+  isPickedUpRef:
     useLocalValue: 0
     localValue: 0
     variable: {fileID: 11400000, guid: f16342fd022891f4a8b33ad9383d27d1, type: 2}

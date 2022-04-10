@@ -49,6 +49,6 @@ MonoBehaviour:
     variable: {fileID: 11400000, guid: e71a1a75cb0c9fd4d9c26c29c2033c68, type: 2}
   playerWhitePosition: {fileID: 11400000, guid: bc8e6cc6599a2e24f931ee8f6a34fe4b, type: 2}
   playerBlackPosition: {fileID: 11400000, guid: 14b83a373d1036f4caf0b71a273fc441, type: 2}
-  loadedOtherScene: {fileID: 11400000, guid: a5469a8304414b243a385ca7af2d5029, type: 2}
+  isSceneLoaded: {fileID: 11400000, guid: a5469a8304414b243a385ca7af2d5029, type: 2}
   isPickedUpWhiteGoal: {fileID: 11400000, guid: bb584e31c493a0140a8871f0e8b1c268, type: 2}
   isPickedUpBlackGoal: {fileID: 11400000, guid: f16342fd022891f4a8b33ad9383d27d1, type: 2}

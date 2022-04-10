@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinishBlock : MonoBehaviour
 {
@@ -10,15 +12,19 @@ public class FinishBlock : MonoBehaviour
      * of how many triggers were there and calls ... whe all is done.
      */
 
-    [SerializeField] private BoolReference isPickedUp;
-    public delegate void OnFinished();
-    public static OnFinished onFinished;
+    [SerializeField] private BoolReference isPickedUpRef;
+    private bool isPickedUp;
+
+
+    public delegate void LevelEnded(int sceneBuildIndex);
+    public static LevelEnded OnFinished;
 
     public static int instanceTriggerCount = 0; // how many times were this triggered in a game
 
 
     private void OnEnable()
     {
+        SaveManager.OnSave += SaveValues;
         SaveManager.OnLoad += LoadValues;
     }
 
@@ -26,17 +32,11 @@ public class FinishBlock : MonoBehaviour
     void Start()
     {
         instanceTriggerCount = 0; // set zero trigger in the beggining.
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnDisable()
     {
+        SaveManager.OnSave -= SaveValues;
         SaveManager.OnLoad -= LoadValues;
     }
 
@@ -48,14 +48,14 @@ public class FinishBlock : MonoBehaviour
 		{
            
             instanceTriggerCount++;
-            isPickedUp.Value = true;
+            isPickedUp = true;
             
 			if (instanceTriggerCount == 2)
 			{
                 Debug.Log("Both picked");
 
-                if (onFinished != null) {
-                    //onFinished(); 
+                if (OnFinished != null) {
+                    OnFinished(SceneManager.GetActiveScene().buildIndex+1); 
                 }
             }
 
@@ -66,7 +66,7 @@ public class FinishBlock : MonoBehaviour
 
     private void LoadValues()
     {
-        if (isPickedUp.Value)
+        if (isPickedUpRef.Value)
         {
             instanceTriggerCount++;
             gameObject.SetActive(false);
@@ -80,11 +80,17 @@ public class FinishBlock : MonoBehaviour
         {
             Debug.Log("Both picked");
 
-            if (onFinished != null)
+            if (OnFinished != null)
             {
-                //onFinished(); 
+                OnFinished(SceneManager.GetActiveScene().buildIndex+1); 
             }
         }
     }
+
+    private void SaveValues()
+    {
+        isPickedUpRef.Value = isPickedUp;
+    }
+
 
 }

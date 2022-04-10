@@ -21,8 +21,11 @@ public class Movement : MonoBehaviour
 
     private void OnEnable()
     {
+        TransitionState.OnTransition += CantMove;
+        TransitionState.OnEndingTransition += CanMove;
         PauseState.OnPause += CantMove;
         PauseState.OnResume += CanMove;
+        
     }
 
     // Start is called before the first frame update
@@ -48,6 +51,8 @@ public class Movement : MonoBehaviour
 
     private void OnDisable()
     {
+        TransitionState.OnTransition -= CantMove;
+        TransitionState.OnEndingTransition -= CanMove;
         PauseState.OnPause -= CantMove;
         PauseState.OnResume -= CanMove;
     }
