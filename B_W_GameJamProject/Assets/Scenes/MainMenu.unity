@@ -291,7 +291,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -6.872}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 364, y: -82}
+  m_AnchoredPosition: {x: 282, y: -101}
   m_SizeDelta: {x: 379.0707, y: 58.4429}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &562281498
@@ -314,7 +314,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Credit 3
+  m_text: Milo Zimmerman-Bence
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6eb0139b3af70004aa1f05943a38da56, type: 2}
   m_sharedMaterial: {fileID: 122641732190740253, guid: 6eb0139b3af70004aa1f05943a38da56, type: 2}
@@ -377,7 +377,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 4.794882}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -808,16 +808,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728640122}
-  m_LocalRotation: {x: -0, y: -0, z: -0.013090945, w: 0.99991435}
+  m_LocalRotation: {x: -0, y: -0, z: 0.054659266, w: -0.9985051}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1016771700}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.5}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -6.267}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -170, y: -317.44}
+  m_AnchoredPosition: {x: -173, y: -333}
   m_SizeDelta: {x: 379.0707, y: 58.4429}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1728640124
