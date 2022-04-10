@@ -238,7 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange:
     useLocalValue: 1
-    localValue: 2.03
+    localValue: 2.04
     variable: {fileID: 11400000, guid: 05a7099d66a90374f89baaff9f375b91, type: 2}
   player: {fileID: 6199895608155278528}
   playerStateManager: {fileID: 6199895609545758222}
