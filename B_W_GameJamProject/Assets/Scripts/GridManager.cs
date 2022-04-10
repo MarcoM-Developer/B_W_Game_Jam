@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
-using UnityEngine.EventSystems;
 
 public class GridManager : MonoBehaviour
 {
@@ -84,7 +83,7 @@ public class GridManager : MonoBehaviour
     private bool whiteOnSwitch = false; 
     private bool blackOnSwitch = false;
 
-    // TODO: Implement white wire controls
+    // TODO: Implement white wire controls.
 
     // Update is called once per frame
     void Update()
@@ -145,10 +144,6 @@ public class GridManager : MonoBehaviour
         // Mouse (for testing)
         /* if (Input.GetMouseButtonDown(0))
         {
-            //check if UI is on the screen
-            if (EventSystem.current.IsPointerOverGameObject())
-                return;
-
             // Test the activation
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
