@@ -40,6 +40,7 @@ public class A_Player_wo_Jump : MonoBehaviour
     [SerializeField] private AK.Wwise.Event pMoveLR;
     [SerializeField] private AK.Wwise.Event pStopLR;
     [SerializeField] private AK.Wwise.Event pLand;
+    //[SerializeField] private AK.Wwise.State pTypeState;
 
     private bool isSoundPlaying = false;
     private float currentVelocity;
@@ -47,22 +48,12 @@ public class A_Player_wo_Jump : MonoBehaviour
 
     public void Update()
     {
-        if (sCurrentPlayer.gameObject.layer == 8)
-        { //white
-            AkSoundEngine.SetState("CurrentPlayer", "White");
-
-        }
-        else if (sCurrentPlayer.gameObject.layer == 9)
-        {  //black
-            AkSoundEngine.SetState("CurrentPlayer", "Black");
-        }
-
 
         NoJumpPlayerMotionLR();
 
         //PlayerJump();
 
-        // PlayerLand();
+        //PlayerLand();
 
     }//end update
 
@@ -74,52 +65,47 @@ public class A_Player_wo_Jump : MonoBehaviour
         //Player Movement/Speed
         AkSoundEngine.SetRTPCValue("PlayerSpeed", GetCurrentVelocity());
 
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        //if moving in any direction play movement
+        //if not focus play movemnt at a lower sound
+
+
+        if (currentVelocity >= 1)
         {
-            if (!isSoundPlaying)//if no sound is playing
-            {
-
-                if (playerStateManager.CurrentState)
-
-
-                    if (sCurrentPlayer.gameObject.layer == 8)
-                    { //white
-                        pMoveLR.Post(gameObject);
-                    }
-                    else if (sCurrentPlayer.gameObject.layer == 9)
-                    {  //black
-                        pMoveLR.Post(gameObject);
-                    }
-                isSoundPlaying = true;
-            }
-
+            pMoveLR.Post(gameObject);
+            isSoundPlaying = true;
+            Debug.Log("Sound is Playing");
         }
-        else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
+        else if (currentVelocity < 1)
         {
-            if (isSoundPlaying)//if sound is playing
+            if (isSoundPlaying)
             {
-
-                if (sCurrentPlayer.gameObject.layer == 9) // not white
-                    pStopLR.Post(gameObject);
-                else if (sCurrentPlayer.gameObject.layer == 8) //not black
-                    pStopLR.Post(gameObject);
+                pStopLR.Post(gameObject);
                 isSoundPlaying = false;
-
-
+                Debug.Log("Sound is Not Playing");
             }
         }
+
+
+
+
+
+
+
+
+        /*
+                if (sCurrentPlayer.gameObject.layer == 8)
+                { //white
+                    AkSoundEngine.SetState("CurrentPlayer", "White");
+                    pMoveLR.Post(gameObject);
+                }
+                else if (sCurrentPlayer.gameObject.layer == 9)
+                {  //black
+                    AkSoundEngine.SetState("CurrentPlayer", "Black");
+                    pMoveLR.Post(gameObject);
+                }*/
+
+
     }
-
-    /*   private void PlayerJump()
-       {
-
-           if (Input.GetKeyDown(KeyCode.Space))
-           {
-               //play jump
-               plyrJump.Post(gameObject);
-           }
-
-       }*/
 
 
     private void PlayerLand()
@@ -131,17 +117,11 @@ public class A_Player_wo_Jump : MonoBehaviour
 
     public float GetCurrentVelocity()
     {
-
-        if (sRigidbody.velocity.x < 0)
-            currentVelocity = -sRigidbody.velocity.x;
-        else
-            currentVelocity = sRigidbody.velocity.x;
-
-        return currentVelocity;
+        return Mathf.Abs(sRigidbody.velocity.x);
     }
 
 
-
+    //if speed over x value play sound
 
 
 }//END MAIN
