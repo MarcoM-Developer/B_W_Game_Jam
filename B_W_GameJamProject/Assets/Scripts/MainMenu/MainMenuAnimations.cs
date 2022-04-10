@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MainMenuAnimations : MonoBehaviour
 {
-    [SerializeField] private GameObject mainMenuImage,  startButton, loadButton;
+    [SerializeField] private GameObject mainMenuImage; //, startButton; //, loadButton;
     [SerializeField] private Image mainMenuOpacityLayer;
 
     [SerializeField] private float mainMenuImageHeight;
@@ -22,32 +23,27 @@ public class MainMenuAnimations : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        needInput = true;
-        hasPressedKey = false;
+        //needInput = true;
+        //hasPressedKey = false;
+        AnimateMainMenu();
     }
 
     private void AnimateMainMenu()
     {
         Sequence mySequence = DOTween.Sequence();
         mySequence.Append(mainMenuImage.transform.DOMoveY(mainMenuImageHeight, mainMenuImageAnimationTime));
-        mySequence.Append(mainMenuOpacityLayer.DOFade(opacityLayerValue, opacityLayerAnimationTime));
-        mySequence.Append(startButton.transform.DOScaleX(buttonXScaleValue, buttonScaleAnimationTime));
-        mySequence.Append(loadButton.transform.DOScaleX(buttonXScaleValue, buttonScaleAnimationTime));
+        //mySequence.Append(mainMenuOpacityLayer.DOFade(opacityLayerValue, opacityLayerAnimationTime));
+        //mySequence.Append(startButton.transform.DOScaleX(buttonXScaleValue, buttonScaleAnimationTime));
+        // mySequence.Append(loadButton.transform.DOScaleX(buttonXScaleValue, buttonScaleAnimationTime));
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (hasPressedKey)
+        if (Input.anyKey)
         {
-            hasPressedKey = false;
-            AnimateMainMenu();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
         }
-
-        if ( (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Return)) && needInput)
-        {
-            needInput = false;
-            hasPressedKey = true;
-        }
+            
     }
 }
