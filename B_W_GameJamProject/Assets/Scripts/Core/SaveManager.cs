@@ -9,29 +9,32 @@ public class SaveManager : MonoBehaviour
 {
     [SerializeField] private UIntReference sceneIndex;
     [SerializeField] private Vector3Variable playerWhitePosition, playerBlackPosition;
-    [SerializeField] private BoolVariable loadedOtherScene;
+    [SerializeField] private BoolVariable isSceneLoaded;
     [SerializeField] private BoolVariable isPickedUpWhiteGoal;
     [SerializeField] private BoolVariable isPickedUpBlackGoal;
     public static event Action OnSave;
     public static event Action OnLoad;
 
+    private void OnEnable()
+    {
+        LevelTransition.OnTransitionEnded += Load;
+    }
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         sceneIndex.Value = (uint)SceneManager.GetActiveScene().buildIndex;
 
-        if (OnLoad != null && loadedOtherScene.Value)
+        if (OnLoad != null && isSceneLoaded.Value)
         {
-            loadedOtherScene.Value = false;
+            isSceneLoaded.Value = false;
             OnLoad();
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        
+        LevelTransition.OnTransitionEnded -= Load;
     }
 
     public void Save()
@@ -66,22 +69,23 @@ public class SaveManager : MonoBehaviour
             isPickedUpWhiteGoal.Value = loadedSaveObject.isPickedUpWhiteGoal;
         }
 
-        if (SceneManager.GetActiveScene().buildIndex != sceneIndex.Value)
+        /*if (SceneManager.GetActiveScene().buildIndex != sceneIndex.Value)
         {
             loadedOtherScene.Value = true;
             SceneManager.LoadScene((int)sceneIndex.Value, LoadSceneMode.Single);
-        }
-
-        if (OnLoad != null)
+        }*/
+        SceneManager.LoadScene((int)sceneIndex.Value, LoadSceneMode.Single);
+        isSceneLoaded.Value = true;
+        /*if (OnLoad != null)
         {
             OnLoad();
-        }
+        }*/
     }
 
-    public void LoadMainMenu()
+   /* public void LoadMainMenu()
     {
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
-    }
+    }*/
 
 }
 
