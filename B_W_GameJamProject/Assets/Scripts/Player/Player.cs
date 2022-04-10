@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
 
     private void OnEnable()
     {
+        TransitionState.OnTransition += DisablePlayer;
+        TransitionState.OnEndingTransition += CheckIsActiveThenPassState;
         SaveManager.OnSave += StorePlayerPosition;
         SaveManager.OnLoad += LoadPlayerPosition;
     }
@@ -42,6 +44,8 @@ public class Player : MonoBehaviour
 
     private void OnDisable()
     {
+        TransitionState.OnTransition -= DisablePlayer;
+        TransitionState.OnEndingTransition -= CheckIsActiveThenPassState;
         SaveManager.OnSave -= StorePlayerPosition;
         SaveManager.OnLoad -= LoadPlayerPosition;
     }
@@ -74,5 +78,11 @@ public class Player : MonoBehaviour
     private void LoadPlayerPosition()
     {
         transform.position = playerPosition.Value;
+    }
+
+    private void DisablePlayer()
+    {
+        playerStateManager.CurrentState = playerStateManager.OffState;
+        playerStateManager.CurrentState.StartState();
     }
 }

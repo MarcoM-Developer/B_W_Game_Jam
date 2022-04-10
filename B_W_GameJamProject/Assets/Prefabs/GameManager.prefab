@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2395512451327739002}
   - component: {fileID: 2395512451327739001}
   - component: {fileID: 2395512451327739000}
+  - component: {fileID: 1723525039102704884}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -47,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseState: {fileID: 2395512451327739000}
   gamePlayState: {fileID: 2395512451327739001}
+  transitionState: {fileID: 1723525039102704884}
 --- !u!114 &2395512451327739001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,6 +73,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55ddcd82e5dd76c409169279a4890a4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameStateManager: {fileID: 2395512451327739002}
+--- !u!114 &1723525039102704884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2395512451327739006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85a930c3288c79745b5009abd8fb81a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameStateManager: {fileID: 2395512451327739002}
