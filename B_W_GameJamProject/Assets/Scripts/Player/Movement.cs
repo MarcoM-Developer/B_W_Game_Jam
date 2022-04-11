@@ -41,7 +41,7 @@ public class Movement : MonoBehaviour
         {
             DetectInput();
         }
-        FlipGameObjectLeftOrRight();
+        //FlipGameObjectLeftOrRight();
     }
 
     private void FixedUpdate()
