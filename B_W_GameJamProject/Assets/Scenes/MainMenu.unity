@@ -618,11 +618,11 @@ MonoBehaviour:
 
     SFX:
 
-    Curtis Smith
+    Curtis Smith with the
+    help of Daniel Tu: lilcjttu
 
 
-    Made
-    for B&W Jam #8 @ itch.io'
+    Made for B&W Jam #8 @ itch.io'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6eb0139b3af70004aa1f05943a38da56, type: 2}
   m_sharedMaterial: {fileID: 122641732190740253, guid: 6eb0139b3af70004aa1f05943a38da56, type: 2}
