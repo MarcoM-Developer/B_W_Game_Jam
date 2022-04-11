@@ -20,7 +20,19 @@ SpriteAtlas:
       readable: 0
       crunchedCompression: 0
       sRGB: 1
-    platformSettings: []
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
     packingSettings:
       serializedVersion: 2
       padding: 4
@@ -31,14 +43,14 @@ SpriteAtlas:
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
-    - {fileID: 2800000, guid: bdc636707946943918652611bfe0f94c, type: 3}
-    - {fileID: 2800000, guid: 81332214e74b848e0aef68499c75b1cd, type: 3}
-    - {fileID: 2800000, guid: 24fb8d367207640d4844e81379c0e953, type: 3}
-    - {fileID: 2800000, guid: 895141e299a4641db95c00d6b17d9867, type: 3}
-    - {fileID: 2800000, guid: c032afbd84430458f94a6ca3d8dc1176, type: 3}
-    - {fileID: 2800000, guid: 44199bf4e9118470a9b36d3c6c725884, type: 3}
-    - {fileID: 2800000, guid: 73cbd5b483c9a427d84f1b53c641f452, type: 3}
     - {fileID: 2800000, guid: 0749f59632c454f9d81cc069a2a4e3a3, type: 3}
+    - {fileID: 2800000, guid: 73cbd5b483c9a427d84f1b53c641f452, type: 3}
+    - {fileID: 2800000, guid: 44199bf4e9118470a9b36d3c6c725884, type: 3}
+    - {fileID: 2800000, guid: c032afbd84430458f94a6ca3d8dc1176, type: 3}
+    - {fileID: 2800000, guid: 895141e299a4641db95c00d6b17d9867, type: 3}
+    - {fileID: 2800000, guid: 24fb8d367207640d4844e81379c0e953, type: 3}
+    - {fileID: 2800000, guid: 81332214e74b848e0aef68499c75b1cd, type: 3}
+    - {fileID: 2800000, guid: bdc636707946943918652611bfe0f94c, type: 3}
     - {fileID: 2800000, guid: 2ccfe0dc125854484853d569a80fc2da, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
