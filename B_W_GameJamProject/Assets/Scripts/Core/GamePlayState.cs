@@ -9,7 +9,8 @@ public class GamePlayState : GameState
 
     public override void StartState()
     {
-        Application.targetFrameRate = frameRate;
+        //Application.targetFrameRate = frameRate;
+        //QualitySettings.vSyncCount = 1;
     }
 
     public override void UpdateState()
