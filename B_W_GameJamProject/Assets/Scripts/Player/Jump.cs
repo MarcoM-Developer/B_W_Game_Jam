@@ -28,6 +28,8 @@ public class Jump : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 jump = true;
+
+                AudioManager.instance.Play("Jump");
             }
         }
 
