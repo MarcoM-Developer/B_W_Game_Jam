@@ -42,4 +42,16 @@ public class AudioManager : MonoBehaviour
         Sound sound = Array.Find(sounds, sound => sound.name == name);
         sound.source.Play();
 	}
+    /*
+        public void PitchAdjust(float pitch)
+        {
+            Sound sound = Array.Find(sounds, sound => sound.name == name);
+            sound.source.pitch = pitch;
+        }
+
+       public void VolumeAdjust(float vol)
+        {
+            Sound sound = Array.Find(sounds, sound => sound.name == name);
+            sound.volume = vol;
+        }*/
 }
