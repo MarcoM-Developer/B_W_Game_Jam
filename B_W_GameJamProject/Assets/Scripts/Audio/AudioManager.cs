@@ -42,20 +42,6 @@ public class AudioManager : MonoBehaviour
         Sound sound = Array.Find(sounds, sound => sound.name == name);
         sound.source.Play();
 	}
-<<<<<<< HEAD
-    /*
-        public void PitchAdjust(float pitch)
-        {
-            Sound sound = Array.Find(sounds, sound => sound.name == name);
-            sound.source.pitch = pitch;
-        }
-
-       public void VolumeAdjust(float vol)
-        {
-            Sound sound = Array.Find(sounds, sound => sound.name == name);
-            sound.volume = vol;
-        }*/
-=======
 
     public void Pause(string name)
 	{
@@ -68,5 +54,4 @@ public class AudioManager : MonoBehaviour
         Sound sound = Array.Find(sounds, sound => sound.name == name);
         sound.source.Stop();
     }
->>>>>>> main
 }
