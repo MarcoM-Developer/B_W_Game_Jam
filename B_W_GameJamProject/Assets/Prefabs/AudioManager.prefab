@@ -80,3 +80,9 @@ MonoBehaviour:
     volume: 0.1
     pitch: 2
     source: {fileID: 0}
+  - name: Beep
+    loop: 0
+    clip: {fileID: 8300000, guid: 262a740a74b8ca142814dd4905547197, type: 3}
+    volume: 0.1
+    pitch: 2
+    source: {fileID: 0}

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Audio_Player : MonoBehaviour
+public class Audio_White_Player : MonoBehaviour
 {
 
     Rigidbody2D rigidBody;
