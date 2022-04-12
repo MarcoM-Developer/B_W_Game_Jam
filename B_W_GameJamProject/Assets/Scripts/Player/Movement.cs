@@ -34,12 +34,27 @@ public class Movement : MonoBehaviour
         CanMove();
     }
 
+
+    private bool isMoving = false;
+
     // Update is called once per frame
     private void Update()
     {
         if (canMove)
         {
             DetectInput();
+
+            //bool movesFast = (playerRigidBody.velocity.x > 4 || playerRigidBody.velocity.x < -4);
+
+            /*if (movesFast && !isMoving)
+			{
+                isMoving = true;
+                AudioManager.instance.Play("WhiteRoll");
+			}else if (!movesFast)
+			{
+                isMoving = false;
+                AudioManager.instance.Pause("WhiteRoll");
+			}*/
         }
         //FlipGameObjectLeftOrRight();
     }
@@ -62,6 +77,8 @@ public class Movement : MonoBehaviour
         directionVector = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
     }
 
+ 
+
     private void Move()
     {
         if (directionVector.x > 0.5 && playerRigidBody.velocity.x <= maxSpeed.Value)
@@ -72,6 +89,8 @@ public class Movement : MonoBehaviour
 		{
             playerRigidBody.AddForce(directionVector * acceleration.Value, ForceMode2D.Force);
         }
+
+
 
         /*if ( (directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0) )
         {
