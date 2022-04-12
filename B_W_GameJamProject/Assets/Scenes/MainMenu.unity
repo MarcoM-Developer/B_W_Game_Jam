@@ -463,6 +463,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585129, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: sounds.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585129, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: sounds.Array.data[6].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: a3ce3676bfbfa4140a9624de509046ed, type: 3}
+    - target: {fileID: 2238950275561585129, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: sounds.Array.data[6].name
+      value: ThemeIntro
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585129, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: sounds.Array.data[6].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585129, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: sounds.Array.data[6].volume
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
 --- !u!1 &953647779

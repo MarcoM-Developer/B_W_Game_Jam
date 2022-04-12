@@ -132,7 +132,7 @@ MonoBehaviour:
   playerRigidBody: {fileID: 6199895608155278529}
   jumpHeight:
     useLocalValue: 1
-    localValue: 20
+    localValue: 21
     variable: {fileID: 0}
   jumpReducer: 0
 --- !u!1 &6199895609304780429
