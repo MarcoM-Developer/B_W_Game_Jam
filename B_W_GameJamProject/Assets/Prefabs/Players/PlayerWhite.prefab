@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdf230f571637bf4b83f2a743b63c08f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isActive: 0
+  isActive: 1
   playerStateManager: {fileID: 6199895609545758222}
   playerType: 0
   playerPosition: {fileID: 11400000, guid: bc8e6cc6599a2e24f931ee8f6a34fe4b, type: 2}
