@@ -47,7 +47,7 @@ MonoBehaviour:
   - name: WireSwitch
     loop: 0
     clip: {fileID: 8300000, guid: 178cc4a150a144693b372daa51980892, type: 3}
-    volume: 0.25
+    volume: 0.12
     pitch: 1
     source: {fileID: 0}
   - name: Theme
