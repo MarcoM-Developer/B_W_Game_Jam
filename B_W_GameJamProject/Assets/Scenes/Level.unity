@@ -17359,6 +17359,91 @@ TilemapCollider2D:
   m_CorrespondingSourceObject: {fileID: 476272640622980851, guid: d8afc9ac714f44fd191ed1be47a8dab1, type: 3}
   m_PrefabInstance: {fileID: 693548862}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1455474461
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2238950275561585124, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585127, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585127, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585127, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -13.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585127, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585127, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585127, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585127, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585127, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585127, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585127, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585127, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585129, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: sounds.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585129, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: sounds.Array.data[1].name
+      value: MusicTitle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585129, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: sounds.Array.data[7].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5a04442705a2f77428daf31831c96dde, type: 3}
+    - target: {fileID: 2238950275561585129, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: sounds.Array.data[7].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585129, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: sounds.Array.data[7].name
+      value: MusicGameplay
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585129, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: sounds.Array.data[7].pitch
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238950275561585129, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
+      propertyPath: sounds.Array.data[7].volume
+      value: 0.1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 64f5884e142db4f42ba574256bb20037, type: 3}
 --- !u!114 &1469353999 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8247046298418993321, guid: fac80de25b4534e41b1ff7b5e8bfef99, type: 3}

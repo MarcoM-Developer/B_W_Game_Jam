@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7252736446462786972}
   - component: {fileID: 7252736446462786950}
   - component: {fileID: 7252736446462786970}
+  - component: {fileID: 891937119030568892}
   m_Layer: 8
   m_Name: PlayerWhite_NoJump
   m_TagString: Player
@@ -116,6 +117,18 @@ MonoBehaviour:
     localValue: 10
     variable: {fileID: 11400000, guid: 4d70554f1f015594f9ed87c0326fd2b3, type: 2}
   playerRigidBody: {fileID: 7252736446462786972}
+--- !u!114 &891937119030568892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7252736446462786975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 996769ab72b849f4fb77fbc53bfc11b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7252736447099933438
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,7 +306,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 595510155
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
