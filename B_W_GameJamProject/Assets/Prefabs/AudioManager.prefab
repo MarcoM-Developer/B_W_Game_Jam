@@ -47,7 +47,7 @@ MonoBehaviour:
   - name: WireSwitch
     loop: 0
     clip: {fileID: 8300000, guid: 178cc4a150a144693b372daa51980892, type: 3}
-    volume: 0.5
+    volume: 0.12
     pitch: 1
     source: {fileID: 0}
   - name: Theme
@@ -57,16 +57,16 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
   - name: BlackRoll
-    loop: 0
+    loop: 1
     clip: {fileID: 8300000, guid: 3e0840fa836c6402cb8dafd6d16f2375, type: 3}
-    volume: 0.4
-    pitch: 1
+    volume: 0.05
+    pitch: 0.5
     source: {fileID: 0}
   - name: WhiteRoll
-    loop: 0
+    loop: 1
     clip: {fileID: 8300000, guid: d7fc7b0dc838d4df79b88fc8a1f1577e, type: 3}
-    volume: 0.4
-    pitch: 1
+    volume: 0.05
+    pitch: 0.5
     source: {fileID: 0}
   - name: Jump
     loop: 0
