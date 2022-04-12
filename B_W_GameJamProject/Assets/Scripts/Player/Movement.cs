@@ -41,7 +41,7 @@ public class Movement : MonoBehaviour
         {
             DetectInput();
         }
-        FlipGameObjectLeftOrRight();
+        //FlipGameObjectLeftOrRight();
     }
 
     private void FixedUpdate()
@@ -64,16 +64,16 @@ public class Movement : MonoBehaviour
 
     private void Move()
     {
-        if (directionVector.x > 0 || directionVector.x < 0)
+        if (directionVector.x > 0.5 && playerRigidBody.velocity.x <= maxSpeed.Value)
         {
-            CheckIfMaxSpeedReached();
-            if (!isAtMaxSpeed)
-            {
-                playerRigidBody.AddForce(directionVector * acceleration.Value, ForceMode2D.Force);
-            }
+            playerRigidBody.AddForce(directionVector * acceleration.Value, ForceMode2D.Force);
+        }
+        else if (directionVector.x < -0.5 && playerRigidBody.velocity.x >= -maxSpeed.Value)
+		{
+            playerRigidBody.AddForce(directionVector * acceleration.Value, ForceMode2D.Force);
         }
 
-        if ( (directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0) )
+        /*if ( (directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0) )
         {
             //Debug.Log("you are not at max speed and your input is in other direction compared to your movement");
             CheckIfMaxSpeedReached();
@@ -82,13 +82,13 @@ public class Movement : MonoBehaviour
             {
                 playerRigidBody.AddForce(directionVector * acceleration.Value, ForceMode2D.Force);
             }
-        }
+        }*/
 
-        if (directionVector.x == 0)
+        /*if (directionVector.x == 0)
         {
             isAtMaxSpeed = false;
             StopMove();
-        }
+        }*/
     }
 
     private void StopMove()

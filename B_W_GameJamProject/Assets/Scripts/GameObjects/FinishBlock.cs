@@ -54,6 +54,8 @@ public class FinishBlock : MonoBehaviour
 			{
                 Debug.Log("Both picked");
 
+                AudioManager.instance.Play("LevelFinished");
+
                 if (OnFinished != null) {
                     OnFinished(SceneManager.GetActiveScene().buildIndex+1); 
                 }

@@ -118,10 +118,10 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 0.3
   m_AngularDrag: 0.05
   m_GravityScale: 5
-  m_Material: {fileID: 6200000, guid: 0c29f1957b34b664e859ffdd110e8e5b, type: 2}
+  m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdf230f571637bf4b83f2a743b63c08f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isActive: 0
+  isActive: 1
   playerStateManager: {fileID: 3939676951340719231}
   playerType: 1
   playerPosition: {fileID: 11400000, guid: 14b83a373d1036f4caf0b71a273fc441, type: 2}
@@ -157,7 +157,7 @@ MonoBehaviour:
   isAtMaxSpeed: 0
   maxSpeed:
     useLocalValue: 1
-    localValue: 5
+    localValue: 8
     variable: {fileID: 11400000, guid: c0b204415da112a4d963932a63ddf4e4, type: 2}
   acceleration:
     useLocalValue: 1
@@ -183,7 +183,7 @@ MonoBehaviour:
   playerRigidBody: {fileID: 3939676950502193068}
   jumpHeight:
     useLocalValue: 1
-    localValue: 20
+    localValue: 21
     variable: {fileID: 0}
   jumpReducer: 0
 --- !u!1 &3939676951340719224

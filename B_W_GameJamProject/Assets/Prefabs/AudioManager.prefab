@@ -56,3 +56,27 @@ MonoBehaviour:
     volume: 0.4
     pitch: 1
     source: {fileID: 0}
+  - name: BlackRoll
+    loop: 0
+    clip: {fileID: 8300000, guid: 3e0840fa836c6402cb8dafd6d16f2375, type: 3}
+    volume: 0.4
+    pitch: 1
+    source: {fileID: 0}
+  - name: WhiteRoll
+    loop: 0
+    clip: {fileID: 8300000, guid: d7fc7b0dc838d4df79b88fc8a1f1577e, type: 3}
+    volume: 0.4
+    pitch: 1
+    source: {fileID: 0}
+  - name: Jump
+    loop: 0
+    clip: {fileID: 8300000, guid: ef4945c7db1444bd9a00a75fc2c98048, type: 3}
+    volume: 0.1
+    pitch: 2
+    source: {fileID: 0}
+  - name: LevelFinished
+    loop: 0
+    clip: {fileID: 8300000, guid: b1894250d70ad471083960aa1b9e80a1, type: 3}
+    volume: 0.1
+    pitch: 2
+    source: {fileID: 0}
