@@ -49,6 +49,8 @@ public class FinishBlock : MonoBehaviour
            
             instanceTriggerCount++;
             isPickedUp = true;
+
+            AudioManager.instance.Play("Beep");
             
 			if (instanceTriggerCount == 2)
 			{
