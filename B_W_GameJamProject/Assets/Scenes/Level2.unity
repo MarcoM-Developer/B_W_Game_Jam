@@ -703,10 +703,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 473956897}
     m_Modifications:
-    - target: {fileID: 6199895608155278528, guid: d2e1fdd511983534b960443cc51b41cb, type: 3}
-      propertyPath: isActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6199895608155278529, guid: d2e1fdd511983534b960443cc51b41cb, type: 3}
       propertyPath: m_Mass
       value: 1
@@ -1144,10 +1140,6 @@ PrefabInstance:
     - target: {fileID: 3939676950502193068, guid: bf3d5b41202d4874f9a8d951c6ac2437, type: 3}
       propertyPath: m_AngularDrag
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3939676950502193069, guid: bf3d5b41202d4874f9a8d951c6ac2437, type: 3}
-      propertyPath: isActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf3d5b41202d4874f9a8d951c6ac2437, type: 3}

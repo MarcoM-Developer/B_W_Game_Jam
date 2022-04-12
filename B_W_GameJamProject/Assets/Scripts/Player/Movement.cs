@@ -64,16 +64,13 @@ public class Movement : MonoBehaviour
 
     private void Move()
     {
-        if (directionVector.x > 0 || directionVector.x < 0)
+        if (directionVector.x > 0.5 && playerRigidBody.velocity.x <= maxSpeed.Value)
         {
-            //CheckIfMaxSpeedReached();
-            //if (!isAtMaxSpeed)
-            //{
-            if (playerRigidBody.velocity.x <= maxSpeed.Value) // Dirty chai
-            {
-                playerRigidBody.AddForce(directionVector * acceleration.Value, ForceMode2D.Force);
-            }
-            //}
+            playerRigidBody.AddForce(directionVector * acceleration.Value, ForceMode2D.Force);
+        }
+        else if (directionVector.x < -0.5 && playerRigidBody.velocity.x >= -maxSpeed.Value)
+		{
+            playerRigidBody.AddForce(directionVector * acceleration.Value, ForceMode2D.Force);
         }
 
         /*if ( (directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0) )
