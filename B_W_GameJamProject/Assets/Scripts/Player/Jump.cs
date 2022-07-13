@@ -6,10 +6,11 @@ public class Jump : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D playerRigidBody;
     [SerializeField] private FloatReference jumpHeight;
-    [SerializeField] private float jumpReducer;
+    [SerializeField] private float jumpTimerConstant;
+    
     private bool jump;
     private bool canJump;
-
+    private float jumpTimer;
 
     public Rigidbody2D PlayerRigidBody { get => playerRigidBody; set => playerRigidBody = value; }
     public bool CanJump { get => canJump; set => canJump = value; }
@@ -23,34 +24,37 @@ public class Jump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canJump)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
+        if (canJump && Input.GetKeyDown(KeyCode.Space))
+	{
                 jump = true;
+		jumpTimer = jumpTimerConstant;
+	}
+        
 
-                AudioManager.instance.Play("Jump");
-            }
-        }
+	if (jump && Input.GetKeyUp(KeyCode.Space))
+	{
+		jumpTimer = 0;
+		jump = false;
+	}
 
-        if (playerRigidBody.velocity.y > 0 && Input.GetKeyUp(KeyCode.Space))
-        {
-            playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x, playerRigidBody.velocity.y * jumpReducer);
-        }
     }
 
     private void FixedUpdate()
     {
         if (jump)
         {
-            AddVelocityToY();
-        }
-    }
+	    if (jumpTimer == jumpTimerConstant)
+	    {
+		 playerRigidBody.AddForce(new Vector2(0, 4*jumpHeight.Value), ForceMode2D.Impulse);
+	    }
+	    else if (jumpTimer > 0)
+	    {
+	   	 float ratio = (jumpTimer/jumpTimerConstant);
+	    
+	   	 playerRigidBody.AddForce(new Vector2(0, ratio*jumpHeight.Value), ForceMode2D.Impulse);
+	    }
+	    jumpTimer -= 1;
 
-    private void AddVelocityToY()
-    {
-        playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x, 0);
-        playerRigidBody.AddForce(new Vector2(0, jumpHeight.Value), ForceMode2D.Impulse);
-        jump = false;
+        }
     }
 }
