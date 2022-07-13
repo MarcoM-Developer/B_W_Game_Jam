@@ -15,7 +15,7 @@ MonoBehaviour:
   propagatesSignal: 1
   type: blackSwitch
   tiles:
-  - {fileID: 11400000, guid: 7983f1e114e8a4b0c981236d07f9b5ed, type: 2}
+  - {fileID: 11400000, guid: 9ab6c602aca55413e842d0e5b2f458d9, type: 2}
   isTemp: 0
   isWire: 1
   isCheckerboard: 0
