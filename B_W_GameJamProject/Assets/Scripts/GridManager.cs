@@ -22,10 +22,10 @@ public class GridManager : MonoBehaviour
     private TileData checkerboard;
 
     [SerializeField]
-    private TileData tempWhiteWall;
+    private TileData whiteWall;
 
     [SerializeField]
-    private TileData tempBlackWall;
+    private TileData blackWall;
 
     [SerializeField]
     private TileData blackSwitch;
@@ -60,22 +60,25 @@ public class GridManager : MonoBehaviour
         TileData[] tileData = { blackWire,
                                 whiteWire,
                                 checkerboard,
-                                tempWhiteWall,
-                                tempBlackWall,
+                                whiteWall,
+                                blackWall,
                                 whiteSwitch,
                                 blackSwitch};
 
-        foreach(var data in tileData)
-        { 
-            if (data.tiles != null)
-            {
-                foreach (var tile in data.tiles)
+            foreach(var data in tileData)
+            { 
+                if (data.tiles != null)
                 {
-                    dataFromTiles.Add(tile, data);
-                }
-            }
+                    foreach (var tile in data.tiles)
+                    {
+			if (tile != null) 
+			{
+                            dataFromTiles.Add(tile, data);
+			}
+                    }
+                 }
 			
-		}
+             }
 	}
 
 
@@ -83,7 +86,39 @@ public class GridManager : MonoBehaviour
     // TODO: Setup the dual map?
     void Start()
     {
+	// A little spaghetti code here, but hey who cares.
+	
+	// 1. Generate a random white Tile map! 
+	
+	
+	// 2. Given white Tile map, create a dual tilemap.
+	whiteTileMap.CompressBounds();	// compress bounds, just in case.
 
+	Debug.Log(dataFromTiles[whiteWall.tiles[1]]);
+	Debug.Log(Array.FindIndex(whiteWall.tiles, x => (x == whiteWall.tiles[1]) ));
+
+	// Create the dual:
+	BoundsInt bounds = whiteTileMap.cellBounds;
+	TileBase[] allTiles = whiteTileMap.GetTilesBlock(bounds);
+	
+	// Surek
+	foreach (Vector3Int position in bounds.allPositionsWithin){
+
+	        TileBase tile = whiteTileMap.GetTile(position);			
+					
+		if (tile != null && dataFromTiles.ContainsKey(tile) && dataFromTiles[tile].type == TileData.WHITEWALL) 
+		{
+				int index = Array.FindIndex(whiteWall.tiles, x => (x == tile) );
+				TileBase dual = whiteWall.dualsTiles[index];
+
+				blackTileMap.SetTile(position, dual);
+
+		}else if(tile == null)
+		{
+				blackTileMap.SetTile(position, blackWall.tiles[0]);
+
+		}
+	}
     }
 
 
@@ -110,8 +145,7 @@ public class GridManager : MonoBehaviour
 
         // TODO: De-Spaghetti this code ...
         // Check if White stands on switch.
-        if (blackTile != null &&
-            dataFromTiles.ContainsKey(blackTile))
+        if (blackTile != null && dataFromTiles.ContainsKey(blackTile))
 		{
             TileData data = dataFromTiles[blackTile];
 
@@ -122,7 +156,7 @@ public class GridManager : MonoBehaviour
                 if (!whiteOnSwitch)
 				{
                     //... and in fact, I just moved to the switch...
-                    Debug.Log("White Player entered switch.");
+                    // Debug.Log("White Player entered switch.");
 
                     // ... close the switch
                     PlayFlickSwitchSound();
@@ -142,7 +176,7 @@ public class GridManager : MonoBehaviour
                 if (whiteOnSwitch)
 				{
                     //... and truth be told, I just left the switch.
-                    Debug.Log("Exited switch.");
+                    // Debug.Log("Exited switch.");
 
                     //... tell the world I shamelessly quit the switch!
                     whiteOnSwitch = false;
@@ -170,7 +204,7 @@ public class GridManager : MonoBehaviour
                 if (!blackOnSwitch)
                 {
                     // ... I just moved to the switch
-                    Debug.Log("Black Player entered switch.");
+                    // Debug.Log("Black Player entered switch.");
 
                     // ... close the switch
                     PlayFlickSwitchSound();
@@ -191,7 +225,7 @@ public class GridManager : MonoBehaviour
                 if (blackOnSwitch)
                 {
                     //... I just left the switch.
-                    Debug.Log("Black Exited Switch.");
+                    // Debug.Log("Black Exited Switch.");
 
                     blackOnSwitch = false;
 
@@ -263,8 +297,7 @@ public class GridManager : MonoBehaviour
         }
 
 
-        void TryToSpreadTile(Vector3Int position,
-                             string blackOrWhiteSignal)
+        void TryToSpreadTile(Vector3Int position, string blackOrWhiteSignal)
                             
         {
             TileBase blackTile = blackTileMap.GetTile(position);
@@ -289,12 +322,12 @@ public class GridManager : MonoBehaviour
                         {
                             case WHITE_SIGNAL: // White player sent the signal, put a white wall there.
                                 blackTileMap.SetTile(position, null);
-                                whiteTileMap.SetTile(position, tempWhiteWall.tiles[0]); // Do the positions match?
+                                whiteTileMap.SetTile(position, whiteWall.tiles[0]); // Do the positions match?
                                 break;
 
                             case BLACK_SIGNAL: // Black player sent the signal, put a black wall there.
                                 whiteTileMap.SetTile(position, null);
-                                blackTileMap.SetTile(position, tempBlackWall.tiles[0]);
+                                blackTileMap.SetTile(position, blackWall.tiles[0]);
                                 break;
 
                         }
@@ -322,12 +355,12 @@ public class GridManager : MonoBehaviour
                         {
                             case WHITE_SIGNAL: // White player sent the signal, put a white wall there.
                                 blackTileMap.SetTile(position, null);
-                                whiteTileMap.SetTile(position, tempWhiteWall.tiles[0]); // Do the positions match?
+                                whiteTileMap.SetTile(position, whiteWall.tiles[0]); // Do the positions match?
                                 break;
 
                             case BLACK_SIGNAL: // Black player sent the signal, put a black wall there.
                                 whiteTileMap.SetTile(position, null);
-                                blackTileMap.SetTile(position, tempBlackWall.tiles[0]);
+                                blackTileMap.SetTile(position, blackWall.tiles[0]);
                                 break;
 
                         }
@@ -342,21 +375,6 @@ public class GridManager : MonoBehaviour
 
                     }
                 }
-
-                // Switch ON/OFF
-                /* else if (whiteTile != null &&
-                    dataFromTiles.ContainsKey(whiteTile))
-                {
-                    blackTileData = dataFromTiles[whiteTile];
-
-                    if (blackTileData.isTemp)
-                    {
-                        blackTileMap.SetTile(position, checkerboard.tiles[0]);
-                        whiteTileMap.SetTile(position, checkerboard.tiles[0]);
-                        activeTiles.Add(position);
-                        Spread(position, blackOrWhiteSignal);
-                    }
-                }*/
             }
         }
     }

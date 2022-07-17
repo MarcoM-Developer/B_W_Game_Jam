@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -44,17 +45,6 @@ public class Movement : MonoBehaviour
         {
             DetectInput();
 
-            //bool movesFast = (playerRigidBody.velocity.x > 4 || playerRigidBody.velocity.x < -4);
-
-            /*if (movesFast && !isMoving)
-			{
-                isMoving = true;
-                AudioManager.instance.Play("WhiteRoll");
-			}else if (!movesFast)
-			{
-                isMoving = false;
-                AudioManager.instance.Pause("WhiteRoll");
-			}*/
         }
         //FlipGameObjectLeftOrRight();
     }
@@ -81,41 +71,20 @@ public class Movement : MonoBehaviour
 
     private void Move()
     {
-        if (directionVector.x > 0.5 && playerRigidBody.velocity.x <= maxSpeed.Value)
+	// Player velocity varies as v(t) = vmax (1 - exp(-a t))
+	float v = playerRigidBody.velocity.x;
+	float dx = directionVector.x;
+
+        if (Math.Abs(dx) > 0.5 && Math.Abs(v) <= maxSpeed.Value)
         {
-            playerRigidBody.AddForce(directionVector * acceleration.Value, ForceMode2D.Force);
+	    Vector2 dv = new Vector2(acceleration.Value * (maxSpeed.Value - Math.Abs(v)), 0);
+	    playerRigidBody.AddForce(Math.Sign(dx)*dv, ForceMode2D.Force); 
         }
-        else if (directionVector.x < -0.5 && playerRigidBody.velocity.x >= -maxSpeed.Value)
-		{
-            playerRigidBody.AddForce(directionVector * acceleration.Value, ForceMode2D.Force);
-        }
-
-
-
-        /*if ( (directionVector.x > 0 && playerRigidBody.velocity.x < 0) || (directionVector.x < 0 && playerRigidBody.velocity.x > 0) )
-        {
-            //Debug.Log("you are not at max speed and your input is in other direction compared to your movement");
-            CheckIfMaxSpeedReached();
-            StopMove();
-            if (!isAtMaxSpeed)
-            {
-                playerRigidBody.AddForce(directionVector * acceleration.Value, ForceMode2D.Force);
-            }
-        }*/
-
-        /*if (directionVector.x == 0)
-        {
-            isAtMaxSpeed = false;
-            StopMove();
-        }*/
     }
 
     private void StopMove()
     {
-         if (Mathf.Abs(playerRigidBody.velocity.x) > 0)
-         {
-             playerRigidBody.velocity = new Vector2(0,playerRigidBody.velocity.y);
-         }
+        playerRigidBody.velocity = new Vector2(0,playerRigidBody.velocity.y);
     }
 
     private void CheckIfMaxSpeedReached()

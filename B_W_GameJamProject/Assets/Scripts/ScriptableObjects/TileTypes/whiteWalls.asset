@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb23518621e6241fb9b38f137ebede71, type: 3}
+  m_Name: whiteWalls
+  m_EditorClassIdentifier: 
+  propagatesSignal: 1
+  type: whiteWall
+  tiles:
+  - {fileID: 11400000, guid: 5a498fe6daad54a11b419730bdc1d592, type: 2}
+  - {fileID: 11400000, guid: 304fc1c5b700b4bb495ceb0f436da050, type: 2}
+  - {fileID: 11400000, guid: 7475b869b0c7049e29941d228a61788b, type: 2}
+  - {fileID: 11400000, guid: 663a9cc892f4e4f0fb3509292326f1e4, type: 2}
+  - {fileID: 11400000, guid: 64486b687cd394807a3cf78a017f7da8, type: 2}
+  - {fileID: 11400000, guid: 595c8a5acade249fab79c515c501ce04, type: 2}
+  - {fileID: 11400000, guid: d109f3d7705164e81a8c931a55035e0f, type: 2}
+  - {fileID: 11400000, guid: 2ccf6ecef3e474618ae526b2ee816a1d, type: 2}
+  - {fileID: 11400000, guid: 50dbf0caf49fc4b7496cc51bfb5c3a79, type: 2}
+  - {fileID: 0}
+  dualsTiles:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: a118ee4ccb0da47b6bf60560043ea8b0, type: 2}
+  - {fileID: 11400000, guid: 27189608dd21d418ab9b1e2bc387faa5, type: 2}
+  - {fileID: 11400000, guid: 03c3cdaf0feb543469e027d0269ff689, type: 2}
+  - {fileID: 11400000, guid: b6e0a58dcd88a476ca42d3288f9df468, type: 2}
+  - {fileID: 11400000, guid: 9b8b8c804ae684d34b0b7029d0a24f70, type: 2}
+  - {fileID: 11400000, guid: 2ad136eeb27fb46868ff45a241b9f3a1, type: 2}
+  - {fileID: 11400000, guid: 101521b05702b4b7eacddf0ad000ead3, type: 2}
+  - {fileID: 11400000, guid: eebef6efe6b7347a6a62a40f4f5ea02f, type: 2}
+  - {fileID: 11400000, guid: 628049b16f49a4a3fb4b4d4861902ebc, type: 2}
+  isTemp: 0
+  isWire: 0
+  isCheckerboard: 0
+  isSwitch: 0
