@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private bool isActive;
+    [SerializeField] public bool isActive;
     [SerializeField] private PlayerStateManager playerStateManager;
     [SerializeField] private PlayerType playerType;
     [SerializeField] private Vector3Variable playerPosition;

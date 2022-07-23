@@ -7,10 +7,11 @@ public class Jump : MonoBehaviour
     [SerializeField] private Rigidbody2D playerRigidBody;
     [SerializeField] private FloatReference jumpHeight;
     [SerializeField] private float jumpTimerConstant;
-    
+     
     private bool jump;
     private bool canJump;
     private float jumpTimer;
+
 
     public Rigidbody2D PlayerRigidBody { get => playerRigidBody; set => playerRigidBody = value; }
     public bool CanJump { get => canJump; set => canJump = value; }
@@ -24,14 +25,14 @@ public class Jump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canJump && Input.GetKeyDown(KeyCode.Space))
+        if (canJump && Input.GetKeyDown(KeyCode.UpArrow))
 	{
                 jump = true;
 		jumpTimer = jumpTimerConstant;
 	}
         
 
-	if (jump && Input.GetKeyUp(KeyCode.Space))
+	if (jump && Input.GetKeyUp(KeyCode.UpArrow))
 	{
 		jumpTimer = 0;
 		jump = false;
