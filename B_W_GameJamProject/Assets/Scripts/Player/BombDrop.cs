@@ -51,12 +51,12 @@ public class BombDrop: MonoBehaviour
 				explode.destructibleTileMap = whiteTileMap;
 				explode.backgroundTileMap = blackTileMap; // if white
 				explode.destructibleTileData = whiteWall;
-				explode.backgroudTileData = blackWall;
+				explode.backgroundTileData = blackWall;
 			} else {
 				explode.destructibleTileMap = blackTileMap;
 				explode.backgroundTileMap = whiteTileMap;
 				explode.destructibleTileData = blackWall;
-				explode.backgroudTileData = whiteWall;
+				explode.backgroundTileData = whiteWall;
 			}	
 	
 		}

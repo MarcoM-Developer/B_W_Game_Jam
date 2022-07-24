@@ -15,7 +15,10 @@ MonoBehaviour:
   propagatesSignal: 1
   type: checkerboard
   tiles:
-  - {fileID: 11400000, guid: 1850e4426ab5b4706a799ededee64099, type: 2}
+  - {fileID: 11400000, guid: 7df4e37a1e1084364be3116c05c333c2, type: 2}
+  dualsTiles:
+  - {fileID: 11400000, guid: 7df4e37a1e1084364be3116c05c333c2, type: 2}
   isTemp: 0
   isWire: 0
   isCheckerboard: 1
+  isSwitch: 0

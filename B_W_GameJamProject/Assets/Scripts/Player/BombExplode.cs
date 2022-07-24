@@ -22,7 +22,9 @@ public class BombExplode: MonoBehaviour
     public Tilemap destructibleTileMap; // tiles to destroy
     public Tilemap backgroundTileMap; // tiles to avoid
     public TileData destructibleTileData; // tiles to destroy
-    public TileData backgroudTileData;
+    public TileData backgroundTileData;
+
+    private int blastRadius = 2; // Bomb blast radius
     
     
         // Start is called before the first frame update
@@ -44,8 +46,32 @@ public class BombExplode: MonoBehaviour
 		Debug.Log(backgroundTileMap);
 		Vector3Int bombTilePosition = backgroundTileMap.WorldToCell(bombPosition);
 
-		backgroundTileMap.SetTile(backgroundTileMap.WorldToCell(bombPosition), destructibleTileData.tiles[0]);
-		destructibleTileMap.SetTile(destructibleTileMap.WorldToCell(bombPosition), destructibleTileData.dualsTiles[0]);
+		// TEST
+		// Square blast first
+		for (int x = -blastRadius; x < blastRadius; x++){
+			for (int y = -blastRadius; y < blastRadius; y++) {
+			  	Vector3Int delta = new Vector3Int(x,y,0);
+				Vector3Int position = bombTilePosition + delta;		
+				
+				TileBase backgroundTile = backgroundTileMap.GetTile(position);
+				TileBase destructibleTile = destructibleTileMap.GetTile(position);
+
+				Debug.Log(backgroundTile);
+				Debug.Log(destructibleTile);
+				
+				if(backgroundTile.name != "checkerboard" &&
+				   destructibleTile.name != "checkerboard"){
+					backgroundTileMap.SetTile(position, backgroundTileData.tiles[0]);
+					destructibleTileMap.SetTile(position, null); //destructibleTileData.tiles[0]);
+				}
+			}
+		}
+		// backgroundTileMap.SetTile(bombTilePosition, null);
+		//destructibleTileMap.SetTile(bombTilePosition,  destructibleTileData.tiles[0]);
+
+		// CODE UP EXPLOSIONS HERE: 
+		
+
 
 		// Just to try here:
 		Destroy(gameObject);

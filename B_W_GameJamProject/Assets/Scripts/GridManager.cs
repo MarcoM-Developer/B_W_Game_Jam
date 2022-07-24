@@ -59,7 +59,7 @@ public class GridManager : MonoBehaviour
         dataFromTiles = new Dictionary<TileBase, TileData>();
         TileData[] tileData = { blackWire,
                                 whiteWire,
-                                checkerboard,
+                               // checkerboard,
                                 whiteWall,
                                 blackWall,
                                 whiteSwitch,
@@ -73,7 +73,8 @@ public class GridManager : MonoBehaviour
                     {
 			if (tile != null) 
 			{
-                            dataFromTiles.Add(tile, data);
+			    dataFromTiles[tile] = data;
+                            //dataFromTiles.Add(tile, data);
 			}
                     }
                  }
@@ -93,6 +94,10 @@ public class GridManager : MonoBehaviour
 	
 	// 2. Given white Tile map, create a dual tilemap.
 	whiteTileMap.CompressBounds();	// compress bounds, just in case.
+	
+	blackTileMap.origin = whiteTileMap.origin; // lock origin and size
+	blackTileMap.size = whiteTileMap.size;
+	blackTileMap.ResizeBounds();
 
 	Debug.Log(dataFromTiles[whiteWall.tiles[1]]);
 	Debug.Log(Array.FindIndex(whiteWall.tiles, x => (x == whiteWall.tiles[1]) ));
