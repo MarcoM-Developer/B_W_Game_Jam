@@ -151,7 +151,7 @@ public class GridManager : MonoBehaviour
         // TODO: De-Spaghetti this code ...
         // Check if White stands on switch.
         if (blackTile != null && dataFromTiles.ContainsKey(blackTile))
-		{
+	    {
             TileData data = dataFromTiles[blackTile];
 
             if (data.isSwitch)

@@ -59,11 +59,18 @@ public class BombExplode: MonoBehaviour
 				Debug.Log(backgroundTile);
 				Debug.Log(destructibleTile);
 				
-				if(backgroundTile.name != "checkerboard" &&
-				   destructibleTile.name != "checkerboard"){
-					backgroundTileMap.SetTile(position, backgroundTileData.tiles[0]);
-					destructibleTileMap.SetTile(position, null); //destructibleTileData.tiles[0]);
+				if (backgroundTile != null && backgroundTile.name == "checkerboard")
+				{
+					continue;
 				}
+				
+				if (destructibleTile != null && destructibleTile.name == "checkerboard")
+				{
+					continue;
+				}
+
+				backgroundTileMap.SetTile(position, backgroundTileData.tiles[0]);
+				destructibleTileMap.SetTile(position, null); //destructibleTileData.tiles[0]);
 			}
 		}
 		// backgroundTileMap.SetTile(bombTilePosition, null);

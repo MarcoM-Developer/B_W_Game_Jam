@@ -97,12 +97,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e3ee600889d407c9592dc2fc1ab207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerRigidBody: {fileID: 0}
   player: {fileID: 0}
-  bombDelay: 200
+  bombDelay: 100
   whiteTileMap: {fileID: 0}
   blackTileMap: {fileID: 0}
+  whiteWall: {fileID: 0}
+  blackWall: {fileID: 0}
   isWhite: 1
+  destructibleTileMap: {fileID: 0}
+  backgroundTileMap: {fileID: 0}
+  destructibleTileData: {fileID: 0}
+  backgroundTileData: {fileID: 0}
 --- !u!50 &7544589025886994170
 Rigidbody2D:
   serializedVersion: 4
